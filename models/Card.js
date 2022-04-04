@@ -30,7 +30,7 @@ const CardSchema = new Schema({
     required: true
   },
   desc: {
-    type: Text,
+    type: String,
     required: true
   }
 }, {
