@@ -1,4 +1,5 @@
 const express = require("express");
+const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const db = require('./config/keys').mongoURI;
 
@@ -9,8 +10,10 @@ mongoose
 
   const app = express();
 
-app.get("/", (req, res) => res.send("Hello World"));
+  const posts = require('./routes/api/posts')
 
 const port = process.env.PORT || 4000;
+
+app.use("/api/posts", posts);
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
