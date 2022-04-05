@@ -1,13 +1,14 @@
 import React, {useEffect} from 'react'
 import PostIndexItemContainer from './post_index_item_container';
 import postStyles from './posts.css'
+import {Link} from 'react-router-dom'
 
 const PostIndex = ({posts, fetchPosts}) => {
     useEffect( () => {
         fetchPosts();
     },[])
 
-    //test
+    /////// test //////
     posts = [
         {id: 0, user: 'User' , body:'This is text', date:'3/04/22'},
         {id: 1, user:'User', body:'This is also text', date:'3/05/22'},
@@ -23,6 +24,7 @@ const PostIndex = ({posts, fetchPosts}) => {
             {posts.map( post => {
                 return <PostIndexItemContainer key={post.id} post={post}/>
             })}
+            <Link to="/posts/new" className='link-button'>Create New Post</Link>
         </ul>
     )
 }

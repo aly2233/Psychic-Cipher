@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+    /* align-items: center; */
 }
 
 .posts-list li {
@@ -21,4 +22,44 @@
     background-color: purple;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+}
+
+.post-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-form textarea {
+    width: 80%;
+    height: 100px;
+}
+
+.post-form-buttons {
+    align-self: flex-end;
+    margin-right: 10%
+}
+
+.link-button {
+    background: aquamarine;
+    border: solid purple thin;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    width: 130px;
+    text-align: center;
+    padding: 5px;
+    align-self: center;
+    cursor:pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.link-button:visited {
+    color: inherit;
+}
+
+.post-form-buttons {
+
 }
