@@ -20,23 +20,47 @@ class NavBar extends React.Component {
       if (this.props.loggedIn) {
         return (
             <div className='nav-bar'>
-              <h1>Psychic Cipher</h1>
-                <Link to={'/profile'}>Profile</Link>
-                <button onClick={this.logoutUser}>Logout</button>
+                <div className='flourish-block0'></div>
+              <div className='flourish-block'></div>
+              <div className='flourish-block2'></div>
+              <div className='flourish-block3'></div>
+              <div className='flourish-block4'></div>
+              <div className='flourish-block00'></div>
+             <Link className='header-link' to='/' >
+               <div className='title-link'>Psychic Cipher</div>
+              </Link>
+
+              <div className='nav-bar-button-container'>
+                <Link to={'/profile'}>
+                  <button className='nav-bar-button'>Profile</button>
+                </Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button className='nav-bar-button' onClick={this.logoutUser}>Logout</button>
+                </div>
             </div>
         );
       } else {
         return (
-            <div className='nav-bar'>
+          <div className='nav-bar'>
+              <div className='flourish-block0'></div>
+              <div className='flourish-block'></div>
+              <div className='flourish-block2'></div>
+              <div className='flourish-block3'></div>
+              <div className='flourish-block4'></div>
+              <div className='flourish-block00'></div>
               <Link className='header-link' to='/' >
                <div className='title-link'>Psychic Cipher</div>
               </Link>
                 {/* <Link className='nav-links-signup' to={'/signup'}>Signup</Link>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <Link className='nav-links-login' to={'/login'}>Login</Link> */}
-                <button onClick={() => this.props.openModal('signup')}> Signup</button>
+                <div className='nav-bar-button-container'>
+                <button className='nav-bar-button' onClick={() => this.props.openModal('signup')}> Signup</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button className='nav-bar-button' onClick={() => this.props.openModal('login')}> Login</button>
 
-                <button onClick={() => this.props.openModal('login')}> Login</button>
+
+                </div>
+
             </div>
         );
       }

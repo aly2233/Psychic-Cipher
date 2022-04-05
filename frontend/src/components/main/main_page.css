@@ -33,7 +33,10 @@ box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(166, 157, 144);
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 100px;
+    /* font-family: 'Righteous', cursive; */
 }
 
 .tarot-card-item {
@@ -48,5 +51,14 @@ box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
     font-size: 36px;
     text-align: center;
     padding-top: 50px;
-    color: rgb(166, 157, 144)
+    color: rgb(166, 157, 144);
+    font-family: 'Righteous', cursive;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom: 1px, black;
+}
+.border-bottom {
+    text-align: center;
+    width: 400px;
+    height: 10px;
 }

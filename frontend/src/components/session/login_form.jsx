@@ -35,9 +35,9 @@ class LoginForm extends React.Component {
     };
 
     this.props.login(user)
-    if(this.props.state.session.user.id !== null) {
-      this.props.closeModal()
-    }
+    // if(this.props.state.session.user.id !== null) {
+    //   this.props.closeModal()
+    // }
  
   }
 
