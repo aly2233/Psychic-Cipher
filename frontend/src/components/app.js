@@ -3,6 +3,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import NavBarContainer from './nav/navbar_container';
 import Modal from './nav/modal';
+import cardsContainer from './cards/cards_container';
 
 import MainPage from './main/main_page';
 import LoginFormContainer from './session/login_form_container';
@@ -21,6 +22,7 @@ const App = () => (
         <Route exact path="/posts/new" component={CreatePostFormContainer}/>
         <Route exact path="/login" component={LoginFormContainer} />
         <Route exact path="/signup" component={SignupFormContainer} />
+        <Route exact path="/cards" component={cardsContainer} />
     {/* </Routes> */}
 
   </div>
