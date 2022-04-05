@@ -1,14 +1,14 @@
-// import React from 'react'
+import React from 'react'
 
-// const Post = ({posts, fetchPosts}) => {
+const Post = ({posts, fetchPosts}) => {
 
-//     return(
-//         <div>
+    return(
+        <div>
 
-//         </div>
-//     )
-// }
+        </div>
+    )
+}
 
-// export default Post;
+export default Post;
 
 
