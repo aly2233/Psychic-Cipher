@@ -1,7 +1,10 @@
+require('axios-debug-log')
+
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 const passport = require('passport');
+
 
 const Post = require('../../models/Post')
 const validatePostInput = require('../../validation/posts')
@@ -32,22 +35,24 @@ router.get('/:id', (req, res) => {
 
 
 router.post('/',
-    passport.authenticate('jwt', {session: false}),
+    // passport.authenticate('jwt', {session: false}),
     (req, res) => {
-        const { errors, isValid } = validateTweetInput(req.body)
+        console.log( req.body)
+        // const { errors, isValid } = validatePostInput(req.body)
 
-        if(!isValid) {
-            return res.status(400).json(errors);
-        }
-
+        // console.log('im here')
+        // if(!isValid) {
+        //     return res.status(400).json(errors);
+        // }
+        
         const newPost = new Post({
             text: req.body.text,
-            user: req.user.id
+            // user: req.user.id
+            user: req.body.userId
         });
-
+        
         newPost.save().then(post => res.json(post));
     }
 )
-
 module.exports = router;
 

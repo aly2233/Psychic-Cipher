@@ -1,5 +1,6 @@
 // // attempt 1
 require("./models/Card");
+require("./models/Post");
 const seeder = require('mongoose-seed');
 const db = require("./config/keys").mongoURI;
 
@@ -7,11 +8,11 @@ const db = require("./config/keys").mongoURI;
 // // connect to database cluster
 seeder.connect(db, function () {
   // // link to card model
-  seeder.loadModels(["./models/Card.js"]);
+  seeder.loadModels(["./models/Card.js", "./models/Post.js"]);
   // // deleting previous instances of card model
-  seeder.clearModels(["Card"], function () {
+  seeder.clearModels(["Card", "Post"], function () {
     // // line for reseeding
-    seeder.populateModels(deck, function (err, done) {
+    seeder.populateModels(data, function (err, done) {
       // // disconnecting upon completion
       if (err) {
         return console.log("seed err", err)
@@ -26,7 +27,8 @@ seeder.connect(db, function () {
 });
 
 
-const deck = [
+const data = [
+  //Card Object
   {
     "model": "Card",
     "documents": [
@@ -1181,5 +1183,32 @@ const deck = [
         }
       ]
     ]
+  },
+  /////// POSTS
+  {
+    "model": "Post",
+    "documents": [
+      [
+        {
+          "user": '624c7c68b5120c4c6ad44213',
+          "text": 'That card was great.  It totally speaks to me.'
+        },
+        {
+          "user": '624c7c68b5120c4c6ad44213',
+          "text": 'I feel like these cards are reading my mind'
+        },
+        {
+          "user": '624c7c68b5120c4c6ad44213',
+          "text": 'Tarot reading comment something something'
+        },
+        {
+          "user": '624c7c68b5120c4c6ad44213',
+          "text": 'Do you even tarot bro?'
+        }
+      ]
+    ]
   }
+
 ]
+
+

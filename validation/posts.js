@@ -3,6 +3,7 @@ const validText = require('./valid-text')
 
 module.exports = function validatePostInput(data) {
     let errors = {};
+    // console.log(data)
 
     data.text = validText(data.text) ? data.text : '';
 
