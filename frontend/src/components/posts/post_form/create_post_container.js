@@ -4,7 +4,7 @@ const { createPost } = require("../../../actions/post_actions")
 
 const mapStateToProps = state => {
     return {
-
+        userId: state.session.user.id
     }
 }
 

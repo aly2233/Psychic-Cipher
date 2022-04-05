@@ -13,6 +13,7 @@ export const fetchPost = (postId) => {
 }
 
 export const createPost = (post) => {
+    console.log(post)
     return axios.post('/api/posts/', post)
 }
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
-const PostForm = ({createPost}) => {
+const PostForm = ({createPost, userId}) => {
     const [text, setText] = useState('')
 
     // useEffect( () => {
@@ -9,8 +9,9 @@ const PostForm = ({createPost}) => {
     // })
     
     const handleSubmit = (e) => {
+        debugger
         e.preventDefault()
-        createPost()
+        createPost({user: userId, text})
     }
 
     const update = (e) => {

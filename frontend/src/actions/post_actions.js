@@ -45,6 +45,7 @@ export const updatePost = (post) => dispatch => {
 }
 
 export const createPost = (post) => dispatch => {
+    debugger
     return PostApiUtil.createPost(post)
         .then( post => dispatch(receivePost(post)))
         .catch(err => console.log(err))
