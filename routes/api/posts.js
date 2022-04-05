@@ -54,6 +54,5 @@ router.post('/',
         newPost.save().then(post => res.json(post));
     }
 )
-
 module.exports = router;
 
