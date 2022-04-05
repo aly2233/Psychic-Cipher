@@ -1,5 +1,7 @@
 import React from 'react';
-// import { withRouter } from 'react-router-dom';
+
+
+import './signup.css'
 
 class SignupForm extends React.Component {
   constructor(props) {
@@ -8,21 +10,15 @@ class SignupForm extends React.Component {
       email: '',
       handle: '',
       password: '',
-      password2: '',
-      errors: {}
-    };
+      password2: ''
+    }
+    this.props.state.errors = {}
 
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.clearedErrors = false;
+
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.signedIn === true) {
-      this.props.history.push('/login');
-    }
 
-    this.setState({errors: nextProps.errors})
-  }
 
   update(field) {
     return e => this.setState({
@@ -39,22 +35,24 @@ class SignupForm extends React.Component {
       password2: this.state.password2
     };
 
-    this.props.signup(user, this.props.history); 
+    this.props.signup(user)
+    // .then(this.props.closeModal()); 
   }
 
   renderErrors() {
     return(
-      <ul>
-        {Object.keys(this.state.errors).map((error, i) => (
-          <li key={`error-${i}`}>
-            {this.state.errors[error]}
-          </li>
+      <div>
+        {Object.keys(this.props.state.errors).map((error, i) => (
+           ( <ul className='errors' key={`error-${i}`}>
+           {this.props.state.errors[error]}
+          </ul> )
         ))}
-      </ul>
+      </div>
     );
   }
 
   render() {
+    // console.log(this.props.state)
     return (
       <div className="signup-form-container">
         <form onSubmit={this.handleSubmit}>

@@ -1,5 +1,102 @@
-.nav-bar-sign-login {
+.nav-bar {
     font-size: 20px;
-    text-align: right;
+    text-align: center;
+    background-color: rgb(166, 157, 144);
     }
     
+
+.header-link {
+    padding-top: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 45px;
+    text-shadow: 1px 1px white;
+    /* text-shadow: 2px 2px rgb(49, 49, 90); */
+    font-family: 'Righteous', cursive;
+  
+}
+
+.header-link:hover {
+  color: rgb(73, 32, 32);
+}
+
+.nav-bar-button {
+  background-color:  rgb(166, 157, 144) ;
+  border-color:  black ;
+  font-family: 'Righteous', cursive;
+  font-size: 16px;
+  padding: 3px;
+  width: 100px;
+  cursor: pointer;
+  /* margin-bottom: 10px; */
+}
+.nav-bar-button-container{
+  padding: 10px;
+}
+
+.flourish-block {
+  position: absolute;
+  background-color: rgb(49, 49, 90);
+  margin-left: 20%;
+  width: 40px;
+  height: 110px;
+  
+}
+
+.flourish-block2 {
+  position: absolute;
+  background-color: rgb(49, 49, 90);
+  margin-left: 76%;
+  width: 40px;
+  height: 110px;
+}
+.flourish-block3 {
+  position: absolute;
+  background-color: rgb(49, 49, 90);
+  margin-left: 65%;
+  width: 20px;
+  height: 110px;
+}
+
+.flourish-block4 {
+  position: absolute;
+  background-color: rgb(49, 49, 90);
+  margin-left: 32%;
+  width: 20px;
+  height: 110px;
+}
+
+.flourish-block00 {
+  position: absolute;
+  background-color: rgb(49, 49, 90);
+  margin-left: 90%;
+  width: 80px;
+  height: 110px;
+}
+
+.flourish-block0 {
+  position: absolute;
+  background-color: rgb(49, 49, 90);
+  margin-left: 5%;
+  width: 80px;
+  height: 110px;
+  
+}
+
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+  }
+  
+  .modal-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
