@@ -1,0 +1,64 @@
+.top-image {
+    background-color: rgb(49, 49, 90);
+ text-align: center;
+}
+
+
+
+.main-page {
+    background-color: rgb(49, 49, 90);
+}
+
+
+
+.image {
+    margin-top: 10px;
+    border-radius: 5px;
+    /* width: 700px; */
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+}
+
+.explore-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+.play-tarot {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 100px;
+    /* font-family: 'Righteous', cursive; */
+}
+
+.tarot-card-item {
+    width: 150px;
+    height: 260px;
+    border-radius: 8px;
+    border-color: antiquewhite;
+    padding: 15px;
+}
+
+.explore-writing {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 50px;
+    color: rgb(166, 157, 144);
+    font-family: 'Righteous', cursive;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom: 1px, black;
+}
+.border-bottom {
+    text-align: center;
+    width: 400px;
+    height: 10px;
+}

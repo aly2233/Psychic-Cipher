@@ -1,5 +1,8 @@
+
+import './login.css'
 import React from 'react';
-// import { withRouter } from 'react-router-dom';
+
+
 
 class LoginForm extends React.Component {
   constructor(props) {
@@ -8,24 +11,14 @@ class LoginForm extends React.Component {
     this.state = {
       email: '',
       password: '',
-      errors: {}
     };
-
+    this.props.state.errors = {};
     this.handleSubmit = this.handleSubmit.bind(this);
     this.renderErrors = this.renderErrors.bind(this);
   }
 
-  // Once the user has been authenticated, redirect to the Tweets page
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.currentUser === true) {
-      this.props.history.push('/tweets');
-    }
 
-    // Set or clear errors
-    this.setState({errors: nextProps.errors})
-  }
-
-  // Handle field updates (called in the render method)
+  
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
@@ -41,46 +34,61 @@ class LoginForm extends React.Component {
       password: this.state.password
     };
 
-    this.props.login(user); 
+    this.props.login(user)
+    // if(this.props.state.session.user.id !== null) {
+    //   this.props.closeModal()
+    // }
+ 
   }
 
-  // Render the session errors if there are any
+
   renderErrors() {
     return(
       <ul>
-        {Object.keys(this.state.errors).map((error, i) => (
-          <li key={`error-${i}`}>
-            {this.state.errors[error]}
-          </li>
+        {Object.keys(this.props.state.errors).map((error, i) => (
+           ( <li className='errors' key={`error-${i}`}>
+           {this.props.state.errors[error]}
+          </li> )
         ))}
       </ul>
     );
   }
 
+
+
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <div>
-              <input type="text"
+   
+      <div className='login-form-container'>
+        <form className='login-form' onSubmit={this.handleSubmit}>
+         {/* {this.renderErrors()} */}
+          <div className='login-form-interior'>
+              <input className='login-input' 
+                type="text"
                 value={this.state.email}
                 onChange={this.update('email')}
                 placeholder="Email"
+                // required
               />
             <br/>
-              <input type="password"
+              <input className='login-input'
+               type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
                 placeholder="Password"
+                // required
               />
             <br/>
+            <br />
             <input type="submit" value="Submit" />
             {this.renderErrors()}
           </div>
         </form>
+        {/* {this.renderErrors()} */}
       </div>
     );
   }
 }
 
-export default LoginForm;
+// export default withRouter(LoginForm);
+export default LoginForm
