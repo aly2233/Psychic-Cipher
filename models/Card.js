@@ -32,6 +32,16 @@ const CardSchema = new Schema({
   desc: {
     type: String,
     required: true
+  },
+  photoUrls: {
+    up: {
+      type: String,
+      required: true
+    },
+    rev: {
+      type: String,
+      required: true
+    }
   }
 }, {
   timestamps: true
