@@ -1,0 +1,24 @@
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.posts-list li {
+    border: black thin solid;
+    margin: 20px;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.post-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: thin black solid;
+    height: 40px;
+    align-items:center;
+    background-color: purple;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}

@@ -6,12 +6,14 @@ import NavBarContainer from './nav/navbar_container';
 import MainPage from './main/main_page';
 import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
+import PostIndexContainer from './posts/post_index_container';
 
 const App = () => (
   <div>
     <NavBarContainer />
     {/* <Routes> */}
         <Route exact path="/" component={MainPage} />
+        <Route exaxt path="/" component={PostIndexContainer} />
         <Route exact path="/login" component={LoginFormContainer} />
         <Route exact path="/signup" component={SignupFormContainer} />
     {/* </Routes> */}

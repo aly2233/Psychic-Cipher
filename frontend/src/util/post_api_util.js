@@ -3,6 +3,7 @@ import axios from 'axios';
 
 
 export const fetchPosts = () => {
+    // debugger
     return axios.get('/api/posts')
 }
 
