@@ -3,6 +3,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import NavBarContainer from './nav/navbar_container';
 import Modal from './nav/modal';
+import cardsContainer from './cards/cards_container';
 
 import MainPage from './main/main_page';
 
@@ -13,6 +14,7 @@ const App = () => (
     < Modal />
     {/* <Routes> */}
         <Route exact path="/" component={MainPage} />
+        <Route exact path="/cards" component={cardsContainer} />
     {/* </Routes> */}
 
   </div>
