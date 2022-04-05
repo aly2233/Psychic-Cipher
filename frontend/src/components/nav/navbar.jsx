@@ -19,16 +19,24 @@ class NavBar extends React.Component {
   getLinks() {
       if (this.props.loggedIn) {
         return (
-            <div>
+            <div className='nav-bar'>
+              <h1>Psychic Cipher</h1>
                 <Link to={'/profile'}>Profile</Link>
                 <button onClick={this.logoutUser}>Logout</button>
             </div>
         );
       } else {
         return (
-            <div className='nav-bar-sign-login'>
-                <Link to={'/signup'}>Signup</Link>
-                <Link to={'/login'}>Login</Link>
+            <div className='nav-bar'>
+              <Link className='header-link' to='/' >
+               <div className='title-link'>Psychic Cipher</div>
+              </Link>
+                {/* <Link className='nav-links-signup' to={'/signup'}>Signup</Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <Link className='nav-links-login' to={'/login'}>Login</Link> */}
+                <button onClick={() => this.props.openModal('signup')}> Signup</button>
+
+                <button onClick={() => this.props.openModal('login')}> Login</button>
             </div>
         );
       }
