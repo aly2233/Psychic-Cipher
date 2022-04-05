@@ -5,8 +5,9 @@ const mongoose = require('mongoose');
 const db = require('./config/keys').mongoURI;
 const bodyParser = require('body-parser');
 const passport = require('passport');
-
+require("./models/Card")
 const users = require("./routes/api/users");
+const cards = require("./routes/api/cards");
 
 mongoose
   .connect(db, { useNewUrlParser: true })
@@ -25,13 +26,10 @@ app.use(bodyParser.json());
 
 app.use("/api/users", users);
 
-
-
-
-
-
 const port = process.env.PORT || 4000;
 
 app.use("/api/posts", posts);
+app.use("/api/cards", cards);
+
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
