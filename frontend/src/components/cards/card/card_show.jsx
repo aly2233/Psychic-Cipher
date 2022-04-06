@@ -12,19 +12,37 @@ const CardShow = ({fetchCard, card, match}) => {
     }
     return (
         <div className='card-show-container'>
-
             <div className='card-show-flex' >
+                <div>
                 <img className='card-image-show' src={card.data.photoUrls.up} />
-                <div className='card-details'>
-            <div className='card-name'>{card.data.name}</div>
-            <p className='card-arcana'> Arcana: {card.data.arcana} </p>
-
-            <p className='card-desc'>{card.data.desc}</p>
-
+                            <div className='card-meaning' >
+                                <p className='meaning-title' >Upright Meaning</p>
+                                <p>{card.data.meaningUp}</p>
+                            </div>
                 </div>
 
+
+                <div className='card-details'>
+                        <div className='card-name'>{card.data.name}</div>
+                    <p className='card-arcana'> Arcana: {card.data.arcana} </p>
+                    <p className='card-desc'>{card.data.desc}</p>
+                </div>
+
+
+
+                <div>
                 <img className='card-image-show' src={card.data.photoUrls.rev} />
+                <div className='card-meaning' >
+                                <p className='meaning-title' >Reversed Meaning</p>
+                                <p>{card.data.meaningRev}</p>
+                            </div>
+                </div>
+
+
+
+
             </div>
+            {/* <div className='card-positions'>if the card is drawn upright this can mean {card.data.meaningUp}</div> */}
 
 
             {/* <h1>Card Show</h1> */}

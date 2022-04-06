@@ -35,6 +35,10 @@ class NavBar extends React.Component {
                   <button className='nav-bar-button'>Profile</button>
                 </Link>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <Link to={'/cards'}>
+                  <button className='nav-bar-button'>Explore</button>
+                </Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button className='nav-bar-button' onClick={this.logoutUser}>Logout</button>
                 </div>
             </div>
@@ -55,6 +59,10 @@ class NavBar extends React.Component {
                 <Link className='nav-links-login' to={'/login'}>Login</Link> */}
                 <div className='nav-bar-button-container'>
                 <button className='nav-bar-button' onClick={() => this.props.openModal('signup')}> Signup</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <Link to={'/cards'}>
+                  <button className='nav-bar-button'>Explore</button>
+                </Link>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button className='nav-bar-button' onClick={() => this.props.openModal('login')}> Login</button>
 
