@@ -411,7 +411,7 @@ const data = [
         "meaningRev": "Fall, decadence, ruin, perdition, to perish also a certain clouded joy.",
         "desc": "A hand issuing from a cloud grasps a stout wand or club.",
         "photoUrls": {
-          "up": "temphttps://psychic-cipher.s3.us-west-1.amazonaws.com/Wands01.jpeg",
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands01.jpeg",
           "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands01.jpeg"
         }
       },
