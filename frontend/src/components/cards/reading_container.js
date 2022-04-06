@@ -4,7 +4,7 @@ import Reading from "./reading";
 
 const mSTP = (state) => {
   return {
-    cards: state.cards.data
+    cards: state.cards
   }
 }
 
