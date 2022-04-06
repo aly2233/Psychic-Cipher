@@ -9,20 +9,11 @@ const Post = require('../../models/Post')
 const validatePostInput = require('../../validation/posts')
 
 router.get('/', (req, res) => {
-    Post.find({card: req.query.cardId})
+    Post.find({cardId: (req.query.cardId || req.body.cardId)})
         .sort({date: -1})
         .then(posts => res.json(posts))
         .catch(err => res.status(404).json({ nopostsfound: 'No posts found'}))
 });
-
-
-// router.get('/card/:card_id', (req, res) => {
-//     Post.find({card: req.params.card_id})
-//         .sort({date: -1})
-//         .then(posts => res.json(posts))
-//         .catch(err => res.status(404).json({ nopostsfound: 'No posts found for that card'}))
-
-// })
 
 
 router.get('/user/:user_id', (req, res) => {
@@ -53,8 +44,8 @@ router.post('/',
         
         const newPost = new Post({
             body: req.body.body,
-            card: req.body.card,
-            user: req.body.user
+            cardId: req.body.cardId,
+            userId: req.body.userId
         });
         
         newPost.save().then(post => res.json(post));
