@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
-const PostForm = ({submitForm, userId}) => {
+const PostForm = ({submitForm, formType, userId, cardId, toggleCreatePostWindow}) => {
     const [text, setText] = useState('')
   
     const handleSubmit = (e) => {
         e.preventDefault()
-        submitForm({user: userId, body:text})
-
+        submitForm({userId: userId, cardId: cardId, body:text})
+        setText('')
+        toggleCreatePostWindow();
     }
 
     const update = (e) => {
@@ -16,7 +17,7 @@ const PostForm = ({submitForm, userId}) => {
  
     return (
         <form onSubmit={(e) => handleSubmit(e)} className="post-form">
-            <p>What would you like to say about your card?</p>
+            <p>{formType === 'Create Post' ? 'What would you like to say about your card?' : formType}</p>
             <textarea
                 value={text}
                 onChange={update}

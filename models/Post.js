@@ -2,11 +2,12 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 
 const PostSchema = new Schema({
-    user: {
+    userId: {
         type: Schema.Types.ObjectId,
-        ref: 'users'
+        ref: 'users',
+        required: true
     },
-    card: {
+    cardId: {
         type: Schema.Types.ObjectId,
         ref: 'cards'
     },
