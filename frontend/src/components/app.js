@@ -13,18 +13,15 @@ import CreatePostFormContainer from './posts/post_form/create_post_container';
 import CardShowContainer from './cards/card/card_show_container';
 // import EditPostFormContainer from './posts/post_form/edit_post_container';
 
-import ReadingContainer from "./cards/reading_container"
-
 
 const App = () => (
   <div>
-    <ReadingContainer />
     <NavBarContainer />
     < Modal />
     {/* <Routes> */}
         <Route exact path="/" component={MainPage} />
         <Route exaxt path="/posts" component={PostIndexContainer} />
-        {/* <Route exact path="/posts/new" component={CreatePostFormContainer}/> */}
+        <Route exact path="/posts/new" component={CreatePostFormContainer}/>
         {/* <Route exact path="/posts/:post_id/edit" component={EditPostFormContainer} /> */}
         {/* <Route exact path="/login" component={LoginFormContainer} /> */}
         {/* <Route exact path="/signup" component={SignupFormContainer} /> */}
