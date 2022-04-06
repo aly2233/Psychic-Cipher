@@ -4,7 +4,6 @@ import { fetchPosts } from "../../actions/post_actions"
 import PostIndex from "./post_index.jsx"
 
 const mapStateToProps = (state, ownProps) => {
-    debugger
     return {
         posts: Object.values(state.posts)
     }

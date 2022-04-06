@@ -4,7 +4,8 @@ import PostForm from "./post_form"
 
 const mapStateToProps = state => {
     return {
-        userId: state.session.user.id
+        userId: state.session.user.id,
+        formType: 'Edit Post'
     }
 }
 

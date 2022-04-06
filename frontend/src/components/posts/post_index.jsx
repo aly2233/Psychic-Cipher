@@ -12,25 +12,23 @@ const PostIndex = ({card, posts, fetchPosts, match}) => {
     useEffect( () => {
         // debugger
         // fetchPosts(card.data._id)
-        debugger
         fetchPosts(match.params.card_id)
     },[])
 
     const toggleCreatePostWindow = () => {
         createPost ? setCreatePost(false) : setCreatePost(true)
     }
-
     return(
         <div>
             <ul className='posts-list'>
                 {posts?.map( post => {
-                    return <PostIndexItemContainer key={post.id} post={post}/>
+                    return <PostIndexItemContainer key={post.id} card= {card} post={post}/>
                 })}
                 {/* <Link to={`cards/${card._id}/new`} className='link-button'>Create New Post</Link> */}
             </ul>
             {/* <Route exact path="/posts/new" component={CreatePostFormContainer}/> */}
             <button onClick={toggleCreatePostWindow} className='link-button'>Create New Post</button>
-            {createPost ? <CreatePostFormContainer /> : <></>}
+            {createPost ? <CreatePostFormContainer cardId={card.data._id} toggleCreatePostWindow={toggleCreatePostWindow}/> : <></>}
         </div>
     )
 }

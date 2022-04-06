@@ -5,7 +5,6 @@ const { fetchPost } = require("../../actions/post_actions")
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        // post: state.entities.posts[ownProps.match.params.post_id]
         user: state.session.user
     }
 }
