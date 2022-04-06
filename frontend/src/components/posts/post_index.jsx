@@ -28,7 +28,7 @@ const PostIndex = ({card, posts, fetchPosts, match}) => {
             </ul>
             {/* <Route exact path="/posts/new" component={CreatePostFormContainer}/> */}
             <button onClick={toggleCreatePostWindow} className='link-button'>Create New Post</button>
-            {createPost ? <CreatePostFormContainer cardId={card.data._id} toggleCreatePostWindow={toggleCreatePostWindow}/> : <></>}
+            {createPost ? <CreatePostFormContainer cardId={card.data._id} togglePostWindow={toggleCreatePostWindow}/> : <></>}
         </div>
     )
 }
