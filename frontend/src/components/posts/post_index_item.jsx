@@ -20,7 +20,7 @@ const PostIndexItem = ({post, user, card}) => {
             </div>
 
             {post.userId === user.id ? <button onClick={toggleEditPostWindow}>Edit Post</button> : <></>}
-            {editPost ? <EditPostFormContainer body={body} cardId={card.data._id} toggleEditPostWindow={toggleEditPostWindow}/> : <></>}
+            {editPost ? <EditPostFormContainer body={post.body} cardId={card.data._id} togglePostWindow={toggleEditPostWindow}/> : <></>}
         </li>
     )
 }
