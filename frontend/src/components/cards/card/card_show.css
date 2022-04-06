@@ -20,11 +20,21 @@
     color: antiquewhite;
 }
 
+.card-meaning{
+    color: antiquewhite;
+    width: 320px;
+    text-align: center;
+    margin-top: -45px;
+    margin-left: 41px;
+}
+
 .card-image-show {
     padding: 40px;
     width: 320px;
     height: 560px;
 }
+
+
 
 .card-name {
     font-size: 50px;
@@ -34,8 +44,21 @@
 
 .card-arcana {
     font-size: 30px;
+    margin-top: -1px
 }
 
 .card-desc {
     font-family: 'Commissioner', sans-serif;
+    margin-top: -30px;
+}
+
+.card-positions{
+    color: antiquewhite;
+    font-size: 20px;
+    width: 700px;
+}
+
+.meaning-title {
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
 }
