@@ -18,11 +18,11 @@ const CardShow = ({fetchCard, card, match}) => {
             <h2>{card.arcana}</h2>
 
             <div className='card-comments'>
-            <PostIndexContainer card={card} />
-
+                <PostIndexContainer card={card} />
             </div>
+        </div>
         )
     }
-}
+
 
 export default CardShow;

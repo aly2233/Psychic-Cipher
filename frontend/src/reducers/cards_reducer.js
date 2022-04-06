@@ -8,7 +8,7 @@ const cardsReducer = (state = {}, action) => {
             nextState = action.cards
             return nextState;
         case RECEIVE_CARD:
-            nextState[action.card.id] = action.card
+            nextState["card"] = action.card
             return nextState
         default:
             return state;
