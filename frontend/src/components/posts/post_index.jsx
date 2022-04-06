@@ -5,13 +5,15 @@ import {Link, Route} from 'react-router-dom'
 import CreatePostFormContainer from './post_form/create_post_container';
 
 
-const PostIndex = ({card, posts, fetchPosts}) => {
+const PostIndex = ({card, posts, fetchPosts, match}) => {
 
     const [createPost, setCreatePost] = useState(false)
     
-
     useEffect( () => {
-        fetchPosts(card._id);
+        // debugger
+        // fetchPosts(card.data._id)
+        debugger
+        fetchPosts(match.params.card_id)
     },[])
 
     const toggleCreatePostWindow = () => {
