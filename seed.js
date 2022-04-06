@@ -196,8 +196,8 @@ const data = [
         "meaningRev": "Selfishness, the crowd, body politic.",
         "desc": "The gallows from which he is suspended forms a Tau cross, while the figure--from the position of the legs--forms a fylfot cross. There is a nimbus about the head of the seeming martyr. It should be noted (1) that the tree of sacrifice is living wood, with leaves thereon; (2) that the face expresses deep entrancement, not suffering; (3) that the figure, as a whole, suggests life in suspension, but life and not death. It is a card of profound significance, but all the significance is veiled. One of his editors suggests that Éliphas Lévi did not know the meaning, which is unquestionable nor did the editor himself. It has been called falsely a card of martyrdom, a card a of prudence, a card of the Great Work, a card of duty; but we may exhaust all published interpretations and find only vanity. I will say very simply on my own part that it expresses the relation, in one of its aspects, between the Divine and the Universe.\nHe who can understand that the story of his higher nature is imbedded in this symbolism will receive intimations concerning a great awakening that is possible, and will know that after the sacred Mystery of Death there is a glorious Mystery of Resurrection.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/RWS_Tarot_12_Hanged_Man.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rRWS_Tarot_12_Hanged_Man.jpeg"
         }
       },
       {
@@ -210,8 +210,8 @@ const data = [
         "meaningRev": "Inertia, sleep, lethargy, petrifaction, somnambulism; hope destroyed.",
         "desc": "The veil or mask of life is perpetuated in change, transformation and passage from lower to higher, and this is more fitly represented in the rectified Tarot by one of the apocalyptic visions than by the crude notion of the reaping skeleton. Behind it lies the whole world of ascent in the spirit. The mysterious horseman moves slowly, bearing a black banner emblazoned with the Mystic Rose, which signifies life. Between two pillars on the verge of the horizon there shines the sun of immortality. The horseman carries no visible weapon, but king and child and maiden fall before him, while a prelate with clasped hands awaits his end.\nThere should be no need to point out that the suggestion of death which I have made in connection with the previous card is, of course, to be understood mystically, but this is not the case in the present instance. The natural transit of man to the next stage of his being either is or may be one form of his progress, but the exotic and almost unknown entrance, while still in this life, into the state of mystical death is a change in the form of consciousness and the passage into a state to which ordinary death is neither the path nor gate. The existing occult explanations of the 13th card are, on the whole, better than usual, rebirth, creation, destination, renewal, and the rest.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/RWS_Tarot_13_Death.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rRWS_Tarot_13_Death.jpeg"
         }
       },
       {
@@ -224,8 +224,8 @@ const data = [
         "meaningRev": "Things connected with churches, religions, sects, the priesthood, sometimes even the priest who will marry the Querent; also disunion, unfortunate combinations, competing interests.",
         "desc": "A winged angel, with the sign of the sun upon his forehead and on his breast the square and triangle of the septenary. I speak of him in the masculine sense, but the figure is neither male nor female. It is held to be pouring the essences of life from chalice to chalice. It has one foot upon the earth and one upon waters, thus illustrating the nature of the essences. A direct path goes up to certain heights on the verge of the horizon, and above there is a great light, through which a crown is seen vaguely. Hereof is some part of the Secret of Eternal Life, as it is possible to man in his incarnation. All the conventional emblems are renounced herein.\nSo also are the conventional meanings, which refer to changes in the seasons, perpetual movement of life and even the combination of ideas. It is, moreover, untrue to say that the figure symbolizes the genius of the sun, though it is the analogy of solar light, realized in the third part of our human triplicity. It is called Temperance fantastically, because, when the rule of it obtains in our consciousness, it tempers, combines and harmonises the psychic and material natures. Under that rule we know in our rational part something of whence we came and whither we are going.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/RWS_Tarot_14_Temperance.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rRWS_Tarot_14_Temperance.jpeg"
         }
       },
       {
@@ -238,8 +238,8 @@ const data = [
         "meaningRev": "Evil fatality, weakness, pettiness, blindness.",
         "desc": "The design is an accommodation, mean or harmony, between several motives mentioned in the first part. The Horned Goat of Mendes, with wings like those of a bat, is standing on an altar. At the pit of the stomach there is the sign of Mercury. The right hand is upraised and extended, being the reverse of that benediction which is given by the Hierophant in the fifth card. In the left hand there is a great flaming torch, inverted towards the earth. A reversed pentagram is on the forehead. There is a ring in front of the altar, from which two chains are carried to the necks of two figures, male and female. These are analogous with those of the fifth card, as if Adam and Eve after the Fall. Hereof is the chain and fatality of the material life.\nThe figures are tailed, to signify the animal nature, but there is human intelligence in the faces, and he who is exalted above them is not to be their master for ever. Even now, he is also a bondsman, sustained by the evil that is in him and blind to the liberty of service. With more than his usual derision for the arts which he pretended to respect and interpret as a master therein, Éliphas Lévi affirms that the Baphometic figure is occult science and magic. Another commentator says that in the Divine world it signifies predestination, but there is no correspondence in that world with the things which below are of the brute. What it does signify is the Dweller on the Threshold without the Mystical Garden when those are driven forth therefrom who have eaten the forbidden fruit.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/RWS_Tarot_15_Devil.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rRWS_Tarot_15_Devil.jpeg"
         }
       },
       {
@@ -252,8 +252,8 @@ const data = [
         "meaningRev": "According to one account, the same in a lesser degree also oppression, imprisonment, tyranny.",
         "desc": "Occult explanations attached to this card are meagre and mostly disconcerting. It is idle to indicate that it depicts min in all its aspects, because it bears this evidence on the surface. It is said further that it contains the first allusion to a material building, but I do not conceive that the Tower is more or less material than the pillars which we have met with in three previous cases. I see nothing to warrant Papus in supposing that it is literally the fall of Adam, but there is more in favour of his alternative--that it signifies the materialization of the spiritual word. The bibliographer Christian imagines that it is the downfall of the mind, seeking to penetrate the mystery of God. I agree rather with Grand Orient that it is the ruin of the House of We, when evil has prevailed therein, and above all that it is the rending of a House of Doctrine. I understand that the reference is, however, to a House of Falsehood. It illustrates also in the most comprehensive way the old truth that \"except the Lord build the house, they labour in vain that build it.\"\nThere is a sense in which the catastrophe is a reflection from the previous card, but not on the side of the symbolism which I have tried to indicate therein. It is more correctly a question of analogy; one is concerned with the fall into the material and animal state, while the other signifies destruction on the intellectual side. The Tower has been spoken of as the chastisement of pride and the intellect overwhelmed in the attempt to penetrate the Mystery of God; but in neither case do these explanations account for the two persons who are the living sufferers. The one is the literal word made void and the other its false interpretation. In yet a deeper sense, it may signify also the end of a dispensation, but there is no possibility here for the consideration of this involved question.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/RWS_Tarot_16_Tower.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rRWS_Tarot_16_Tower.jpeg"
         }
       },
       {
@@ -266,8 +266,8 @@ const data = [
         "meaningRev": "Arrogance, haughtiness, impotence.",
         "desc": "A great, radiant star of eight rays, surrounded by seven lesser stars--also of eight rays. The female figure in the foreground is entirely naked. Her left knee is on the land and her right foot upon the water. She pours Water of Life from two great ewers, irrigating sea and land. Behind her is rising ground and on the right a shrub or tree, whereon a bird alights. The figure expresses eternal youth and beauty. The star is l'étoile flamboyante, which appears in Masonic symbolism, but has been confused therein. That which the figure communicates to the living scene is the substance of the heavens and the elements. It has been said truly that the mottoes of this card are \"Waters of Life freely\" and \"Gifts of the Spirit.\"\nThe summary of several tawdry explanations says that it is a card of hope. On other planes it has been certified as immortality and interior light. For the majority of prepared minds, the figure will appear as the arcana of Truth unveiled, glorious in undying beauty, pouring on the waters of the soul some part and measure of her priceless possession. But she is in reality the Great Mother in the Kabalistic Sephira Binah, which is supernal Understanding, who communicates to the Sephiroth that are below in the measure that they can receive her influx.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/RWS_Tarot_17_Star.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rRWS_Tarot_17_Star.jpeg"
         }
       },
       {
@@ -280,8 +280,8 @@ const data = [
         "meaningRev": "Instability, inconstancy, silence, lesser degrees of deception and error.",
         "desc": "The distinction between this card and some of the conventional arcanas is that the moon is increasing on what is called the side of mercy, to the right of the observer. It has sixteen chief and sixteen secondary rays. The card represents life of the imagination apart from life of the spirit. The path between the towers is the issue into the unknown. The dog and wolf are the fears of the natural mind in the presence of that place of exit, when there is only reflected light to guide it.\nThe last reference is a key to another form of symbolism. The intellectual light is a reflection and beyond it is the unknown mystery which it cannot shew forth. It illuminates our animal nature, arcanas of which are represented below--the dog, the wolf and that which comes up out of the deeps, the nameless and hideous tendency which is lower than the savage beast. It strives to attain manifestation, symbolized by crawling from the abyss of water to the land, but as a rule it sinks back whence it came. The face of the mind directs a calm gaze upon the unrest below; the dew of thought falls; the message is: Peace, be still; and it may be that there shall come a calm upon the animal nature, while the abyss beneath shall cease from giving up a form.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/RWS_Tarot_18_Moon.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rRWS_Tarot_18_Moon.jpeg"
         }
       },
       {
@@ -294,22 +294,22 @@ const data = [
         "meaningRev": "The same in a lesser sense.",
         "desc": "The naked child mounted on a white horse and displaying a red standard has been mentioned already as the better symbolism connected with this card. It is the destiny of the Supernatural East and the great and holy light which goes before the endless procession of humanity, coming out from the walled garden of the sensitive life and passing on the journey home. The card signifies, therefore, the transit from the manifest light of this world, represented by the glorious sun of earth, to the light of the world to come, which goes before aspiration and is typified by the heart of a child.\nBut the last allusion is again the key to a different form or aspect of the symbolism. The sun is that of consciousness in the spirit - the direct as the antithesis of the reflected light. The characteristic arcana of humanity has become a little child therein--a child in the sense of simplicity and innocence in the sense of wisdom. In that simplicity, he bears the seal of Nature and of Art; in that innocence, he signifies the restored world. When the self-knowing spirit has dawned in the consciousness above the natural mind, that mind in its renewal leads forth the animal nature in a state of perfect conformity.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/RWS_Tarot_19_Sun.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rRWS_Tarot_19_Sun.jpeg"
         }
       },
       {
         "arcana": "major",
         "nameShort": "ar20",
-        "name": "The Last Judgment",
+        "name": "Judgement",
         "value": "20",
         "valueInt": 20,
         "meaningUp": "Change of position, renewal, outcome. Another account specifies total loss though lawsuit.",
         "meaningRev": "Weakness, pusillanimity, simplicity; also deliberation, decision, sentence.",
         "desc": "I have said that this symbol is essentially invariable in all Tarot sets, or at least the variations do not alter its character. The great angel is here encompassed by clouds, but he blows his bannered trumpet, and the cross as usual is displayed on the banner. The dead are rising from their tombs--a woman on the right, a man on the left hand, and between them their child, whose back is turned. But in this card there are more than three who are restored, and it has been thought worth while to make this variation as illustrating the insufficiency of current explanations. It should be noted that all the figures are as one in the wonder, adoration and ecstacy expressed by their attitudes. It is the card which registers the accomplishment of the great work of transformation in answer to the summons of the Supernal--which summons is heard and answered from within.\nHerein is the intimation of a significance which cannot well be carried further in the present place. What is that within us which does sound a trumpet and all that is lower in our nature rises in response--almost in a moment, almost in the twinkling of an eye? Let the card continue to depict, for those who can see no further, the Last judgment and the resurrection in the natural body; but let those who have inward eyes look and discover therewith. They will understand that it has been called truly in the past a card of eternal life, and for this reason it may be compared with that which passes under the name of Temperance.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/RWS_Tarot_20_Judgement.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rRWS_Tarot_20_Judgement.jpeg"
         }
       },
       {
@@ -322,8 +322,8 @@ const data = [
         "meaningRev": "Negligence, absence, distribution, carelessness, apathy, nullity, vanity.",
         "desc": "With light step, as if earth and its trammels had little power to restrain him, a young man in gorgeous vestments pauses at the brink of a precipice among the great heights of the world; he surveys the blue distance before him-its expanse of sky rather than the prospect below. His act of eager walking is still indicated, though he is stationary at the given moment; his dog is still bounding. The edge which opens on the depth has no terror; it is as if angels were waiting to uphold him, if it came about that he leaped from the height. His countenance is full of intelligence and expectant dream. He has a rose in one hand and in the other a costly wand, from which depends over his right shoulder a wallet curiously embroidered. He is a prince of the other world on his travels through this one-all amidst the morning glory, in the keen air. The sun, which shines behind him, knows whence he came, whither he is going, and how he will return by another path after many days. He is the spirit in search of experience. Many symbols of the Instituted Mysteries are summarized in this card, which reverses, under high warrants, all the confusions that have preceded it.\nIn his Manual of Cartomancy, Grand Orient has a curious suggestion of the office of Mystic Fool, as apart of his process in higher divination; but it might call for more than ordinary gifts to put it into operation. We shall see how the card fares according to the common arts of fortune-telling, and it will be an example, to those who can discern, of the fact, otherwise so evident, that the Trumps Major had no place originally in the arts of psychic gambling, when cards are used as the counters and pretexts. Of the circumstances under which this art arose we know, however, very little. The conventional explanations say that the Fool signifies the flesh, the sensitive life, and by a peculiar satire its subsidiary name was at one time the alchemist, as depicting folly at the most insensate stage.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/RWS_Tarot_00_Fool.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rRWS_Tarot_00_Fool.jpeg"
         }
       },
       {
@@ -336,8 +336,8 @@ const data = [
         "meaningRev": "Inertia, fixity, stagnation, permanence.",
         "desc": "As this final message of the Major Trumps is unchanged--and indeed unchangeable--in respect of its design, it has been partly described already regarding its deeper sense. It represents also the perfection and end of the Cosmos, the secret which is within it, the rapture of the universe when it understands itself in God. It is further the state of the soul in the consciousness of Divine Vision, reflected from the self-knowing spirit. But these meanings are without prejudice to that which I have said concerning it on the material side.\nIt has more than one message on the macrocosmic side and is, for example, the state of the restored world when the law of manifestation shall have been carried to the highest degree of natural perfection. But it is perhaps more especially a story of the past, referring to that day when all was declared to be good, when the morning stars sang together and all the Sons of God shouted for joy. One of the worst explanations concerning it is that the figure symbolizes the Magus when he has reached the highest degree of initiation; another account says that it represents the absolute, which is ridiculous. The figure has been said to stand for Truth, which is, however, more properly allocated to the seventeenth card. Lastly, it has been called the Crown of the Magi.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/RWS_Tarot_21_World.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rRWS_Tarot_21_World.jpeg"
         }
       },
       {
@@ -351,8 +351,8 @@ const data = [
         "meaningRev": "Anecdotes, announcements, evil news. Also indecision and the instability which accompanies it.",
         "desc": "In a scene similar to the former, a young man stands in the act of proclamation. He is unknown but faithful, and his tidings are strange.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands11.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands11.jpeg"
         }
       },
       {
@@ -366,8 +366,8 @@ const data = [
         "meaningRev": "Rupture, division, interruption, discord.",
         "desc": "He is shewn as if upon a journey, armed with a short wand, and although mailed is not on a warlike errand. He is passing mounds or pyramids. The motion of the horse is a key to the character of its rider, and suggests the precipitate mood, or things connected therewith.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands12.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands12.jpeg"
         }
       },
       {
@@ -381,8 +381,8 @@ const data = [
         "meaningRev": "Good, economical, obliging, serviceable. Signifies also--but in certain positions and in the neighbourhood of other cards tending in such directions--opposition, jealousy, even deceit and infidelity.",
         "desc": "The Wands throughout this suit are always in leaf, as it is a suit of life and animation. Emotionally and otherwise, the Queen's personality corresponds to that of the King, but is more magnetic.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands13.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands13.jpeg"
         }
       },
       {
@@ -396,8 +396,8 @@ const data = [
         "meaningRev": "Good, but severe; austere, yet tolerant.",
         "desc": "The physical and emotional nature to which this card is attributed is dark, ardent, lithe, animated, impassioned, noble. The King uplifts a flowering wand, and wears, like his three correspondences in the remaining suits, what is called a cap of maintenance beneath his crown. He connects with the symbol of the lion, which is emblazoned on the back of his throne.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands14.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands14.jpeg"
         }
       },
       {
@@ -411,8 +411,8 @@ const data = [
         "meaningRev": "Fall, decadence, ruin, perdition, to perish also a certain clouded joy.",
         "desc": "A hand issuing from a cloud grasps a stout wand or club.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "temphttps://psychic-cipher.s3.us-west-1.amazonaws.com/Wands01.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands01.jpeg"
         }
       },
       {
@@ -426,8 +426,8 @@ const data = [
         "meaningRev": "Surprise, wonder, enchantment, emotion, trouble, fear.",
         "desc": "A tall man looks from a battlemented roof over sea and shore; he holds a globe in his right hand, while a staff in his left rests on the battlement; another is fixed in a ring. The Rose and Cross and Lily should be noticed on the left side.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands02.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands02.jpeg"
         }
       },
       {
@@ -441,8 +441,8 @@ const data = [
         "meaningRev": "The end of troubles, suspension or cessation of adversity, toil and disappointment.",
         "desc": "A calm, stately personage, with his back turned, looking from a cliff's edge at ships passing over the sea. Three staves are planted in the ground, and he leans slightly on one of them.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands03.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands03.jpeg"
         }
       },
       {
