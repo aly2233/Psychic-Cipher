@@ -1,47 +1,97 @@
 import React from "react";
 
+/*
+shuffle the whole deck instead of just selecting random index
+the goal seems to be to fan out the cards, have list of divs
+have the user be able to click them, on click, changed state the record cards
+once state reaches desired cardAmt, submit
+have that be their hand
+*/
+
 class Reading extends React.Component {
+  constructor(bleh) {
+    super(bleh);
+    this.state = {
+      cardAmt : "",
+      cardSpread : this.props.cards
+    }
+
+  }
+
   componentDidMount() {
     this.props.fetchCards();
   }
 
-  render() {
-    const { cards } = this.props;
-    // console.log(cards)
+  // cardReading(reqLength) { //pass in a length like 1, 3 or 5
+  //   const handIdx = []; //collect random indexes
+  //   // // saving random indexes into array
+  //   while (handIdx.length < reqLength) { // while the hand doesn't have all the cards yet
+  //     const randNum = Math.floor(Math.random() * 78); //generate random indexes
+  //     if (!handIdx.includes(randNum)) handIdx.push(randNum); //store random indexes if not yet in hand, O(n^2)
+  //   }
 
-    function cardReading(reqLength) {
-      const handIdx = [];
-      const handArr = [];
+  //   return handIdx; //return random indexes
+  // }
 
-      // // saving random indexes into array
-      while (handIdx.length < reqLength) {
-        const randNum = Math.floor(Math.random() * 78);
-        if (!handIdx.includes(randNum)) handIdx.push(randNum);
-      }
+  //pass in amt of cards
+  shuffleAll(arr){
+    let shuffled = arr.slice(0);
+    for (let i = 0; i < shuffled.length; i++) {
+      const randSwapLocation = Math.floor(Math.random() * i);
 
-      console.log("These are random indexes: ", handIdx);
-
-      // // iterating through array of random indexes
-      for (let i = 0; i < handIdx.length; i++) {
-        const randPos = Math.floor(Math.random() * 2);
-        // console.log(cards)
-        console.log(typeof handIdx[i]);
-        // console.log(cards[handIdx[i]]);
-        // const finalCard = cards[handIdx[i]];
-        console.log(cards[9]);
-        const finalPos = randPos === 0 ? "meaningUp" : "meaningRev"
-
-        // console.log("This is the Final Card: ", finalCard);
-        console.log("Final Position: ", finalPos);
-      }
-
-      // return hand;
+      const holder = shuffled[i];
+      shuffled[i] = shuffled[randSwapLocation];
+      shuffled[randSwapLocation] = holder;
+      // [shuffled[i], shuffled[randSwapLocation]] = [shuffled[randSwapLocation], shuffled[i]];
     }
 
-    console.log(cardReading(5))
+    return shuffled;
+  }
+  
+//     function shuffleAll(arr) {
+//   let shuffled = arr.slice(0);
+//   for (let i = 0; i < shuffled.length; i++) {
+//     const randSwapLocation = Math.floor(Math.random() * i);
+//     [shuffled[i], shuffled[randSwapLocation]] = [shuffled[randSwapLocation], shuffled[i]];
+//   }
 
+//   return shuffled;
+// }
+
+  //setting state to user's selected hand
+  updateField(field){
+    return (e) => { this.setState({ [field]: e.target.value }) }
+  }
+
+  render() {
+    if (!this.props) return null;
+    console.log(this.props)
+    console.log(this.state)
     return (
-      <div>I am from the reading</div>
+      <div>
+        <div className="card-read-settings">
+          <p>Please select the number of cards you would like read.</p>
+          <input type="radio" id="1" name="cardAmt" value="1" onChange={this.updateField("cardAmt")}/>
+          <label id="1">1 Card</label>
+          <input type="radio" id="3" name="cardAmt" value="3" onChange={this.updateField("cardAmt")}/>
+          <label id="3">3 Cards</label>
+          <input type="radio" id="5" name="cardAmt" value="5" onChange={this.updateField("cardAmt")}/>
+          <label id="5">5 Cards</label>
+        </div>
+
+        <div className="card-read-fan">
+          <ul>
+            {/* {
+              this.props.cards.map((card, i) => (
+                // return (
+                  <div>
+                    <li key={i}>{card.name}</li>
+                    <div />
+                    {/* ) */}
+          </ul>
+        </div>
+
+      </div>
     )
   }
 }
