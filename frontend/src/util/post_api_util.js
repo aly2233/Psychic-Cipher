@@ -1,16 +1,14 @@
-
 import axios from 'axios';
 
 
 export const fetchPosts = (cardId) => {
     console.log()
     console.log(cardId)
-    // return axios.get('/api/posts/', cardId )
     return axios({
         method: 'get',
         url: '/api/posts/',
         params: {
-          cardId: '624c87b71b90dbf9947ba2fe'
+          cardId: cardId
         }
       });
 }
