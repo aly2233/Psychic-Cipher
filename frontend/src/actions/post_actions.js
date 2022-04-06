@@ -25,9 +25,15 @@ const removePost = (postId) => {
     }
 }
 
+// export const fetchCardPosts = (card_id) => dispatch => {
+//     return PostApiUtil.fetchCardPosts(card_id)
+//         .then( posts => dispatch(receivePosts(posts)))
+//         .catch(err => console.log(err))
+// }
 
-export const fetchPosts = () => dispatch =>  {
-    return PostApiUtil.fetchPosts()
+export const fetchPosts = (cardId) => dispatch =>  {
+    // debugger
+    return PostApiUtil.fetchPosts(cardId)
         .then( posts => dispatch(receivePosts(posts)))
         .catch(err => console.log(err))
 }

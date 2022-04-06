@@ -8,6 +8,7 @@ const PostIndexItem = ({post, user, fetchPost, match}) => {
     //     fetchPost(match.params.post_id)
     // }, [])
 
+    
     return (
         <li>
             <div className='post-header'>
