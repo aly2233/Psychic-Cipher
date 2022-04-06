@@ -1,5 +1,4 @@
 const express = require("express");
-
 const app = express();
 const mongoose = require('mongoose');
 const db = require('./config/keys').mongoURI;
@@ -8,7 +7,13 @@ const passport = require('passport');
 require("./models/Card")
 const users = require("./routes/api/users");
 const cards = require("./routes/api/cards");
-
+const path = require('path');
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('frontend/build'));
+  app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+  })
+}
 mongoose
   .connect(db, { useNewUrlParser: true })
   .then(() => console.log("Connected to MongoDB successfully"))
@@ -25,6 +30,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use("/api/users", users);
+
 
 const port = process.env.PORT || 2000;
 
