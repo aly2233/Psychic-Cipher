@@ -6,6 +6,10 @@ const PostSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'users'
     },
+    card: {
+        type: Schema.Types.ObjectId,
+        ref: 'cards'
+    },
     body: {
         type: String,
         required: true

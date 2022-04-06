@@ -15,6 +15,7 @@ router.get('/', (req, res) => {
         .catch(err => res.status(404).json({ nopostsfound: 'No posts found'}))
 });
 
+
 router.get('/user/:user_id', (req, res) => {
     Post.find({user: req.params.user_id})
         .then(posts => res.json(posts))
@@ -36,8 +37,8 @@ router.get('/:id', (req, res) => {
 router.post('/',
     // passport.authenticate('jwt', {session: false}),
     (req, res) => {
-        console.log( req.body)
-        const { errors, isValid } = validatePostInput(req.body)
+
+        // const { errors, isValid } = validatePostInput(req.body)
 
         // console.log('im here')
         // if(!isValid) {
@@ -45,9 +46,11 @@ router.post('/',
         // }
         
         const newPost = new Post({
-            body: req.body.text,
-            // user: req.user.id
-            user: req.body.userId
+
+            body: req.body.body,
+            card: req.body.card,
+            user: req.body.user
+
         });
         
         newPost.save().then(post => res.json(post));
