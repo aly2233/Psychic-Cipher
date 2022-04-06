@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+
 import { Link } from 'react-router-dom';
 import PostIndexContainer from '../../posts/post_index_container';
 const CardShow = ({fetchCard, card, match}) => {
@@ -18,9 +19,10 @@ const CardShow = ({fetchCard, card, match}) => {
 
             <div className='card-comments'>
             <PostIndexContainer card={card} />
+
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default CardShow;
