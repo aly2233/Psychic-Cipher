@@ -3,10 +3,15 @@ import CardShow from "./card_show"
 import { fetchCard } from "../../../actions/card_actions"
 
 const mapStateToProps = (state, ownProps) => {
-    debugger // this is off
+    // console.log(state.cards[ownProps.match.params.card_id])
+    // console.log(state.cards.undefined.data.arcana)
+    console.log(ownProps.match.params.card_id)
+    // console.log(state.cards[ownProps.match.params.card_id])
     return {
+        // card: stat,
         // card: state.cards.data[ownProps.match.params.card_id]
-        card: state.card.data
+        // card: state.card.data
+        card_id: ownProps.match.params.card_id
     }
 }
 
