@@ -21,7 +21,7 @@ const App = () => (
     {/* <Routes> */}
         <Route exact path="/" component={MainPage} />
         <Route exaxt path="/posts" component={PostIndexContainer} />
-        <Route exact path="/posts/new" component={CreatePostFormContainer}/>
+        {/* <Route exact path="/posts/new" component={CreatePostFormContainer}/> */}
         {/* <Route exact path="/posts/:post_id/edit" component={EditPostFormContainer} /> */}
         {/* <Route exact path="/login" component={LoginFormContainer} /> */}
         {/* <Route exact path="/signup" component={SignupFormContainer} /> */}

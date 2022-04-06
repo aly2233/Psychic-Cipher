@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 export const fetchPosts = (cardId) => {
-    console.log()
+    console.log('*********')
     console.log(cardId)
     return axios({
         method: 'get',
