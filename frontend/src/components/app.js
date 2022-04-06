@@ -13,9 +13,12 @@ import CreatePostFormContainer from './posts/post_form/create_post_container';
 import CardShowContainer from './cards/card/card_show_container';
 // import EditPostFormContainer from './posts/post_form/edit_post_container';
 
+import ReadingContainer from "./cards/reading_container"
+
 
 const App = () => (
   <div>
+    <ReadingContainer />
     <NavBarContainer />
     < Modal />
     {/* <Routes> */}
