@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
-const PostForm = ({submitForm, formType, userId, cardId, toggleCreatePostWindow}) => {
-    const [text, setText] = useState('')
+const PostForm = ({submitForm, body, formType, userId, cardId, toggleCreatePostWindow}) => {
+    const [text, setText] = useState(body || '')
   
     const handleSubmit = (e) => {
         e.preventDefault()
