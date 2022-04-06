@@ -10,7 +10,7 @@ class MainPage extends React.Component {
         <div className='top-image'>
 
           <img className='image'  src={photo} />
-          <h1 className='play-tarot' >P l a y  t h e  g a m e  o f  T a r o t</h1>
+          <h1 className='play-tarot' >Play the game of Tarot</h1>
          
 
         </div>
