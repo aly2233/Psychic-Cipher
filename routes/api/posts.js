@@ -9,9 +9,7 @@ const Post = require('../../models/Post')
 const validatePostInput = require('../../validation/posts')
 
 router.get('/', (req, res) => {
-    console.log('***********')
-    console.log(req)
-    Post.find({card: req.params.cardId})
+    Post.find({card: req.query.cardId})
         .sort({date: -1})
         .then(posts => res.json(posts))
         .catch(err => res.status(404).json({ nopostsfound: 'No posts found'}))

@@ -3,10 +3,9 @@ import CardShow from "./card_show"
 import { fetchCard } from "../../../actions/card_actions"
 
 const mapStateToProps = (state, ownProps) => {
-    debugger // this is off
     return {
-        // card: state.cards.data[ownProps.match.params.card_id]
-        card: state.card.data
+        card: state.cards.undefined ? state.cards.undefined.data : null,
+        cardId: ownProps.match.params.card_id
     }
 }
 
