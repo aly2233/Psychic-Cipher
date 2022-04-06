@@ -10,6 +10,7 @@ import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
 import PostIndexContainer from './posts/post_index_container';
 import CreatePostFormContainer from './posts/post_form/create_post_container';
+// import EditPostFormContainer from './posts/post_form/edit_post_container';
 
 
 const App = () => (
@@ -20,6 +21,7 @@ const App = () => (
         <Route exact path="/" component={MainPage} />
         <Route exaxt path="/posts" component={PostIndexContainer} />
         <Route exact path="/posts/new" component={CreatePostFormContainer}/>
+        {/* <Route exact path="/posts/:post_id/edit" component={EditPostFormContainer} /> */}
         <Route exact path="/login" component={LoginFormContainer} />
         <Route exact path="/signup" component={SignupFormContainer} />
         <Route exact path="/cards" component={cardsContainer} />

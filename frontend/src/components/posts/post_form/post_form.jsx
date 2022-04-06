@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
-const PostForm = ({createPost, userId}) => {
+const PostForm = ({submitForm, userId}) => {
     const [text, setText] = useState('')
-
-    // useEffect( () => {
-
-    // })
-    
+  
     const handleSubmit = (e) => {
-        debugger
         e.preventDefault()
-        createPost({user: userId, body: text})
+        submitForm({user: userId, body:text})
+
     }
 
     const update = (e) => {

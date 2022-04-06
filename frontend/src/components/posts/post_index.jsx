@@ -9,11 +9,11 @@ const PostIndex = ({posts, fetchPosts}) => {
     },[])
 
     /////// test //////
-    posts = [
-        {id: 0, user: 'User' , body:'This is text', date:'3/04/22'},
-        {id: 1, user:'User', body:'This is also text', date:'3/05/22'},
-        {id: 2, user:'User', body:'This is text part 3', date: '3/06/22'},
-    ]
+    // posts = [
+    //     {id: 0, user: 'User' , body:'This is text', date:'3/04/22'},
+    //     {id: 1, user:'User', body:'This is also text', date:'3/05/22'},
+    //     {id: 2, user:'User', body:'This is text part 3', date: '3/06/22'},
+    // ]
 
     if(!posts) {
         return <></>
