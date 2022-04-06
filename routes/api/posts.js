@@ -1,3 +1,4 @@
+
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
@@ -36,6 +37,7 @@ router.get('/:id', (req, res) => {
 router.post('/',
     // passport.authenticate('jwt', {session: false}),
     (req, res) => {
+
         // const { errors, isValid } = validatePostInput(req.body)
 
         // console.log('im here')
@@ -44,9 +46,11 @@ router.post('/',
         // }
         
         const newPost = new Post({
+
             body: req.body.body,
             card: req.body.card,
             user: req.body.user
+
         });
         
         newPost.save().then(post => res.json(post));
