@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 
 app.use("/api/users", users);
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 2000;
 
 app.use("/api/posts", posts);
 app.use("/api/cards", cards);

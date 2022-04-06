@@ -1,5 +1,3 @@
-require('axios-debug-log')
-
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
@@ -15,6 +13,7 @@ router.get('/', (req, res) => {
         .then(posts => res.json(posts))
         .catch(err => res.status(404).json({ nopostsfound: 'No posts found'}))
 });
+
 
 router.get('/user/:user_id', (req, res) => {
     Post.find({user: req.params.user_id})
@@ -37,7 +36,6 @@ router.get('/:id', (req, res) => {
 router.post('/',
     // passport.authenticate('jwt', {session: false}),
     (req, res) => {
-        console.log( req.body)
         // const { errors, isValid } = validatePostInput(req.body)
 
         // console.log('im here')
@@ -46,9 +44,9 @@ router.post('/',
         // }
         
         const newPost = new Post({
-            text: req.body.text,
-            // user: req.user.id
-            user: req.body.userId
+            body: req.body.body,
+            card: req.body.card,
+            user: req.body.user
         });
         
         newPost.save().then(post => res.json(post));
