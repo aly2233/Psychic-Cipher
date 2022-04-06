@@ -1,0 +1,14 @@
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(49, 49, 90);
+}
+
+.card-item-image {
+    width: 150px;
+    height: 260px;
+    padding: 20px;
+    border-color: antiquewhite;
+}
