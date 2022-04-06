@@ -10,7 +10,7 @@ const validatePostInput = require('../../validation/posts')
 
 router.get('/', (req, res) => {
     console.log('***********')
-    console.log(req.params)
+    console.log(req)
     Post.find({card: req.params.cardId})
         .sort({date: -1})
         .then(posts => res.json(posts))

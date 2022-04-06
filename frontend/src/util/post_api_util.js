@@ -10,7 +10,7 @@ export const fetchPosts = (cardId) => {
         method: 'get',
         url: '/api/posts/',
         params: {
-          cardId: cardId
+          cardId: '624c87b71b90dbf9947ba2fe'
         }
       });
 }
