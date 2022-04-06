@@ -1,4 +1,3 @@
-require('axios-debug-log')
 
 const express = require('express');
 const router = express.Router();
@@ -38,7 +37,7 @@ router.post('/',
     // passport.authenticate('jwt', {session: false}),
     (req, res) => {
         console.log( req.body)
-        // const { errors, isValid } = validatePostInput(req.body)
+        const { errors, isValid } = validatePostInput(req.body)
 
         // console.log('im here')
         // if(!isValid) {
@@ -46,7 +45,7 @@ router.post('/',
         // }
         
         const newPost = new Post({
-            text: req.body.text,
+            body: req.body.text,
             // user: req.user.id
             user: req.body.userId
         });
