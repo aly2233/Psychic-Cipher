@@ -14,16 +14,16 @@ const CardShow = ({fetchCard, card, match}) => {
         <div className='card-show-container'>
 
             <div className='card-show-flex' >
-                <img className='card-image-show' src={card.photoUrls.up} />
+                <img className='card-image-show' src={card.data.photoUrls.up} />
                 <div className='card-details'>
-            <div className='card-name'>{card.name}</div>
-            <p className='card-arcana'> Arcana: {card.arcana} </p>
+            <div className='card-name'>{card.data.name}</div>
+            <p className='card-arcana'> Arcana: {card.data.arcana} </p>
 
-            <p className='card-desc'>{card.desc}</p>
+            <p className='card-desc'>{card.data.desc}</p>
 
                 </div>
 
-                <img className='card-image-show' src={card.photoUrls.rev} />
+                <img className='card-image-show' src={card.data.photoUrls.rev} />
             </div>
 
 

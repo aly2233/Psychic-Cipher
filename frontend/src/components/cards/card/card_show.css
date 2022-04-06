@@ -22,6 +22,8 @@
 
 .card-image-show {
     padding: 40px;
+    width: 320px;
+    height: 560px;
 }
 
 .card-name {
