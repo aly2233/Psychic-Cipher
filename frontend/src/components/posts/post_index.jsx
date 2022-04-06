@@ -20,15 +20,13 @@ const PostIndex = ({card, posts, fetchPosts, match}) => {
     }
     return(
         <div>
+                {createPost ? <CreatePostFormContainer cardId={card.data._id} togglePostWindow={toggleCreatePostWindow}/> : <></>}
+                <button onClick={toggleCreatePostWindow} className='create-post-button'>Create New Post</button>
             <ul className='posts-list'>
                 {posts?.map( post => {
                     return <PostIndexItemContainer key={post.id} card= {card} post={post}/>
                 })}
-                {/* <Link to={`cards/${card._id}/new`} className='link-button'>Create New Post</Link> */}
             </ul>
-            {/* <Route exact path="/posts/new" component={CreatePostFormContainer}/> */}
-            <button onClick={toggleCreatePostWindow} className='link-button'>Create New Post</button>
-            {createPost ? <CreatePostFormContainer cardId={card.data._id} togglePostWindow={toggleCreatePostWindow}/> : <></>}
         </div>
     )
 }
