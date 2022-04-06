@@ -456,8 +456,8 @@ const data = [
         "meaningRev": "The meaning remains unaltered; it is prosperity, increase, felicity, beauty, embellishment.",
         "desc": "From the four great staves planted in the foreground there is a great garland suspended; two female figures uplift nosegays; at their side is a bridge over a moat, leading to an old manorial house.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands04.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands04.jpeg"
         }
       },
       {
@@ -471,8 +471,8 @@ const data = [
         "meaningRev": "Litigation, disputes, trickery, contradiction.",
         "desc": "A posse of youths, who are brandishing staves, as if in sport or strife. It is mimic warfare, and hereto correspond the",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands05.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands05.jpeg"
         }
       },
       {
@@ -486,8 +486,8 @@ const data = [
         "meaningRev": "Apprehension, fear, as of a victorious enemy at the gate; treachery, disloyalty, as of gates being opened to the enemy; also indefinite delay.",
         "desc": "A laurelled horseman bears one staff adorned with a laurel crown; footmen with staves are at his side.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands06.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands06.jpeg"
         }
       },
       {
@@ -501,8 +501,8 @@ const data = [
         "meaningRev": "Perplexity, embarrassments, anxiety. It is also a caution against indecision.",
         "desc": "A young man on a craggy eminence brandishing a staff; six other staves are raised towards him from below.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands07.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands07.jpeg"
         }
       },
       {
@@ -516,8 +516,8 @@ const data = [
         "meaningRev": "Arrows of jealousy, internal dispute, stingings of conscience, quarrels; and domestic disputes for persons who are married.",
         "desc": "The card represents motion through the immovable-a flight of wands through an open country; but they draw to the term of their course. That which they signify is at hand; it may be even on the threshold.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands08.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands08.jpeg"
         }
       },
       {
@@ -531,8 +531,8 @@ const data = [
         "meaningRev": "Obstacles, adversity, calamity.",
         "desc": "The figure leans upon his staff and has an expectant look, as if awaiting an enemy. Behind are eight other staves--erect, in orderly disposition, like a palisade.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Tarot_Nine_of_Wands.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands09.jpeg"
         }
       },
       {
@@ -546,8 +546,8 @@ const data = [
         "meaningRev": "Contrarieties, difficulties, intrigues, and their analogies.",
         "desc": "A man oppressed by the weight of the ten staves which he is carrying.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands10.jpeg",
+          "rev": "thttps://psychic-cipher.s3.us-west-1.amazonaws.com/rWands10.jpegemp"
         }
       },
       {
@@ -561,8 +561,8 @@ const data = [
         "meaningRev": "Taste, inclination, attachment, seduction, deception, artifice.",
         "desc": "A fair, pleasing, somewhat effeminate page, of studious and intent aspect, contemplates a fish rising from a cup to look at him. It is the pictures of the mind taking form.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups11.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups11.jpeg"
         }
       },
       {
@@ -576,8 +576,8 @@ const data = [
         "meaningRev": "Trickery, artifice, subtlety, swindling, duplicity, fraud.",
         "desc": "Graceful, but not warlike; riding quietly, wearing a winged helmet, referring to those higher graces of the imagination which sometimes characterize this card. He too is a dreamer, but the images of the side of sense haunt him in his vision.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups12.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups12.jpeg"
         }
       },
       {
@@ -591,8 +591,8 @@ const data = [
         "meaningRev": "The accounts vary; good woman; otherwise, distinguished woman but one not to be trusted; perverse woman; vice, dishonour, depravity.",
         "desc": "Beautiful, fair, dreamy--as one who sees visions in a cup. This is, however, only one of her aspects; she sees, but she also acts, and her activity feeds her dream.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups13.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups13.jpeg"
         }
       },
       {
@@ -606,8 +606,8 @@ const data = [
         "meaningRev": "Dishonest, double-dealing man; roguery, exaction, injustice, vice, scandal, pillage, considerable loss.",
         "desc": "He holds a short sceptre in his left hand and a great cup in his right; his throne is set upon the sea; on one side a ship is riding and on the other a dolphin is leaping. The implicit is that the Sign of the Cup naturally refers to water, which appears in all the court cards.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups14.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups14.jpeg"
         }
       },
       {
@@ -621,8 +621,8 @@ const data = [
         "meaningRev": "House of the false heart, mutation, instability, revolution.",
         "desc": "The waters are beneath, and thereon are water-lilies; the hand issues from the cloud, holding in its palm the cup, from which four streams are pouring; a dove, bearing in its bill a cross-marked Host, descends to place the Wafer in the Cup; the dew of water is falling on all sides. It is an intimation of that which may lie behind the Lesser Arcana.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups01.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups01.jpeg"
         }
       },
       {
@@ -636,8 +636,8 @@ const data = [
         "meaningRev": "Lust, cupidity, jealousy, wish, desire, but the card may also give, says W., \"that desire which is not in nature, but by which nature is sanctified.\"",
         "desc": "A youth and maiden are pledging one another, and above their cups rises the Caduceus of Hermes, between the great wings of which there appears a lion's head. It is a variant of a sign which is found in a few old examples of this card. Some curious emblematical meanings are attached to it, but they do not concern us in this place.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups02.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups02.jpeg"
         }
       },
       {
@@ -651,8 +651,8 @@ const data = [
         "meaningRev": "Expedition, dispatch, achievement, end. It signifies also the side of excess in physical enjoyment, and the pleasures of the senses.",
         "desc": "Maidens in a garden-ground with cups uplifted, as if pledging one another.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups03.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups03.jpeg"
         }
       },
       {
@@ -666,8 +666,8 @@ const data = [
         "meaningRev": "Novelty, presage, new instruction, new relations.",
         "desc": "A young man is seated under a tree and contemplates three cups set on the grass before him; an arm issuing from a cloud offers him another cup. His expression notwithstanding is one of discontent with his environment.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups04.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups04.jpeg"
         }
       },
       {
@@ -681,8 +681,8 @@ const data = [
         "meaningRev": "News, alliances, affinity, consanguinity, ancestry, return, false projects.",
         "desc": "A dark, cloaked figure, looking sideways at three prone cups two others stand upright behind him; a bridge is in the background, leading to a small keep or holding. Divanatory Meanings: It is a card of loss, but something remains over; three have been taken, but two are left; it is a card of inheritance, patrimony, transmission, but not corresponding to expectations; with some interpreters it is a card of marriage, but not without bitterness or frustration. Reversed: News, alliances, affinity, consanguinity, ancestry, return, false projects",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups05.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups05.jpeg"
         }
       },
       {
@@ -696,8 +696,8 @@ const data = [
         "meaningRev": "The future, renewal, that which will come to pass presently.",
         "desc": "Children in an old garden, their cups filled with flowers.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups06.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups06.jpeg"
         }
       },
       {
@@ -711,8 +711,8 @@ const data = [
         "meaningRev": "Desire, will, determination, project.",
         "desc": "Strange chalices of vision, but the images are more especially those of the fantastic spirit.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups07.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups07.jpeg"
         }
       },
       {
@@ -726,8 +726,8 @@ const data = [
         "meaningRev": "Great joy, happiness, feasting.",
         "desc": "A man of dejected aspect is deserting the cups of his felicity, enterprise, undertaking or previous concern.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups08.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups08.jpeg"
         }
       },
       {
@@ -741,8 +741,8 @@ const data = [
         "meaningRev": "Truth, loyalty, liberty; but the readings vary and include mistakes, imperfections, etc.",
         "desc": "A goodly personage has feasted to his heart's content, and abundant refreshment of wine is on the arched counter behind him, seeming to indicate that the future is also assured. The picture offers the material side only, but there are other aspects.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups09.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups09.jpeg"
         }
       },
       {
@@ -756,8 +756,8 @@ const data = [
         "meaningRev": "Repose of the false heart, indignation, violence.",
         "desc": "Appearance of Cups in a rainbow; it is contemplated in wonder and ecstacy by a man and woman below, evidently husband and wife. His right arm is about her; his left is raised upward; she raises her right arm. The two children dancing near them have not observed the prodigy but are happy after their own manner. There is a home-scene beyond.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Cups10.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rCups10.jpeg"
         }
       },
       {
@@ -771,8 +771,8 @@ const data = [
         "meaningRev": "Prodigality, dissipation, liberality, luxury; unfavourable news.",
         "desc": "A youthful figure, looking intently at the pentacle which hovers over his raised hands. He moves slowly, insensible of that which is about him.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents11.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents11.jpeg"
         }
       },
       {
@@ -786,8 +786,8 @@ const data = [
         "meaningRev": "inertia, idleness, repose of that kind, stagnation; also placidity, discouragement, carelessness.",
         "desc": "He rides a slow, enduring, heavy horse, to which his own aspect corresponds. He exhibits his symbol, but does not look therein.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents12.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents12.jpeg"
         }
       },
       {
@@ -801,8 +801,8 @@ const data = [
         "meaningRev": "Evil, suspicion, suspense, fear, mistrust.",
         "desc": "The face suggests that of a dark woman, whose qualities might be summed up in the idea of greatness of soul; she has also the serious cast of intelligence; she contemplates her symbol and may see worlds therein.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents13.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents13.jpeg"
         }
       },
       {
@@ -816,8 +816,8 @@ const data = [
         "meaningRev": "Vice, weakness, ugliness, perversity, corruption, peril.",
         "desc": "The figure calls for no special description the face is rather dark, suggesting also courage, but somewhat lethargic in tendency. The bull's head should be noted as a recurrent symbol on the throne. The sign of this suit is represented throughout as engraved or blazoned with the pentagram, typifying the correspondence of the four elements in human nature and that by which they may be governed. In many old Tarot packs this suit stood for current coin, money, deniers. I have not invented the substitution of pentacles and I have no special cause to sustain in respect of the alternative. But the consensus of divinatory meanings is on the side of some change, because the cards do not happen to deal especially with questions of money.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents14.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents14.jpeg"
         }
       },
       {
@@ -831,8 +831,8 @@ const data = [
         "meaningRev": "The evil side of wealth, bad intelligence; also great riches. In any case it shews prosperity, comfortable material conditions, but whether these are of advantage to the possessor will depend on whether the card is reversed or not.",
         "desc": "A hand--issuing, as usual, from a cloud--holds up a pentacle.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents01.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents01.jpeg"
         }
       },
       {
@@ -846,8 +846,8 @@ const data = [
         "meaningRev": "Enforced gaiety, simulated enjoyment, literal sense, handwriting, composition, letters of exchange.",
         "desc": "A young man, in the act of dancing, has a pentacle in either hand, and they are joined by that endless cord which is like the number 8 reversed.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents02.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents02.jpeg"
         }
       },
       {
@@ -861,8 +861,8 @@ const data = [
         "meaningRev": "Mediocrity, in work and otherwise, puerility, pettiness, weakness.",
         "desc": "A sculptor at his work in a monastery. Compare the design which illustrates the Eight of Pentacles. The apprentice or amateur therein has received his reward and is now at work in earnest.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents03.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents03.jpeg"
         }
       },
       {
@@ -876,8 +876,8 @@ const data = [
         "meaningRev": "Suspense, delay, opposition.",
         "desc": "A crowned figure, having a pentacle over his crown, clasps another with hands and arms; two pentacles are under his feet. He holds to that which he has.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents04.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents04.jpeg"
         }
       },
       {
@@ -891,8 +891,8 @@ const data = [
         "meaningRev": "Disorder, chaos, ruin, discord, profligacy.",
         "desc": "Two mendicants in a snow-storm pass a lighted casement.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents05.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents05.jpeg"
         }
       },
       {
@@ -906,8 +906,8 @@ const data = [
         "meaningRev": "Desire, cupidity, envy, jealousy, illusion.",
         "desc": "A person in the guise of a merchant weighs money in a pair of scales and distributes it to the needy and distressed. It is a testimony to his own success in life, as well as to his goodness of heart.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents06.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents06.jpeg"
         }
       },
       {
@@ -921,8 +921,8 @@ const data = [
         "meaningRev": "Cause for anxiety regarding money which it may be proposed to lend.",
         "desc": "A young man, leaning on his staff, looks intently at seven pentacles attached to a clump of greenery on his right; one would say that these were his treasures and that his heart was there.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents07.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents07.jpeg"
         }
       },
       {
@@ -936,8 +936,8 @@ const data = [
         "meaningRev": "Voided ambition, vanity, cupidity, exaction, usury. It may also signify the possession of skill, in the sense of the ingenious mind turned to cunning and intrigue.",
         "desc": "An artist in stone at his work, which he exhibits in the form of trophies.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents08.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents08.jpeg"
         }
       },
       {
@@ -951,8 +951,8 @@ const data = [
         "meaningRev": "Roguery, deception, voided project, bad faith.",
         "desc": "A woman, with a bird upon her wrist, stands amidst a great abundance of grapevines in the garden of a manorial house. It is a wide domain, suggesting plenty in all things. Possibly it is her own possession and testifies to material well-being.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents09.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents09.jpeg"
         }
       },
       {
@@ -966,8 +966,8 @@ const data = [
         "meaningRev": "Chance, fatality, loss, robbery, games of hazard; sometimes gift, dowry, pension.",
         "desc": "A man and woman beneath an archway which gives entrance to a house and domain. They are accompanied by a child, who looks curiously at two dogs accosting an ancient personage seated in the foreground. The child's hand is on one of them.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Pents10.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rPents10.jpeg"
         }
       },
       {
@@ -981,8 +981,8 @@ const data = [
         "meaningRev": "More evil side of these qualities; what is unforeseen, unprepared state; sickness is also intimated.",
         "desc": "A lithe, active figure holds a sword upright in both hands, while in the act of swift walking. He is passing over rugged land, and about his way the clouds are collocated wildly. He is alert and lithe, looking this way and that, as if an expected enemy might appear at any moment.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords11.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords11.jpeg"
         }
       },
       {
@@ -996,8 +996,8 @@ const data = [
         "meaningRev": "Imprudence, incapacity, extravagance.",
         "desc": "He is riding in full course, as if scattering his enemies. In the design he is really a prototypical hero of romantic chivalry. He might almost be Galahad, whose sword is swift and sure because he is clean of heart.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords12.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords12.jpeg"
         }
       },
       {
@@ -1011,8 +1011,8 @@ const data = [
         "meaningRev": "Malice, bigotry, artifice, prudery, bale, deceit.",
         "desc": "Her right hand raises the weapon vertically and the hilt rests on an arm of her royal chair the left hand is extended, the arm raised her countenance is severe but chastened; it suggests familiarity with sorrow. It does not represent mercy, and, her sword notwithstanding, she is scarcely a symbol of power.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords13.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords13.jpeg"
         }
       },
       {
@@ -1026,8 +1026,8 @@ const data = [
         "meaningRev": "Cruelty, perversity, barbarity, perfidy, evil intention.",
         "desc": "He sits in judgment, holding the unsheathed sign of his suit. He recalls, of course, the conventional Symbol of justice in the Trumps Major, and he may represent this virtue, but he is rather the power of life and death, in virtue of his office.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords14.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords14.jpeg"
         }
       },
       {
@@ -1041,8 +1041,8 @@ const data = [
         "meaningRev": "The same, but the results are disastrous; another account says--conception, childbirth, augmentation, multiplicity.",
         "desc": "A hand issues from a cloud, grasping as word, the point of which is encircled by a crown.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords01.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords01.jpeg"
         }
       },
       {
@@ -1056,8 +1056,8 @@ const data = [
         "meaningRev": "Imposture, falsehood, duplicity, disloyalty.",
         "desc": "A hoodwinked female figure balances two swords upon her shoulders.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords02.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords02.jpeg"
         }
       },
       {
@@ -1071,8 +1071,8 @@ const data = [
         "meaningRev": "Mental alienation, error, loss, distraction, disorder, confusion.",
         "desc": "Three swords piercing a heart; cloud and rain behind.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords03.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords03.jpeg"
         }
       },
       {
@@ -1086,8 +1086,8 @@ const data = [
         "meaningRev": "Wise administration, circumspection, economy, avarice, precaution, testament.",
         "desc": "The effigy of a knight in the attitude of prayer, at full length upon his tomb.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords04.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords04.jpeg"
         }
       },
       {
@@ -1101,8 +1101,8 @@ const data = [
         "meaningRev": "The same; burial and obsequies.",
         "desc": "A disdainful man looks after two retreating and dejected figures. Their swords lie upon the ground. He carries two others on his left shoulder, and a third sword is in his right hand, point to earth. He is the master in possession of the field.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords05.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords05.jpeg"
         }
       },
       {
@@ -1116,8 +1116,8 @@ const data = [
         "meaningRev": "Declaration, confession, publicity; one account says that it is a proposal of love.",
         "desc": "A ferryman carrying passengers in his punt to the further shore. The course is smooth, and seeing that the freight is light, it may be noted that the work is not beyond his strength.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords06.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords06.jpeg"
         }
       },
       {
@@ -1131,8 +1131,8 @@ const data = [
         "meaningRev": "Good advice, counsel, instruction, slander, babbling.",
         "desc": "A man in the act of carrying away five swords rapidly; the two others of the card remain stuck in the ground. A camp is close at hand.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords07.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords07.jpeg"
         }
       },
       {
@@ -1146,8 +1146,8 @@ const data = [
         "meaningRev": "Disquiet, difficulty, opposition, accident, treachery; what is unforeseen; fatality.",
         "desc": "A woman, bound and hoodwinked, with the swords of the card about her. Yet it is rather a card of temporary durance than of irretrievable bondage.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords08.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords08.jpeg"
         }
       },
       {
@@ -1161,8 +1161,8 @@ const data = [
         "meaningRev": "Imprisonment, suspicion, doubt, reasonable fear, shame.",
         "desc": "One seated on her couch in lamentation, with the swords over her. She is as one who knows no sorrow which is like unto hers. It is a card of utter desolation.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords09.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords09.jpeg"
         }
       },
       {
@@ -1176,8 +1176,8 @@ const data = [
         "meaningRev": "Advantage, profit, success, favour, but none of these are permanent; also power and authority.",
         "desc": "A prostrate figure, pierced by all the swords belonging to the card.",
         "photoUrls": {
-          "up": "temp",
-          "rev": "temp"
+          "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Swords10.jpeg",
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rSwords10.jpeg"
         }
       }
     ]
