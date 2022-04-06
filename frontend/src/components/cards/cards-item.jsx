@@ -10,7 +10,7 @@ class CardsItem extends React.Component {
 
 
     render() {
-     console.log(this.props.card._id)
+    //  console.log(this.props.card._id)
         return (
             <div>
                 <Link to={`/cards/${this.props.card._id}`}>

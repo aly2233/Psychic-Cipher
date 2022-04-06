@@ -31,11 +31,12 @@ const CardShow = ({fetchCard, card, match}) => {
             <Link to="/cards">All Cards</Link>
 
             <div className='card-comments'>
-            <PostIndexContainer card={card} />
-                </div>
+                <PostIndexContainer card={card} />
+            </div>
         </div>
         )
-}
+    }
+
 
 
 export default CardShow;
