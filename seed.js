@@ -547,7 +547,7 @@ const data = [
         "desc": "A man oppressed by the weight of the ten staves which he is carrying.",
         "photoUrls": {
           "up": "https://psychic-cipher.s3.us-west-1.amazonaws.com/Wands10.jpeg",
-          "rev": "thttps://psychic-cipher.s3.us-west-1.amazonaws.com/rWands10.jpegemp"
+          "rev": "https://psychic-cipher.s3.us-west-1.amazonaws.com/rWands10.jpeg"
         }
       },
       {
