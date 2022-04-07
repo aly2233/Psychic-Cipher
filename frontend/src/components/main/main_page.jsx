@@ -17,7 +17,9 @@ class MainPage extends React.Component {
         <div className='top-image'>
 
           <img className='image'  src={photo} />
+          <Link to='/reading'>
           <h1 className='play-tarot' >Play the game of Tarot</h1>
+          </Link>
          
 
         </div>

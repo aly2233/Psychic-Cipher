@@ -42,13 +42,13 @@ class LoginForm extends React.Component {
 
   renderErrors() {
     return(
-      <ul>
+      <div className='errors-div'>
         {Object.keys(this.props.state.errors).map((error, i) => (
-           ( <li className='errors' key={`error-${i}`}>
+           ( <ul className='errors' key={`error-${i}`}>
            {this.props.state.errors[error]}
-          </li> )
+          </ul> )
         ))}
-      </ul>
+      </div>
     );
   }
 
@@ -78,7 +78,7 @@ class LoginForm extends React.Component {
               />
             <br/>
             <br />
-            <input type="submit" value="Submit" />
+            <input className='login-submit-button' type="submit" value="Submit" />
             {this.renderErrors()}
           </div>
         </form>
