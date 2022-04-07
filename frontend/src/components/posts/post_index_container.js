@@ -5,7 +5,8 @@ import PostIndex from "./post_index.jsx"
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        posts: Object.values(state.posts)
+        posts: Object.values(state.posts),
+        loggedIn: state.session.isAuthenticated
     }
 }
 

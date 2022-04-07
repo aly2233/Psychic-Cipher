@@ -24,9 +24,9 @@ const PostIndexItem = ({post, user, deletePost}) => {
                 <p>{post.body}</p>
             </div>
 
-            {post.userId === user.id ? <button onClick={toggleEditPostWindow}>Edit Post</button> : <></>}
+            {post.userId === user.id ? <button onClick={toggleEditPostWindow} className='post-form-button'>Edit Post</button> : <></>}
             {editPost ? <EditPostFormContainer post={post} cardId={post.cardId} togglePostWindow={toggleEditPostWindow}/> : <></>}
-            {editPost ? <button onClick={handleDelete}>Delete Post</button> : <></>}
+            {editPost ? <button onClick={handleDelete} className='post-form-button'>Delete Post</button> : <></>}
         </li>
     )
 }
