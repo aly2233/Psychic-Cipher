@@ -1,0 +1,85 @@
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.cardspread{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url("../../images/tabletop.jpeg")
+
+}
+
+.deck-container {
+    width: 1640px;
+}
+
+.deck-image {
+    height: 160px;
+    width: 90px;
+    display: inline-block;
+}
+
+.individual-card-container {
+    display: inline-block;
+    height: 160px;
+    width: 90px;
+    margin-left: -1.7rem;
+    padding-top: 20px;
+
+}
+
+.deck-image:hover {
+    transform: translateY(1rem);
+}
+
+.chosen-card {
+    height: 300px;
+    width: 175px;
+    padding-right: 10px;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s; 
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+
+
+ul > li {
+    list-style: none;
+}
+
+input[type=checkbox]{
+    z-index: -1;
+    opacity: 0;
+    height: 160px;
+    width: 90px;
+    position: absolute;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked + .deck-image {
+    transform: translateY(1rem);
+
+}
+
+input[type=checkbox]:hover + .deck-image {
+    transform: translateY(1rem)
+}
