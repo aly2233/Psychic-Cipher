@@ -14,19 +14,24 @@ const PostIndexItem = ({post, user, deletePost}) => {
         toggleEditPostWindow();
     }
 
+    const convertDate = () => {
+        let dateString = new Date(post.date).toString()
+        return dateString.slice(0, dateString.indexOf('-'))
+    }
+
     return (
         <li>
             <div className='post-header'>
                 <p>{user.email}</p>
-                <p>{post.date}</p>
+                <p>{convertDate()}</p>
             </div>
-            <div>
+            <div className='post-body'>
                 <p>{post.body}</p>
             </div>
 
-            {post.userId === user.id ? <button onClick={toggleEditPostWindow}>Edit Post</button> : <></>}
+            {post.userId === user.id ? <button onClick={toggleEditPostWindow} className='post-form-button'>Edit Post</button> : <></>}
             {editPost ? <EditPostFormContainer post={post} cardId={post.cardId} togglePostWindow={toggleEditPostWindow}/> : <></>}
-            {editPost ? <button onClick={handleDelete}>Delete Post</button> : <></>}
+            {editPost ? <button onClick={handleDelete} className='post-form-button'>Delete Post</button> : <></>}
         </li>
     )
 }

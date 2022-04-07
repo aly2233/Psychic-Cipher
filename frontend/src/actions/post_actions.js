@@ -44,7 +44,6 @@ export const fetchPost = (postId) => dispatch => {
 }
 
 export const updatePost = (post) => dispatch => {
-    debugger
     return PostApiUtil.updatePost(post)
         .then( post => dispatch(receivePost(post)))
         .catch(err => console.log(err))
