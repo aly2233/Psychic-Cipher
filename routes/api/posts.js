@@ -9,8 +9,14 @@ const Post = require('../../models/Post')
 const validatePostInput = require('../../validation/posts')
 
 router.get('/', (req, res) => {
-    Post.find({cardId: (req.query.cardId || req.body.cardId)})
+    filter = req.query.cardId ? {cardId: req.query.cardId} : req.body.cardId ? {cardId: req.query.cardId} : {}
+    filter.limit = req.query.limit || req.body.limit ? req.query.limit || req.body.limit : 0;
+    filter.skip = req.query.skip || req.body.skip ? req.query.skip || req.body.skip : 0;
+
+    Post.find(filter)
         .sort({date: -1})
+        .limit(filter.limit)
+        .skip(filter.skip)
         .then(posts => res.json(posts))
         .catch(err => res.status(404).json({ nopostsfound: 'No posts found'}))
 });

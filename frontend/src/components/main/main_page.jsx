@@ -8,20 +8,26 @@ import fool from './Fool.jpeg'
 import star from './aStar.jpeg'
 import justice from './Justice.jpeg'
 import hanged from './Hanged_Man.jpeg'
+import PostIndexContainer from '../posts/post_index_container';
 
 class MainPage extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {skip: 0}
+  }
+
+  update(e) {
+    this.setState({skip: e.target.value})
+  }
 
   render() {
     return (
       <div className='main-page'>
         <div className='top-image'>
-
           <img className='image'  src={photo} />
           <Link to='/reading'>
-          <h1 className='play-tarot' >Play the game of Tarot</h1>
+            <h1 className='play-tarot' >Play the game of Tarot</h1>
           </Link>
-         
-
         </div>
 
       <div>
@@ -30,27 +36,31 @@ class MainPage extends React.Component {
             <div className='explore-cards'> 
 
               <Link to={'/cards/624dc08fb5f9e7a4e4e8c827'}>
-              <img className='tarot-card-item' src={fool}/>
+                <img className='tarot-card-item' src={fool}/>
               </Link>
               <Link to={'/cards/624dc08fb5f9e7a4e4e8c823'}>
-              <img className='tarot-card-item' src={star}/>
+                <img className='tarot-card-item' src={star}/>
               </Link>
               <Link to={'/cards/624dc08fb5f9e7a4e4e8c81d'}>
-              <img className='tarot-card-item' src={justice}  />
+                <img className='tarot-card-item' src={justice}  />
               </Link>
               <Link to={'/cards/624dc08fb5f9e7a4e4e8c81e'}>
-              <img className='tarot-card-item' src={hanged} alt="" />
+                <img className='tarot-card-item' src={hanged} alt="" />
               </Link>
 
               <Link to={'/cards/624dc08fb5f9e7a4e4e8c818'}>
-              <img className='tarot-card-item' src={lovers} alt="" />
+                <img className='tarot-card-item' src={lovers} alt="" />
               </Link>
 
               <Link to={'/cards/624dc08fb5f9e7a4e4e8c81f'}>
-              <img className='tarot-card-item' src={death} alt="" />
+                <img className='tarot-card-item' src={death} alt="" />
               </Link>
 
             </div>
+        </div>
+        
+        <div className='main-page-recent-posts'>
+            <PostIndexContainer limit={5} skip={this.state.skip} />
         </div>
       </div>
     );

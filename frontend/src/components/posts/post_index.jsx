@@ -4,14 +4,16 @@ import './posts.css'
 import CreatePostFormContainer from './post_form/create_post_container';
 
 
-const PostIndex = ({loggedIn, card, posts, fetchPosts, match}) => {
+const PostIndex = ({loggedIn, card, posts, fetchPosts, match, limit, skip}) => {
 
     const [createPost, setCreatePost] = useState(false)
+    // const [postCount, ]
     
     useEffect( () => {
-        fetchPosts(match.params.card_id)
-    },[posts])
+        fetchPosts(match.params.card_id, limit, skip)
+    },[])
 
+    
     const toggleCreatePostWindow = () => createPost ? setCreatePost(false) : setCreatePost(true)
 
     return(
