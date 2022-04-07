@@ -6,10 +6,13 @@
 }
 
 .posts-list li {
+    display: flex;
+    flex-direction: column;
     border: black thin solid;
     margin: 20px;
     background-color: aquamarine;
     border-radius: 10px;
+    min-width: 400px;
 }
 
 .post-header {
@@ -23,6 +26,10 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
+
+/* .post-body {
+    border: black solid;
+} */
 
 .post-form {
     display: flex;
@@ -55,21 +62,29 @@
     cursor:pointer;
     font-size: 16px;
     margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .link-button:visited {
     color: inherit;
 }
 
-.post-form-buttons {
-
+.post-form-button {
+    background: purple;
+    border: solid black thin;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    align-self: center;
+    cursor:pointer;
+    font-size: 16px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.create-post-button {
-    text-align: center;
-    background-color:  rgb(231, 223, 212) ;
-    border-color:  rgb(91, 90, 90) ;
-   
-    font-size: 16px;
-    padding: 3px;
+.posts-list li > button {
+    align-self: flex-end;
 }

@@ -31,26 +31,10 @@ router.get('/:id', (req, res) => {
         );
 })
 
-router.patch('/:id', (req, res) => {
-    // console.log(req.params.id)
-    // Post.findById(req.params.id)
-    //     .then(post => {
-    //         post.body = req.body.body
-    //         console.log(post)
-    //         post.update().then(post => res.json(post));
-    //     } )
-
+router.patch('/:id', (req, res) => { 
         Post.findById(req.params.id)
-        .then(post => {
-            post.body = req.body.body;
-            console.log(post)
-            post.update();
-        }).then(updatedPost => res.json(updatedPost));
-
-    // console.log(updatedPost)
-    // updatedPost.body = req.body.body
-    // // console.log(updatedPost)
-    // updatedPost.update().then(post => res.json(post));
+        .then(post => Post.findByIdAndUpdate(req.params.id, {body: req.body.body},{new: true}))
+        .then(updatedPost => res.json(updatedPost))
 })
 
 
