@@ -31,8 +31,8 @@ const removePost = (postId) => {
 //         .catch(err => console.log(err))
 // }
 
-export const fetchPosts = (cardId, limit = 0, skip = 0) => dispatch =>  {
-    return PostApiUtil.fetchPosts(cardId, limit, skip)
+export const fetchPosts = (field, fieldId, limit = 0, skip = 0) => dispatch =>  {
+    return PostApiUtil.fetchPosts(field, fieldId, limit, skip)
         .then( posts => dispatch(receivePosts(posts)))
         .catch(err => console.log(err))
 }

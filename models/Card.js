@@ -21,17 +21,19 @@ const CardSchema = new Schema({
     type: Number,
     required: true
   },
-  meaningUp: {
-    type: String,
-    required: true
-  },
-  meaningRev: {
-    type: String,
-    required: true
-  },
   desc: {
     type: String,
     required: true
+  },
+  meaning: {
+    up: {
+      type: String,
+      required: true
+    },
+    rev: {
+      type: String,
+      required: true
+    }
   },
   photoUrls: {
     up: {

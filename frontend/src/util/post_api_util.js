@@ -1,12 +1,13 @@
 import axios from 'axios';
 
 
-export const fetchPosts = (cardId, limit, skip) => {
+export const fetchPosts = (field, fieldId, limit, skip) => {
     return axios({
         method: 'get',
         url: '/api/posts/',
         params: {
-          cardId: cardId,
+        //   cardId: cardId,
+          [field] : fieldId,
           limit: limit,
           skip: skip
         }

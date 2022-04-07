@@ -4,13 +4,15 @@ import './posts.css'
 import CreatePostFormContainer from './post_form/create_post_container';
 
 
-const PostIndex = ({loggedIn, card, posts, fetchPosts, match, limit, skip}) => {
+const PostIndex = ({loggedIn, card, posts, fetchPosts, match, userId, limit, skip}) => {
 
     const [createPost, setCreatePost] = useState(false)
     const [changeCounter, setChangeCounter] = useState(0)
     
+    debugger
+
     useEffect( () => {
-        fetchPosts(match.params.card_id, limit, skip)
+        fetchPosts(card ? 'cardId' : 'userId' , match.params.card_id || userId, limit, skip)
     },[changeCounter])
 
     
@@ -21,7 +23,7 @@ const PostIndex = ({loggedIn, card, posts, fetchPosts, match, limit, skip}) => {
         <div>
             {createPost ? <CreatePostFormContainer cardId={card.data._id} togglePostWindow={toggleCreatePostWindow} setChangeCounter={setChangeCounter}/> : <></>}
 
-            {loggedIn  && !createPost ? 
+            {loggedIn  && !createPost && card ? 
                 <button onClick={toggleCreatePostWindow} className='create-post-button'>Create New Post</button> : <></>}
             <ul className='posts-list'>
                 {posts?.map( post => <PostIndexItemContainer key={post.id} post={post} setChangeCounter={setChangeCounter}/> )}

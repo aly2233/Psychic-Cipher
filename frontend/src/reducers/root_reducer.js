@@ -4,6 +4,7 @@ import errors from './session_errors_reducer'
 import modal from './modal_reducer'
 import posts from './posts_reducer'
 import cards from './cards_reducer';
+import users from './users_reducer'
 
 
 const RootReducer = combineReducers({
@@ -11,7 +12,8 @@ const RootReducer = combineReducers({
   errors,
   posts,
   modal,
-  cards
+  cards,
+  users
 });
 
 export default RootReducer;
