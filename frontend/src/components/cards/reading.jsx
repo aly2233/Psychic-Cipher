@@ -135,12 +135,22 @@ class Reading extends React.Component {
     if (!this.props.cards) return null;
     const selectedIdxs = this.cardReading(this.state.cardAmt);
 
+
+
     const displayNumCards = this.state.cardAmt == 1 ? (
       <div className="one-card">
         <ul>
           <li>
             <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[0]].photoUrls[this.upOrReverse()]}/>
           </li>
+          <div className="Tarot-answer">
+              Ah yes {this.props.cards[selectedIdxs[0]].name}, an interesting card. In this position it usually means... <br />
+              Does this single card make you feel a certain way? Happy? Dissappointed? Do not worry, do not be overly jubilant. <br />
+              This card has a chance to reflect your present moment. Some may project on the future too much and some may live <br />
+              in the past, these are equally dangerous. Use this card to better understand where your path leads and understand <br />
+              the path you have worn for yourself.
+
+            </div>
         </ul>
       </div>
     ) : this.state.cardAmt == 3 ? (
@@ -151,6 +161,9 @@ class Reading extends React.Component {
             <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[1]].photoUrls[this.upOrReverse()]}/>
             <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[2]].photoUrls[this.upOrReverse()]}/>
           </li>
+            <div>
+              Ah yes the 
+            </div>
         </ul>
       </div>
     ) : this.state.cardAmt == 5 ? (
@@ -170,27 +183,27 @@ class Reading extends React.Component {
     )
 
     return (
-      <div>
+      <div className="tarot-reading-container">
+        <br />
+        <br />
+        <br />
         <div className="card-read-settings">
-          <p>Please select the number of cards you would like read.</p>
+          <div className="Please-select-title" >Please select the number of cards you would like read.</div>
           <input type="radio" id="1" name="cardAmt" value={1} onChange={this.updateField("cardAmt")} onClick={this.refreshCards}/>
           <label id="1">1 Card</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input type="radio" id="3" name="cardAmt" value={3} onChange={this.updateField("cardAmt")} onClick={this.refreshCards}/>
           <label id="3">3 Cards</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input type="radio" id="5" name="cardAmt" value={5} onChange={this.updateField("cardAmt")} onClick={this.refreshCards}/>
           <label id="5">5 Cards</label>
-        </div>
 
-        {/* <div className="card-read-fan">
-          <ul>
-            {
-              this.shuffleAll(this.props.cards)?.map((card, i) => {
-                return <li key={i}><img src="#" alt={card.name} /></li>
-                // return <li key={i}><img src={card.photoUrls.up} alt={card.name}/></li>
-              })
-            }
-          </ul>
-        </div> */}
+          <br />
+          <br />
+          <button className="reset-cards-button" onClick={this.refreshCards}>Reshuffle the cards</button>
+        </div>
+       <br />
+     
 
         <div className="cardspread">
           <div className="deck-container">
@@ -201,26 +214,22 @@ class Reading extends React.Component {
                 <img ref={(card) => {this.deckCards.push(card)}}alt="deckimage" className="deck-image" src={tarot_back}></img>
               </div>
             ))}
-            <button onClick={this.refreshCards}>Reset Cards</button>
           </div>
         </div>
 
+        <div className="Current-and-reset">
         <h2>Current Selected Card Amount: {this.state.clickCount}</h2>
+            {/* <button className="reset-cards-button" onClick={this.refreshCards}>Reset Cards</button> */}
+
+
+        </div>
+
 
         
 
-        {/* <div className="card-read-select">
-          <ul>
-            {
-              selectedIdxs.map((cardidx, ikey) => {
-                const position = this.upOrReverse()
-                return <li key={ikey}><img src={this.props.cards[cardidx].photoUrls[position]} alt="cards[cardidx]" /></li>
-              })
-            }
-          </ul>
-        </div> */}
-        <div>
-          {((this.state.clickCount == this.state.cardAmt) && this.state.clickCount !== 0) ? <button disabled={this.state.showCards} onClick={this.showCards}>Reveal</button> : <div></div>}
+    
+        <div className="cards-revealed">
+          {((this.state.clickCount == this.state.cardAmt) && this.state.clickCount !== 0) ? <button disabled={this.state.showCards} className='reveal-cards-button' onClick={this.showCards}>And now.. Lets see what you have have chosen</button> : <div></div>}
           {showCards && displayNumCards}
         </div>
 
