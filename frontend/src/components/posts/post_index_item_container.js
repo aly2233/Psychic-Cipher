@@ -5,7 +5,8 @@ const { fetchPost, deletePost } = require("../../actions/post_actions")
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        user: state.session.user
+        currentUser: state.session.user,
+        // author:
     }
 }
 
