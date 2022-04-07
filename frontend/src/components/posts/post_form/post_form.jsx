@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
-const PostForm = ({submitForm, body, formType, userId, cardId, toggleCreatePostWindow}) => {
-    const [text, setText] = useState(body || '')
+const PostForm = ({submitForm, post, formType, userId, cardId, togglePostWindow}) => {
+    const [text, setText] = useState(post ? post.body : '')
   
     const handleSubmit = (e) => {
         e.preventDefault()
-        submitForm({userId: userId, cardId: cardId, body:text})
-        setText('')
-        toggleCreatePostWindow();
+        let postObj = {userId: userId, cardId: cardId, body:text}
+        if(post)  postObj['id'] = post._id;
+        submitForm(postObj)
+        // submitForm({userId: userId, cardId: cardId, body:text, id: post._id})
+        // setText('')
+        togglePostWindow();
     }
 
     const update = (e) => {

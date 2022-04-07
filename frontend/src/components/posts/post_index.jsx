@@ -24,7 +24,7 @@ const PostIndex = ({card, posts, fetchPosts, match}) => {
                 <button onClick={toggleCreatePostWindow} className='create-post-button'>Create New Post</button>
             <ul className='posts-list'>
                 {posts?.map( post => {
-                    return <PostIndexItemContainer key={post.id} card= {card} post={post}/>
+                    return <PostIndexItemContainer key={post.id} post={post}/>
                 })}
             </ul>
         </div>

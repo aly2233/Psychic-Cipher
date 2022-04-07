@@ -44,6 +44,7 @@ export const fetchPost = (postId) => dispatch => {
 }
 
 export const updatePost = (post) => dispatch => {
+    debugger
     return PostApiUtil.updatePost(post)
         .then( post => dispatch(receivePost(post)))
         .catch(err => console.log(err))
@@ -57,6 +58,6 @@ export const createPost = (post) => dispatch => {
 
 export const deletePost = (postId) => dispatch => {
     return PostApiUtil.deletePost(postId)
-        .then( post => dispatch(removePost(post.id)))
+        .then( postId => dispatch(removePost(postId)))
         .catch(err => console.log(err))
 }
