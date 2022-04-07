@@ -17,8 +17,10 @@ const PostIndex = ({loggedIn, card, posts, fetchPosts, match, limit, skip}) => {
     const toggleCreatePostWindow = () => createPost ? setCreatePost(false) : setCreatePost(true)
 
     return(
+
         <div>
             {createPost ? <CreatePostFormContainer cardId={card.data._id} togglePostWindow={toggleCreatePostWindow} setChangeCounter={setChangeCounter}/> : <></>}
+
             {loggedIn  && !createPost ? 
                 <button onClick={toggleCreatePostWindow} className='create-post-button'>Create New Post</button> : <></>}
             <ul className='posts-list'>

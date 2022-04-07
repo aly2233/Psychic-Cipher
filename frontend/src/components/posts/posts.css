@@ -2,27 +2,29 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+    margin-left: -30px;
     /* align-items: center; */
 }
 
 .posts-list li {
     display: flex;
     flex-direction: column;
-    border: black thin solid;
+    border: antiquewhite thin solid;
     margin: 20px;
-    background-color: aquamarine;
+    background-color: antiquewhite;
     border-radius: 10px;
-    min-width: 650px;
+    width: 650px;
+    margin-left: 2px;
 }
 
 .post-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: thin black solid;
+    border-bottom: thin antiquewhite solid;
     height: 40px;
     align-items:center;
-    background-color: purple;
+    background-color: rgb(49, 49, 90);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -44,28 +46,10 @@
 
 .post-form-buttons {
     align-self: flex-end;
-    margin-right: 10%
+    margin-right: 10%;
+    /* margin-top: -28px; */
 }
 
-.link-button {
-    background: aquamarine;
-    border: solid purple thin;
-    border-radius: 20px;
-    text-decoration: none;
-    color: black;
-    width: 130px;
-    text-align: center;
-    padding: 5px;
-    align-self: center;
-    cursor:pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.link-button:visited {
-    color: inherit;
-}
 
 .post-form-button {
     background: antiquewhite;
@@ -82,14 +66,36 @@
     margin: 10px;
     font-family: 'Staatliches', cursive;
     font-size: 16px;
+    /* margin-top: -28px; */
+}
+
+.edit-post-form-button {
+    background: antiquewhite;
+    border: solid antiquewhite thin;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    align-self: center;
+    cursor:pointer;
+    font-size: 16px;
+    margin: 10px;
+    font-family: 'Staatliches', cursive;
+    font-size: 16px;
+    margin-top: -28px; 
 }
 
 .posts-list li > button {
     align-self: flex-end;
 }
 
+.create-button-container{
+    width: 650px;
+}
 .create-post-button {
-    margin-left: 137px;
+    margin-left: 200px;
     width: 250px;
     border-color: black;
     font-family: 'Staatliches', cursive;
@@ -101,11 +107,31 @@
 .say-about-cards {
     font-family: 'Staatliches', cursive;
     font-size: 30px;
-    color: rgb(246, 242, 237);
+    color: antiquewhite;
 }
 
 .post-text-box {
     background-color: rgb(253, 250, 246);
     font-family: 'Commissioner', sans-serif;
 
+}
+
+.user-email-tag{
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Staatliches', cursive;
+    color: antiquewhite;
+}
+
+.date-tag{
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Staatliches', cursive;
+    color: antiquewhite;  
+}
+
+.post-body-text {
+    padding-left: 20px;
+    font-family: 'Commissioner', sans-serif;
+    color: rgb(49, 49, 90);
 }
