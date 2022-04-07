@@ -12,7 +12,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        fetchPosts: (posts) => dispatch(fetchPosts(posts))
+        fetchPosts: (posts, limit, skip) => dispatch(fetchPosts(posts, limit, skip))
     }
 }
 

@@ -1,14 +1,14 @@
 import axios from 'axios';
 
 
-export const fetchPosts = (cardId) => {
-    console.log('*********')
-    console.log(cardId)
+export const fetchPosts = (cardId, limit, skip) => {
     return axios({
         method: 'get',
         url: '/api/posts/',
         params: {
-          cardId: cardId
+          cardId: cardId,
+          limit: limit,
+          skip: skip
         }
       });
 }
