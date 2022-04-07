@@ -4,6 +4,11 @@
     /* justify-content: center; */
 }
 
+.image-front-posts {
+ width: 300px;
+ height: 700px
+}
+
 .posts-list-front {
     display: flex;
     /* flex-direction: column; */
@@ -12,8 +17,13 @@
     flex-wrap: wrap;
     list-style: none;
     width: 650px;
-    margin-left: 26%;
+    /* margin-left: 26%; */
     padding-bottom: 500px;
+}
+
+.front-post-image {
+    display: flex;
+    justify-content: center;
 }
 
 .posts-list-front li {

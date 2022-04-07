@@ -43,6 +43,13 @@ class LoginForm extends React.Component {
  
   }
 
+  componentDidUpdate() {
+      if (this.state.email === 'FreeTarotReading@email.com' && this.state.password === 'password') {
+              this.props.login({email: 'FreeTarotReading@email.com', password: 'password'})
+                .then( () => this.props.state.session.user.id ? this.props.closeModal() : null)
+      }
+  }
+
 
   renderErrors() {
     return(
@@ -54,6 +61,33 @@ class LoginForm extends React.Component {
         ))}
       </div>
     );
+  }
+
+  demoUserLogIn() {
+    let demoInfo = {
+      email: 'FreeTarotReading@email.com',
+      password: 'password',
+    }
+    let fieldIndex = 0;
+    let indexCount = 0;
+    let currentInput = '';
+    let currentField = Object.keys(demoInfo)[fieldIndex]
+
+    let inputInterval = setInterval( () => {
+        currentInput += demoInfo[currentField][indexCount]
+        this.setState( {[currentField]: currentInput})
+        indexCount++
+        if( currentInput === demoInfo[currentField]) {
+            if(fieldIndex === 1) {
+                clearInterval(inputInterval)
+            } else{
+                currentInput = '';
+                indexCount = 0;
+                fieldIndex++;
+                currentField = Object.keys(demoInfo)[fieldIndex]
+            }
+        }         
+    },50)
   }
 
 
@@ -83,6 +117,7 @@ class LoginForm extends React.Component {
             <br/>
             <br />
             <input className='login-submit-button' type="submit" value="Submit" />
+            <button className='login-submit-button' type="button" onClick={() => this.demoUserLogIn()}>Demo User Log In</button>
             {this.renderErrors()}
           </div>
         </form>

@@ -1,18 +1,7 @@
 import React, {useEffect, useState} from 'react'
 
 
-const PostFrontpageItem = ({post, user, deletePost}) => {
-
-    // const [editPost, setEditPost] = useState(false)
-
-    // const toggleEditPostWindow = () => {
-    //     editPost ? setEditPost(false) : setEditPost(true)
-    // }
-
-    // const handleDelete = () => {
-    //     deletePost(post._id);
-    //     toggleEditPostWindow();
-    // }
+const PostFrontpageItem = ({post, user}) => {
 
     const convertDate = () => {
         let dateString = new Date(post.date).toString()
