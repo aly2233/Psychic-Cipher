@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 // import { Link } from "react-router-dom"
 
-const PostForm = ({submitForm, post, formType, userId, cardId, togglePostWindow}) => {
+const PostForm = ({submitForm, post, formType, userId, cardId, togglePostWindow, setChangeCounter}) => {
     const [text, setText] = useState(post ? post.body : '')
     // const originalText = text;
   
@@ -11,6 +11,7 @@ const PostForm = ({submitForm, post, formType, userId, cardId, togglePostWindow}
         if(post)  postObj['id'] = post._id;
         submitForm(postObj)
         togglePostWindow();
+        setChangeCounter(1);
     }
 
     const update = (e) => {
