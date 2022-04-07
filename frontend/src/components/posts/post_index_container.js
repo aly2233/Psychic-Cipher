@@ -1,6 +1,7 @@
 import { connect } from "react-redux"
 import { withRouter } from "react-router-dom"
 import { deletePost, fetchPosts } from "../../actions/post_actions"
+import { fetchUsersById } from "../../actions/user_actions"
 import PostIndex from "./post_index.jsx"
 
 const mapStateToProps = (state, ownProps) => {
@@ -12,7 +13,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        fetchPosts: (posts, limit, skip) => dispatch(fetchPosts(posts, limit, skip))
+        fetchPosts: (posts, limit, skip) => dispatch(fetchPosts(posts, limit, skip)),
+        fetchAuthors: (userIds) => dispatch(fetchUsersById(userIds))
     }
 }
 
