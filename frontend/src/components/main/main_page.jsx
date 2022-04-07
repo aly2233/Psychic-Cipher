@@ -8,7 +8,8 @@ import fool from './Fool.jpeg'
 import star from './aStar.jpeg'
 import justice from './Justice.jpeg'
 import hanged from './Hanged_Man.jpeg'
-import PostIndexContainer from '../posts/post_index_container';
+// import PostIndexContainer from '../posts/post_index_container';
+import PostFrontpageContainer from '../posts/frontpage/post_frontpage_container';
 
 class MainPage extends React.Component {
   constructor(props) {
@@ -60,7 +61,7 @@ class MainPage extends React.Component {
         </div>
         
         <div className='main-page-recent-posts'>
-            <PostIndexContainer limit={5} skip={this.state.skip} />
+            <PostFrontpageContainer limit={8} skip={this.state.skip} />
         </div>
       </div>
     );

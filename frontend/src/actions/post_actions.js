@@ -32,7 +32,7 @@ const removePost = (postId) => {
 // }
 
 export const fetchPosts = (cardId, limit = 0, skip = 0) => dispatch =>  {
-    debugger
+    // debugger
     return PostApiUtil.fetchPosts(cardId, limit, skip)
         .then( posts => dispatch(receivePosts(posts)))
         .catch(err => console.log(err))
