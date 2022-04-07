@@ -12,7 +12,7 @@ const PostIndexItem = ({post, user, deletePost, setChangeCounter}) => {
     const handleDelete = () => {
         deletePost(post._id);
         toggleEditPostWindow();
-        setChangeCounter(1);
+        setChangeCounter(Math.random() * 100);
     }
 
     const convertDate = () => {
