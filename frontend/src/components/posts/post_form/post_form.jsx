@@ -11,7 +11,7 @@ const PostForm = ({submitForm, post, formType, userId, cardId, togglePostWindow,
         if(post)  postObj['id'] = post._id;
         submitForm(postObj)
         togglePostWindow();
-        setChangeCounter(1);
+        setChangeCounter(Math.random() * 100);
     }
 
     const update = (e) => {
