@@ -12,6 +12,7 @@
     margin: 20px;
     background-color: aquamarine;
     border-radius: 10px;
+    min-width: 400px;
 }
 
 .post-header {
@@ -25,6 +26,10 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
+
+/* .post-body {
+    border: black solid;
+} */
 
 .post-form {
     display: flex;
