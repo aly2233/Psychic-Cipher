@@ -1,7 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import EditPostFormContainer from './post_form/edit_post_form_container'
 
-const PostIndexItem = ({post, currentUser, deletePost, setChangeCounter}) => {
+const PostIndexItem = ({post, currentUser, author, fetchAuthor, deletePost, setChangeCounter}) => {
+
+    // useEffect( () => {
+    //     debugger
+    //     fetchAuthor(post.userId)
+    // },[])
 
     const [editPost, setEditPost] = useState(false)
 
@@ -20,6 +25,7 @@ const PostIndexItem = ({post, currentUser, deletePost, setChangeCounter}) => {
         return dateString.slice(0, dateString.indexOf(':') - 2)
     }
 
+    // debugger
     return (
         <li>
             <div className='post-header'>
