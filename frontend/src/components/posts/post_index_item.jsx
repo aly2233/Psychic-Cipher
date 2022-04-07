@@ -16,20 +16,21 @@ const PostIndexItem = ({post, user, deletePost}) => {
 
     const convertDate = () => {
         let dateString = new Date(post.date).toString()
-        return dateString.slice(0, dateString.indexOf('-'))
+        return dateString.slice(0, dateString.indexOf(':') - 2)
     }
 
     return (
         <li>
             <div className='post-header'>
-                <p>{user.email}</p>
-                <p>{convertDate()}</p>
+                <p className='user-email-tag'>{user.email}</p>
+                <p className='date-tag'>{convertDate()}</p>
+                {/* <p> {post.date}</p> */}
             </div>
             <div className='post-body'>
-                <p>{post.body}</p>
+                <p className='post-body-text'>{post.body}</p>
             </div>
 
-            {post.userId === user.id ? <button onClick={toggleEditPostWindow} className='post-form-button'>Edit Post</button> : <></>}
+            {post.userId === user.id ? <button onClick={toggleEditPostWindow} className='edit-post-form-button'>Edit Post</button> : <></>}
             {editPost ? <EditPostFormContainer post={post} cardId={post.cardId} togglePostWindow={toggleEditPostWindow}/> : <></>}
             {editPost ? <button onClick={handleDelete} className='post-form-button'>Delete Post</button> : <></>}
         </li>
