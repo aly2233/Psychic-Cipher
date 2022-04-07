@@ -6,15 +6,19 @@ const postsReducer = (oldState = {}, action) => {
     switch(action.type) {
         case RECEIVE_POSTS:
             // newState.all = action.posts.data
+            // postsArray = action.posts.data
+            // postsObj
+            // debugger
             return action.posts.data
             // return newState
             // return action.posts
         case RECEIVE_POST:
-            // newState[action.post.id] = action.post 
-            newState.user = action.post.data
+            debugger
+            newState[action.post._id] = action.post.data
             return newState
         case REMOVE_POST:
-            delete newState[action.postId]
+            let matchingKey = Object.keys(newState).filter( key => newState[key]._id === action.postId.data)
+            delete newState[matchingKey]
             return newState
         default:
             return oldState;

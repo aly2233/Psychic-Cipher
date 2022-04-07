@@ -23,11 +23,34 @@ router.get('/user/:user_id', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
+    console.log(req.params.id)
     Post.findById(req.params.id)
         .then(post => res.json(post))
         .catch( err => 
-            res.status(404).json({notweetfound: 'No tweet found with that ID'})
+            res.status(404).json({notweetfound: 'No post found with that ID'})
         );
+})
+
+router.patch('/:id', (req, res) => {
+    // console.log(req.params.id)
+    // Post.findById(req.params.id)
+    //     .then(post => {
+    //         post.body = req.body.body
+    //         console.log(post)
+    //         post.update().then(post => res.json(post));
+    //     } )
+
+        Post.findById(req.params.id)
+        .then(post => {
+            post.body = req.body.body;
+            console.log(post)
+            post.update();
+        }).then(updatedPost => res.json(updatedPost));
+
+    // console.log(updatedPost)
+    // updatedPost.body = req.body.body
+    // // console.log(updatedPost)
+    // updatedPost.update().then(post => res.json(post));
 })
 
 
@@ -41,7 +64,6 @@ router.post('/',
         // if(!isValid) {
         //     return res.status(400).json(errors);
         // }
-        
         const newPost = new Post({
             body: req.body.body,
             cardId: req.body.cardId,
@@ -51,5 +73,12 @@ router.post('/',
         newPost.save().then(post => res.json(post));
     }
 )
+
+router.delete('/:id', (req, res) => {
+    Post.findById(req.params.id)
+        .then(post => post.delete())
+        .then(post => res.json(post.id));
+
+} )
 module.exports = router;
 

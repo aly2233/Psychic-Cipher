@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import EditPostFormContainer from './post_form/edit_post_form_container'
 
-const PostIndexItem = ({post, user, card}) => {
+const PostIndexItem = ({post, user, deletePost}) => {
 
     const [editPost, setEditPost] = useState(false)
 
@@ -9,10 +9,15 @@ const PostIndexItem = ({post, user, card}) => {
         editPost ? setEditPost(false) : setEditPost(true)
     }
 
+    const handleDelete = () => {
+        deletePost(post._id);
+        toggleEditPostWindow();
+    }
+
     return (
         <li>
             <div className='post-header'>
-                <p>{user.userId}</p>
+                <p>{user.email}</p>
                 <p>{post.date}</p>
             </div>
             <div>
@@ -20,7 +25,8 @@ const PostIndexItem = ({post, user, card}) => {
             </div>
 
             {post.userId === user.id ? <button onClick={toggleEditPostWindow}>Edit Post</button> : <></>}
-            {editPost ? <EditPostFormContainer body={post.body} cardId={card.data._id} togglePostWindow={toggleEditPostWindow}/> : <></>}
+            {editPost ? <EditPostFormContainer post={post} cardId={post.cardId} togglePostWindow={toggleEditPostWindow}/> : <></>}
+            {editPost ? <button onClick={handleDelete}>Delete Post</button> : <></>}
         </li>
     )
 }

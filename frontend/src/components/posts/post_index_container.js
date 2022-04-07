@@ -1,6 +1,6 @@
 import { connect } from "react-redux"
 import { withRouter } from "react-router-dom"
-import { fetchPosts } from "../../actions/post_actions"
+import { deletePost, fetchPosts } from "../../actions/post_actions"
 import PostIndex from "./post_index.jsx"
 
 const mapStateToProps = (state, ownProps) => {
