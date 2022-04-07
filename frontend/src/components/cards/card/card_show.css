@@ -62,3 +62,10 @@
     font-size: 20px;
     font-family: 'Staatliches', cursive;
 }
+
+
+.card-comments{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

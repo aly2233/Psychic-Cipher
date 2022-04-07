@@ -20,6 +20,8 @@ const PostIndex = ({loggedIn, card, posts, fetchPosts, match}) => {
     debugger
     return(
         <div>
+                {createPost ? <CreatePostFormContainer cardId={card.data._id} togglePostWindow={toggleCreatePostWindow}/> : <></>}
+                <button onClick={toggleCreatePostWindow} className='create-post-button'>Create New Post</button>
             <ul className='posts-list'>
                 {posts?.map( post => <PostIndexItemContainer key={post.id} post={post}/> )}
             </ul>

@@ -42,15 +42,14 @@ const CardShow = ({fetchCard, card, match}) => {
 
 
             </div>
-            {/* <div className='card-positions'>if the card is drawn upright this can mean {card.data.meaningUp}</div> */}
-
-
-            {/* <h1>Card Show</h1> */}
-            <Link to="/cards">All Cards</Link>
-
+       
             <div className='card-comments'>
                 <PostIndexContainer card={card} />
             </div>
+
+
+    
+
         </div>
         )
     }

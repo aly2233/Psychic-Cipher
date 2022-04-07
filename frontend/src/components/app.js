@@ -11,6 +11,7 @@ import SignupFormContainer from './session/signup_form_container';
 import PostIndexContainer from './posts/post_index_container';
 import CreatePostFormContainer from './posts/post_form/create_post_container';
 import CardShowContainer from './cards/card/card_show_container';
+import ReadingContainer from "./cards/reading_container"
 // import EditPostFormContainer from './posts/post_form/edit_post_container';
 
 
@@ -21,12 +22,13 @@ const App = () => (
     {/* <Routes> */}
         <Route exact path="/" component={MainPage} />
         <Route exaxt path="/posts" component={PostIndexContainer} />
-        {/* <Route exact path="/posts/new" component={CreatePostFormContainer}/> */}
+        <Route exact path="/posts/new" component={CreatePostFormContainer}/>
         {/* <Route exact path="/posts/:post_id/edit" component={EditPostFormContainer} /> */}
         {/* <Route exact path="/login" component={LoginFormContainer} /> */}
         {/* <Route exact path="/signup" component={SignupFormContainer} /> */}
         <Route exact path="/cards" component={cardsContainer} />
         <Route exact path="/cards/:card_id" component={CardShowContainer} />
+        <Route exact path="/reading"component={ReadingContainer}/>
     {/* </Routes> */}
 
   </div>
