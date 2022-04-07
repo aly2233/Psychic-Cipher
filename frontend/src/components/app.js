@@ -14,6 +14,8 @@ import CardShowContainer from './cards/card/card_show_container';
 import ReadingContainer from "./cards/reading_container"
 // import EditPostFormContainer from './posts/post_form/edit_post_container';
 
+import Profile from "./profile/profile";
+
 
 const App = () => (
   <div>
@@ -29,6 +31,7 @@ const App = () => (
         <Route exact path="/cards" component={cardsContainer} />
         <Route exact path="/cards/:card_id" component={CardShowContainer} />
         <Route exact path="/reading"component={ReadingContainer}/>
+        <Route exact path="/profile" component={Profile}/>
     {/* </Routes> */}
 
   </div>
