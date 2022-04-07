@@ -126,6 +126,7 @@ class Reading extends React.Component {
     }
   }
 
+
   render() {
     console.log(this.state.clickCount)
     console.log(this.state.cardAmt)
@@ -134,12 +135,20 @@ class Reading extends React.Component {
     const {showCards} = this.state
     if (!this.props.cards) return null;
     const selectedIdxs = this.cardReading(this.state.cardAmt);
+    let selectedSide = []
+    
+    selectedSide = selectedSide.concat(this.upOrReverse())
+      .concat(this.upOrReverse())
+      .concat(this.upOrReverse())
+      .concat(this.upOrReverse())
+      .concat(this.upOrReverse())
 
+    
     const displayNumCards = this.state.cardAmt == 1 ? (
       <div className="one-card">
         <ul>
           <li>
-            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[0]].photoUrls[this.upOrReverse()]}/>
+            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[0]].photoUrls[selectedSide[0]]}/>
           </li>
         </ul>
       </div>
@@ -147,9 +156,9 @@ class Reading extends React.Component {
       <div className="three-cards">
         <ul>
           <li>
-            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[0]].photoUrls[this.upOrReverse()]}/>
-            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[1]].photoUrls[this.upOrReverse()]}/>
-            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[2]].photoUrls[this.upOrReverse()]}/>
+            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[0]].photoUrls[selectedSide[0]]}/>
+            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[1]].photoUrls[selectedSide[1]]}/>
+            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[2]].photoUrls[selectedSide[2]]}/>
           </li>
         </ul>
       </div>
@@ -157,11 +166,11 @@ class Reading extends React.Component {
       <div className="five-cards">
         <ul>
           <li>
-            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[0]].photoUrls[this.upOrReverse()]}/>
-            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[1]].photoUrls[this.upOrReverse()]}/>
-            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[2]].photoUrls[this.upOrReverse()]}/>
-            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[3]].photoUrls[this.upOrReverse()]}/>
-            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[4]].photoUrls[this.upOrReverse()]}/>
+            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[0]].photoUrls[selectedSide[0]]}/>
+            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[1]].photoUrls[selectedSide[1]]}/>
+            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[2]].photoUrls[selectedSide[2]]}/>
+            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[3]].photoUrls[selectedSide[3]]}/>
+            <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[4]].photoUrls[selectedSide[4]]}/>
           </li>
         </ul>
       </div>
