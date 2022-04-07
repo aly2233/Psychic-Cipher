@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import EditPostFormContainer from './post_form/edit_post_form_container'
 
-const PostIndexItem = ({post, user, deletePost}) => {
+const PostIndexItem = ({post, user, deletePost, setChangeCounter}) => {
 
     const [editPost, setEditPost] = useState(false)
 
@@ -12,6 +12,7 @@ const PostIndexItem = ({post, user, deletePost}) => {
     const handleDelete = () => {
         deletePost(post._id);
         toggleEditPostWindow();
+        setChangeCounter(1);
     }
 
     const convertDate = () => {

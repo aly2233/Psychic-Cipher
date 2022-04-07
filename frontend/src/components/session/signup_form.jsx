@@ -18,6 +18,7 @@ class SignupForm extends React.Component {
 
   }
 
+  
 
 
   update(field) {
@@ -48,6 +49,46 @@ class SignupForm extends React.Component {
         }
       })
   }
+
+  componentDidUpdate() {
+    if (this.state.email === 'FreeTarotReading@email.com' && this.state.handle === 'Miss Cleo' 
+        && this.state.password === 'password' && this.state.password2 === 'password') {
+            this.props.login({email: 'FreeTarotReading@email.com', handle: 'Miss Cleo', password: 'password', password2: 'password'})
+              .then( () => this.props.state.session.user.id ? this.props.closeModal() : null)
+    }
+  }
+
+  demoUserSignUp() {
+    let demoInfo = {
+      email: 'FreeTarotReading@email.com',
+      handle: 'Miss Cleo',
+      password: 'password',
+      password2: 'password'
+    }
+    let fieldIndex = 0;
+    let indexCount = 0;
+    let currentInput = '';
+    let currentField = Object.keys(demoInfo)[fieldIndex]
+
+
+    let inputInterval = setInterval( () => {
+        currentInput += demoInfo[currentField][indexCount]
+        this.setState( {[currentField]: currentInput})
+        indexCount++
+        if( currentInput === demoInfo[currentField]) {
+            if(fieldIndex === 3) {
+                clearInterval(inputInterval)
+            } else{
+                currentInput = '';
+                indexCount = 0;
+                fieldIndex++;
+                currentField = Object.keys(demoInfo)[fieldIndex]
+            }
+        }         
+    },50)
+  }
+
+
 
   renderErrors() {
     return(
@@ -97,6 +138,7 @@ class SignupForm extends React.Component {
               />
             <br/>
             <input className='signup-submit-button' type="submit" value="Submit" />
+            <button className='login-submit-button' type="button" onClick={() => this.demoUserSignUp()}>Demo User Log In</button>
             {this.renderErrors()}
           </div>
         </form>
