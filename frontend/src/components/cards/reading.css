@@ -18,16 +18,44 @@
     to   { opacity: 1; }
 }
 
+.tarot-reading-container {
+    background-color: rgb(49, 49, 90);
+    padding-bottom: 1000px;
+    
+}
+
+.card-read-settings{
+    text-align: center;
+    background-color: rgb(49, 49, 90);
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    border: solid 2px;
+    padding: 20px;
+}
+
+.Please-select-title {
+    font-family: 'Staatliches', cursive;
+    color: antiquewhite;
+    font-size: 30px;
+    padding: 15px;
+    /* border: solid 2px; */
+}
+
 .cardspread{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-image: url("../../images/tabletop.jpeg")
+    background-image: url("../../images/tabletop.jpeg");
+    width: 100%;
+
 
 }
 
 .deck-container {
-    width: 1640px;
+    /* display: flex; */
+    width: 90%;
+    text-align: center;
 }
 
 .deck-image {
@@ -50,9 +78,9 @@
 }
 
 .chosen-card {
-    height: 300px;
-    width: 175px;
-    padding-right: 10px;
+    height: 325px;
+    width: 200px;
+    padding: 40px;
     -webkit-animation: fadein 2s;
     -moz-animation: fadein 2s; 
     -ms-animation: fadein 2s;
@@ -60,7 +88,49 @@
     animation: fadein 2s;
 }
 
+.Current-and-reset{
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Staatliches', cursive;
 
+}
+
+.reset-cards-button{
+    font-family: 'Staatliches', cursive;
+    font-size: 32px;
+    background-color: rgb(49, 49, 90) ;
+    color: antiquewhite;
+    cursor: pointer;
+
+
+}
+
+.reset-cards-button:hover{
+    color: brown;
+}
+
+
+.cards-revealed {
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Staatliches', cursive;
+}
+
+.reveal-cards-button{
+    font-size: 60px;
+    background-color: rgb(49, 49, 90) ;
+    border-color: rgb(49, 49, 90)  ;
+    color: antiquewhite;
+    font-family: 'Staatliches', cursive;
+    box-shadow: 2px 2px rgb(49, 49, 90);
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.reveal-cards-button:hover{
+    color: crimson;
+}
 
 ul > li {
     list-style: none;
@@ -82,4 +152,13 @@ input[type=checkbox]:checked + .deck-image {
 
 input[type=checkbox]:hover + .deck-image {
     transform: translateY(1rem)
+}
+
+.three-cards {
+
+}
+
+.Tarot-answer {
+    font-size: 30px;
+    font-family: 'Commissioner', sans-serif;;
 }
