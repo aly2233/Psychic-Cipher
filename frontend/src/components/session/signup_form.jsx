@@ -41,17 +41,17 @@ class SignupForm extends React.Component {
     // }
     // this.props.openModal('login')
     // this.props.signup(user).then(this.props.login(userLog))
-    this.props.signup(user).then(() => {
-      console.log("errors?: ", this.state.errors)
-    })
-
-
-
+    this.props.signup(user)
+      .then(() => {
+        if (this.props.state.session.user.id) {
+          this.props.closeModal();
+        }
+      })
   }
 
   renderErrors() {
     return(
-      <div>
+      <div className='errors-div'>
         {Object.keys(this.props.state.errors).map((error, i) => (
           ( <ul className='errors' key={`error-${i}`}>
           {this.props.state.errors[error]}
@@ -62,37 +62,41 @@ class SignupForm extends React.Component {
   }
 
   render() {
-    // console.log(this.props.state)
+    console.log(this.props)
     return (
       <div className="signup-form-container">
         <form onSubmit={this.handleSubmit}>
           <div className="signup-form">
             <br/>
               <input type="text"
+                className='signup-input'
                 value={this.state.email}
                 onChange={this.update('email')}
                 placeholder="Email"
               />
             <br/>
               <input type="text"
+                className='signup-input'
                 value={this.state.handle}
                 onChange={this.update('handle')}
                 placeholder="Handle"
               />
             <br/>
               <input type="password"
+                className='signup-input'
                 value={this.state.password}
                 onChange={this.update('password')}
                 placeholder="Password"
               />
             <br/>
               <input type="password"
+                className='signup-input'
                 value={this.state.password2}
                 onChange={this.update('password2')}
                 placeholder="Confirm Password"
               />
             <br/>
-            <input type="submit" value="Submit" />
+            <input className='signup-submit-button' type="submit" value="Submit" />
             {this.renderErrors()}
           </div>
         </form>
