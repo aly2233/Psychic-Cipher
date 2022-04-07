@@ -1,6 +1,6 @@
 .top-image {
     background-color: rgb(49, 49, 90);
- text-align: center;
+    text-align: center;
 }
 
 
@@ -36,7 +36,11 @@ box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
     color: white;
     font-family: 'Staatliches', cursive;
     font-size: 100px;
-    /* font-family: 'Righteous', cursive; */
+
+}
+
+.play-tarot:hover {
+    color: rgb(233, 221, 117);
 }
 
 .tarot-card-item {
