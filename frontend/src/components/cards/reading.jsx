@@ -135,6 +135,13 @@ class Reading extends React.Component {
     const {showCards} = this.state
     if (!this.props.cards) return null;
     const selectedIdxs = this.cardReading(this.state.cardAmt);
+    let selectedSide = []
+    
+    selectedSide = selectedSide.concat(this.upOrReverse())
+      .concat(this.upOrReverse())
+      .concat(this.upOrReverse())
+      .concat(this.upOrReverse())
+      .concat(this.upOrReverse())
 
     const displayNumCards = this.state.cardAmt == 1 ? (
       <div className="one-card">
