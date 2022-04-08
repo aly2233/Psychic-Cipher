@@ -15,6 +15,7 @@ router.get('/', (req, res) => {
     filter.skip = req.query.skip || req.body.skip ? req.query.skip || req.body.skip : 0;
 
     console.log(filter)
+    console.log(req.body)
     
     Post.find(filter)
         .sort({date: -1})

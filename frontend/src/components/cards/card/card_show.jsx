@@ -17,7 +17,7 @@ const CardShow = ({fetchCard, card, match}) => {
                 <img className='card-image-show' src={card.data.photoUrls.up} />
                             <div className='card-meaning' >
                                 <p className='meaning-title' >Upright Meaning</p>
-                                <p>{card.data.meaningUp}</p>
+                                <p>{card.data.meaning.up}</p>
                             </div>
                 </div>
 
@@ -34,7 +34,7 @@ const CardShow = ({fetchCard, card, match}) => {
                 <img className='card-image-show' src={card.data.photoUrls.rev} />
                 <div className='card-meaning' >
                                 <p className='meaning-title' >Reversed Meaning</p>
-                                <p>{card.data.meaningRev}</p>
+                                <p>{card.data.meaning.rev}</p>
                             </div>
                 </div>
 

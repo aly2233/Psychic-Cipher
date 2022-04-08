@@ -9,7 +9,7 @@ const PostIndex = ({loggedIn, card, posts, fetchPosts, match, userId, limit, ski
     const [createPost, setCreatePost] = useState(false)
     const [changeCounter, setChangeCounter] = useState(0)
     
-    debugger
+
 
     useEffect( () => {
         fetchPosts(card ? 'cardId' : 'userId' , match.params.card_id || userId, limit, skip)
