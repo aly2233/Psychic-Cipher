@@ -150,7 +150,7 @@ class Reading extends React.Component {
             <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[0]].photoUrls[selectedSide[0]]}/>
           </li>
           <div className="Tarot-answer">
-              Ah yes {this.props.cards[selectedIdxs[0]].name}, an interesting card. In this position it usually means... <br />
+              Ah yes {this.props.cards[selectedIdxs[0]].name}, an interesting card. In this position it usually means {this.props.cards[selectedIdxs[0]].meaning[selectedSide[0]]} <br />
               Does this single card make you feel a certain way? Happy? Dissappointed? Do not worry, do not be overly jubilant. <br />
               This card has a chance to reflect your present moment. Some may project on the future too much and some may live <br />
               in the past, these are equally dangerous. Use this card to better understand where your path leads and understand <br />
@@ -167,8 +167,14 @@ class Reading extends React.Component {
             <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[1]].photoUrls[selectedSide[1]]}/>
             <img className="chosen-card" alt="card" src={this.props.cards[selectedIdxs[2]].photoUrls[selectedSide[2]]}/>
           </li>
-            <div>
-              Ah yes the 
+            <div className="Tarot-answer">
+              A three card draw. Lets apply {this.props.cards[selectedIdxs[0]].name} to the past. {this.props.cards[selectedIdxs[0]].meaning[selectedSide[0]]} <br />
+              Do these ring true? Does a single element of it ring true? {this.props.cards[selectedIdxs[1]].name} shows your present, {this.props.cards[selectedIdxs[1]].meaning[selectedSide[1]]}.<br />
+              I would say your present defines the future. That these things communicate. Take {this.props.cards[selectedIdxs[1]].name} as a gift to the future, whether {this.props.cards[selectedIdxs[2]].name} <br />
+              looks good or bad. If you futuure seems bleak know nothing is set in stone. You can make the future what you want. <br />
+              If the future looks good know you are on the right track. That the present path leads towards prosperity or positive change. This does not mean do not change though. <br />
+              It means you should trust yourself. Trust yourself to know what to do with the {this.props.cards[selectedIdxs[2]].meaning[selectedSide[2]]} of {this.props.cards[selectedIdxs[2]].name} <br />
+
             </div>
         </ul>
       </div>
