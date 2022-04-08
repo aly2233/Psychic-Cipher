@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { fetchUser } from "../../actions/user_actions";
 import PostIndexContainer from "../posts/post_index_container"
+import "./profile.css";
+
 
 
 const Profile = ({user, userId, fetchUser}) => {
@@ -17,16 +19,61 @@ const Profile = ({user, userId, fetchUser}) => {
   const toggleJournal = () => journalPosts ? setJournalPosts(false) : setJournalPosts(true)
 
   return (
-    <div>
-      <div className='profile-info'>
-        <h1>{user?.data.handle}</h1>
-        <p>{user?.data.email}</p>
+    <div id="profile-container">
+      <div id="authored-posts">
+          <h1>Tarot Notes</h1>
+          <div className='profile-info'>
+          <h1>{user?.data.handle}</h1>
+          <p>{user?.data.email}</p>
+        </div>
+        <button onClick={toggleJournal}>{journalPosts ? `Show Card Page Posts` : `Show Journal Posts`}</button>
+        <div className="journal-entries">
+          <h2>{journalPosts ? 'Journal Entries' : 'Posts On Card Pages'}</h2>
+          <PostIndexContainer journalPosts={journalPosts} limit={10} />
+        </div>      
       </div>
-      <button onClick={toggleJournal}>{journalPosts ? `Show Card Page Posts` : `Show Journal Posts`}</button>
-      <div className="journal-entries">
-        <h2>{journalPosts ? 'Journal Entries' : 'Posts On Card Pages'}</h2>
-        <PostIndexContainer journalPosts={journalPosts} limit={10} />
+
+        <div id="friends-container">
+          <h1>Keep in touch with your friends!</h1>
+          <div id="friend-boundaries">
+            <div id="friend-box-top" className="friend">
+              <div className="friend-heading">
+                <h2>David Domingo</h2>
+              </div>
+              <div className="friend-link">
+              <a href="https://github.com/Domingo-creator">Domingo-creator</a>
+              </div>
+            </div>
+
+          <div id="space-between-friend" className="friend">
+            <div className="friend-heading">
+              <h2>Zach Werbalowsky</h2>
+            </div>
+            <div className="friend-link">
+              <a href="https://github.com/ZWerbo">ZWerbo</a>
+            </div>
+          </div>
+          
+          <div id="space-between-friend" className="friend">
+            <div className="friend-heading">
+              <h2>Alan Yueh</h2>
+            </div>
+            <div className="friend-link">
+              <a href="https://github.com/aly2233">aly2233</a>          
+            </div>
+          </div>
+
+          <div id="space-between-friend" className="friend">
+            <div className="friend-heading">
+              <h2>Abigail Montemayor</h2>
+            </div>
+            <div className="friend-link">
+              <a href="https://github.com/ee3y0re">ee3y0re</a>
+            </div>
+          </div>
+        </div>
       </div>
+      
     </div>
 
   );
