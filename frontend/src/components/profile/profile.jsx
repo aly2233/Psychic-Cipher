@@ -41,7 +41,7 @@ const Profile = ({user, userId, fetchUser}) => {
                 <h2>David Domingo</h2>
               </div>
               <div className="friend-link">
-              <a href="https://github.com/Domingo-creator">Domingo-creator</a>
+              <a href="https://github.com/Domingo-creator" target="_blank">Domingo-creator</a>
               </div>
             </div>
 
@@ -50,7 +50,7 @@ const Profile = ({user, userId, fetchUser}) => {
               <h2>Zach Werbalowsky</h2>
             </div>
             <div className="friend-link">
-              <a href="https://github.com/ZWerbo">ZWerbo</a>
+              <a href="https://github.com/ZWerbo" target="_blank">ZWerbo</a>
             </div>
           </div>
           
@@ -59,7 +59,7 @@ const Profile = ({user, userId, fetchUser}) => {
               <h2>Alan Yueh</h2>
             </div>
             <div className="friend-link">
-              <a href="https://github.com/aly2233">aly2233</a>          
+              <a href="https://github.com/aly2233" target="_blank">aly2233</a>          
             </div>
           </div>
 
@@ -68,7 +68,7 @@ const Profile = ({user, userId, fetchUser}) => {
               <h2>Abigail Montemayor</h2>
             </div>
             <div className="friend-link">
-              <a href="https://github.com/ee3y0re">ee3y0re</a>
+              <a href="https://github.com/ee3y0re" target="_blank">ee3y0re</a>
             </div>
           </div>
         </div>
