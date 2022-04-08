@@ -4,7 +4,7 @@ import EditPostFormContainer from './post_form/edit_post_form_container'
 const PostIndexItem = ({post, currentUser, author, fetchAuthor, deletePost, setChangeCounter}) => {
 
     // useEffect( () => {
-    //     debugger
+    
     //     fetchAuthor(post.userId)
     // },[])
 
@@ -25,7 +25,7 @@ const PostIndexItem = ({post, currentUser, author, fetchAuthor, deletePost, setC
         return dateString.slice(0, dateString.indexOf(':') - 2)
     }
 
-    // debugger
+
     return (
         <li>
             <div className='post-header'>

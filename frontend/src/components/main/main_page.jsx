@@ -36,24 +36,24 @@ class MainPage extends React.Component {
         {/* <div className='border-bottom'>Secret writing</div> */}
             <div className='explore-cards'> 
 
-              <Link to={'/cards/624dc08fb5f9e7a4e4e8c827'}>
+              <Link to={'/cards/624f7a038d592d4df18e370e'}>
                 <img className='tarot-card-item' src={fool}/>
               </Link>
-              <Link to={'/cards/624dc08fb5f9e7a4e4e8c823'}>
+              <Link to={'/cards/624f7a038d592d4df18e370a'}>
                 <img className='tarot-card-item' src={star}/>
               </Link>
-              <Link to={'/cards/624dc08fb5f9e7a4e4e8c81d'}>
+              <Link to={'/cards/624f7a038d592d4df18e3704'}>
                 <img className='tarot-card-item' src={justice}  />
               </Link>
-              <Link to={'/cards/624dc08fb5f9e7a4e4e8c81e'}>
+              <Link to={'/cards/624f7a038d592d4df18e3705'}>
                 <img className='tarot-card-item' src={hanged} alt="" />
               </Link>
 
-              <Link to={'/cards/624dc08fb5f9e7a4e4e8c818'}>
+              <Link to={'/cards/624f7a038d592d4df18e36ff'}>
                 <img className='tarot-card-item' src={lovers} alt="" />
               </Link>
 
-              <Link to={'/cards/624dc08fb5f9e7a4e4e8c81f'}>
+              <Link to={'/cards/624f7a038d592d4df18e3706'}>
                 <img className='tarot-card-item' src={death} alt="" />
               </Link>
 
