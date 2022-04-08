@@ -28,7 +28,7 @@ const Profile = ({user, userId, fetchUser}) => {
         </div>
         <div className="journal-entries">
           <h2>{journalPosts ? 'Journal Entries' : 'Posts On Card Pages'}</h2>
-          <button onClick={toggleJournal}>{journalPosts ? `Show Card Page Posts` : `Show Journal Posts`}</button>
+          <button onClick={toggleJournal} className="create-post-button">{journalPosts ? `Show Card Page Posts` : `Show Journal Posts`}</button>
           <PostIndexContainer journalPosts={journalPosts} limit={10} />
         </div>      
       </div>
