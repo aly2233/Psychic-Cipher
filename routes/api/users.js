@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const bcrypt = require('bcryptjs');
+const mongoose = require('mongoose');
 const User = require('../../models/User');
 const jwt = require('jsonwebtoken');
 const keys = require('../../config/keys');
@@ -18,7 +19,11 @@ router.get('/current', passport.authenticate('jwt', {session: false}), (req, res
     });
   })
 
-
+router.get('/:id', (req, res) => {
+  User.findById(req.params.id)
+        .then(user => res.json(user))
+        .catch(err => res.status(404).json({ nouserfound: 'No user found'}))
+})
 
 
 router.post("/register", (req, res) => {

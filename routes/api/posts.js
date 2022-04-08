@@ -14,8 +14,8 @@ router.get('/', (req, res) => {
     filter.limit = req.query.limit || req.body.limit ? req.query.limit || req.body.limit : 0;
     filter.skip = req.query.skip || req.body.skip ? req.query.skip || req.body.skip : 0;
 
-    console.log(filter)
-    console.log(req.body)
+    // console.log(filter)
+    // console.log(req.body)
     
     Post.find(filter)
         .sort({date: -1})
@@ -33,7 +33,6 @@ router.get('/user/:user_id', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-    console.log(req.params.id)
     Post.findById(req.params.id)
         .then(post => res.json(post))
         .catch( err => 
