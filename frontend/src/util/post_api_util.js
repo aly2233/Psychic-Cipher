@@ -2,12 +2,10 @@ import axios from 'axios';
 
 
 export const fetchPosts = (field, fieldId, limit, skip) => {
-    console.log(field)
     return axios({
         method: 'get',
         url: '/api/posts/',
         params: {
-        //   cardId: cardId,
           [field] : fieldId,
           limit: limit,
           skip: skip

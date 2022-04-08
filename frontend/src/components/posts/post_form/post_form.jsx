@@ -10,8 +10,10 @@ const PostForm = ({submitForm, post, formType, userId, cardId, togglePostWindow,
         let postObj = {userId: userId, cardId: cardId, body:text}
         if(post)  postObj['id'] = post._id;
         submitForm(postObj)
-        togglePostWindow();
-        setChangeCounter(Math.random() * 100);
+            .then( () => {
+                togglePostWindow();
+                setChangeCounter(Math.random() * 10000);
+            })
     }
 
     const update = (e) => {
