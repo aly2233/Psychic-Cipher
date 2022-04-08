@@ -8,7 +8,7 @@ const mapStateToProps = (state, ownProps) => {
     return {
         posts: Object.values(state.posts),
         loggedIn: state.session.isAuthenticated,
-        userId: state.session.user.id
+        userId: state.session.user ? state.session.user.id : null
     }
 }
 

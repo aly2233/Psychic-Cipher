@@ -11,7 +11,7 @@ const PostFrontpageItem = ({post, user}) => {
     return (
         <li>
             <div className='post-header'>
-                <p className='user-email-tag'>{user.email}</p>
+                <p className='user-email-tag'>{user?.email}</p>
                 <p className='date-tag'>{convertDate()}</p>
                 {/* <p> {post.date}</p> */}
             </div>

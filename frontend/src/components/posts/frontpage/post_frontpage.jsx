@@ -12,7 +12,7 @@ const PostFrontpage = ({loggedIn, card, posts, fetchPosts, match, limit, skip}) 
     // const [postCount, ]
     
     useEffect( () => {
-        fetchPosts(match.params.card_id, limit, skip)
+        fetchPosts(limit, skip)
     },[])
 
     
