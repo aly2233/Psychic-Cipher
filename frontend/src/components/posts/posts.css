@@ -135,3 +135,7 @@
     font-family: 'Commissioner', sans-serif;
     color: rgb(49, 49, 90);
 }
+
+#root {
+    margin: -8px;
+  }
