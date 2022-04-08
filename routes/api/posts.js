@@ -10,7 +10,7 @@ const validatePostInput = require('../../validation/posts')
 
 router.get('/', (req, res) => {
     filter = req.query.cardId ? {cardId: req.query.cardId} : req.body.cardId ? {cardId: req.body.cardId} : {}
-    req.query.userId ? filter.userId = req.query.userId : req.body.userId ? filter.userId = req.body.userId : {}
+    req.query.userId ? filter.userId = req.query.userId : req.body.userId ? filter.userId = req.body.userId : null
     filter.limit = req.query.limit || req.body.limit ? req.query.limit || req.body.limit : 0;
     filter.skip = req.query.skip || req.body.skip ? req.query.skip || req.body.skip : 0;
 
@@ -26,8 +26,29 @@ router.get('/', (req, res) => {
 });
 
 
-router.get('/user/:user_id', (req, res) => {
-    Post.find({user: req.params.user_id})
+router.get('/users/:user_id/journal', (req, res) => {
+    let filter = {userId: req.params.user_id}
+    // req.query.userId ? filter.userId = req.query.userId : req.body.userId ? filter.userId = req.body.userId : null
+    filter.limit = req.query.limit || req.body.limit ? req.query.limit || req.body.limit : 0;
+    filter.skip = req.query.skip || req.body.skip ? req.query.skip || req.body.skip : 0;
+    filter.cardId = { $exists: false }
+
+    Post.find(filter)
+        .sort({date: -1})
+        .limit(req.query.limit|| req.body.limit || 0)
+        .skip(req.query.skip|| req.body.skip || 0)
+        .then(posts => res.json(posts))
+        .catch(err => res.status(404).json({ nopostsfound: 'No posts found'}))
+})
+
+router.get('/cards/:id', (req, res) => {
+
+})
+
+
+router.get('/users/:user_id', (req, res) => {
+    Post.find({userId: req.params.user_id})
+        .sort({date: -1})
         .then(posts => res.json(posts))
         .catch(err => res.status(404).json({ nopostsfound: 'No posts found from that user' }))
 });

@@ -1,13 +1,36 @@
-import React from "react";
-import PostIndexContainer from "../posts/post_index_container";
+import React, { useEffect, useState } from "react";
+import { connect } from "react-redux";
+import { fetchUser } from "../../actions/user_actions";
+import PostIndexContainer from "../posts/post_index_container"
 import "./profile.css";
 
-const Profile = () => {
+
+
+const Profile = ({user, userId, fetchUser}) => {
+
+  
+
+  useEffect( () => {
+    fetchUser(userId)
+  },[])
+
+  const [journalPosts, setJournalPosts] = useState(true)
+
+  const toggleJournal = () => journalPosts ? setJournalPosts(false) : setJournalPosts(true)
+
   return (
     <div id="profile-container">
       <div id="authored-posts">
-        <h1>Tarot Notes</h1>
-        <PostIndexContainer />        
+          <h1>Tarot Notes</h1>
+          <div className='profile-info'>
+          <h1>{user?.data.handle}</h1>
+          <p>{user?.data.email}</p>
+        </div>
+        <div className="journal-entries">
+          <h2>{journalPosts ? 'Journal Entries' : 'Posts On Card Pages'}</h2>
+          <button onClick={toggleJournal} className="create-post-button">{journalPosts ? `Show Card Page Posts` : `Show Journal Posts`}</button>
+          <PostIndexContainer journalPosts={journalPosts} limit={10} />
+        </div>      
       </div>
 
         <div id="friends-container">
@@ -18,7 +41,7 @@ const Profile = () => {
                 <h2>David Domingo</h2>
               </div>
               <div className="friend-link">
-              <a href="https://github.com/Domingo-creator">Domingo-creator</a>
+              <a href="https://github.com/Domingo-creator" target="_blank">Domingo-creator</a>
               </div>
             </div>
 
@@ -27,7 +50,7 @@ const Profile = () => {
               <h2>Zach Werbalowsky</h2>
             </div>
             <div className="friend-link">
-              <a href="https://github.com/ZWerbo">ZWerbo</a>
+              <a href="https://github.com/ZWerbo" target="_blank">ZWerbo</a>
             </div>
           </div>
           
@@ -36,7 +59,7 @@ const Profile = () => {
               <h2>Alan Yueh</h2>
             </div>
             <div className="friend-link">
-              <a href="https://github.com/aly2233">aly2233</a>          
+              <a href="https://github.com/aly2233" target="_blank">aly2233</a>          
             </div>
           </div>
 
@@ -45,14 +68,29 @@ const Profile = () => {
               <h2>Abigail Montemayor</h2>
             </div>
             <div className="friend-link">
-              <a href="https://github.com/ee3y0re">ee3y0re</a>
+              <a href="https://github.com/ee3y0re" target="_blank">ee3y0re</a>
             </div>
           </div>
         </div>
       </div>
       
     </div>
+
   );
 }
 
-export default Profile;
+
+const mSTP = (state) => {
+  return {
+    userId: state.session.user?.id,
+    user: state.users ? state.users[state.session.user?.id] : null
+  }
+}
+
+const mDTP = dispatch => {
+  return {
+    fetchUser: (userId) => dispatch(fetchUser(userId))
+  }
+}
+
+export default connect(mSTP, mDTP)(Profile);

@@ -37,6 +37,12 @@ export const fetchPosts = (field, fieldId, limit = 0, skip = 0) => dispatch =>  
         .catch(err => console.log(err))
 }
 
+export const fetchJournalPosts = (userId, limit = 0, skip = 0) => dispatch => {
+    return PostApiUtil.fetchJournalPosts(userId, limit, skip)
+        .then( posts => dispatch(receivePosts(posts)))
+        .catch(err => console.log(err))
+}
+
 export const fetchPost = (postId) => dispatch => {
     return PostApiUtil.fetchPost(postId)
         .then( post => dispatch(receivePost(post)))
