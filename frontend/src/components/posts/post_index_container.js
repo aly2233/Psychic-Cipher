@@ -1,6 +1,6 @@
 import { connect } from "react-redux"
 import { withRouter } from "react-router-dom"
-import { deletePost, fetchPosts } from "../../actions/post_actions"
+import { deletePost, fetchJournalPosts, fetchPosts } from "../../actions/post_actions"
 import { fetchUser } from "../../actions/user_actions"
 import PostIndex from "./post_index.jsx"
 
@@ -14,7 +14,9 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        fetchPosts: (posts, limit, skip) => dispatch(fetchPosts(posts, limit, skip)),
+        // fetchPosts: (posts, limit, skip) => dispatch(fetchPosts(posts, limit, skip)),
+        fetchPosts: (field, fieldId, limit, skip) => dispatch(fetchPosts(field, fieldId, limit, skip)),
+        fetchJournalPosts: (userId, limit, skip) => dispatch(fetchJournalPosts(userId, limit, skip)),
         fetchAuthor: (userId) => dispatch(fetchUser(userId))
     }
 }

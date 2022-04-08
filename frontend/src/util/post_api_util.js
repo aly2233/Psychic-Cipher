@@ -13,6 +13,16 @@ export const fetchPosts = (field, fieldId, limit, skip) => {
       });
 }
 
+export const fetchJournalPosts = (userId, limit, skip) => {
+    return axios({
+        method: 'get',
+        url: `/api/posts/users/${userId}/journal`,
+        params: {
+          limit: limit,
+          skip: skip
+        }
+      });
+}
 
 export const fetchPost = (postId) => {
     return axios.get(`/api/posts/${postId}`)
