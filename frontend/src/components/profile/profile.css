@@ -1,0 +1,71 @@
+#profile-container {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #31325a;
+  color: #faebd7;
+}
+
+#profile-container h1 {
+  font-family: 'Righteous', cursive;
+}
+
+#authored-posts {
+  position: relative;
+}
+
+#authored-posts > h1 {
+  margin-left: 12px;
+}
+
+#friends-container {
+  position: relative;
+}
+
+#friends-container > h1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-bottom: 15px;
+}
+
+#friend-boundaries {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.friend {
+  border: 1px solid;
+  border-radius: 10px
+}
+
+.friend-heading {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  height: 40px;
+}
+
+.friend-heading h2 {
+  font-family: 'Staatliches', cursive;
+  font-size: 16px;
+}
+
+#space-between-friend {
+  margin-top: 39px;
+}
+
+.friend-link {
+  font-family: 'Staatliches', cursive;
+  background-color: #f6ecdf;
+  background-size: cover;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.friend-link a {
+  margin-left: 9px;
+}
