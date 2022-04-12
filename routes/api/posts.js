@@ -9,7 +9,7 @@ const Post = require('../../models/Post')
 const validatePostInput = require('../../validation/posts')
 
 router.get('/', (req, res) => {
-    filter = req.query.cardId ? {cardId: req.query.cardId} : req.body.cardId ? {cardId: req.body.cardId} : {}
+    filter = req.query.cardId ? {cardId: req.query.cardId} : req.body.cardId ? {cardId: req.body.cardId} : {cardId: {$exists: true} }
     req.query.userId ? filter.userId = req.query.userId : req.body.userId ? filter.userId = req.body.userId : null
     filter.limit = req.query.limit || req.body.limit ? req.query.limit || req.body.limit : 0;
     filter.skip = req.query.skip || req.body.skip ? req.query.skip || req.body.skip : 0;
