@@ -1337,29 +1337,7 @@ const data = [
         }
       }
     ]
-  }//,
-  /////// POSTS
-  // {
-  //   "model": "Post",
-  //   "documents": [
-  //     {
-  //       "user": '624c7c68b5120c4c6ad44213',
-  //       "text": 'That card was great.  It totally speaks to me.'
-  //     },
-  //     {
-  //       "user": '624c7c68b5120c4c6ad44213',
-  //       "text": 'I feel like these cards are reading my mind'
-  //     },
-  //     {
-  //       "user": '624c7c68b5120c4c6ad44213',
-  //       "text": 'Tarot reading comment something something'
-  //     },
-  //     {
-  //       "user": '624c7c68b5120c4c6ad44213',
-  //       "text": 'Do you even tarot bro?'
-  //     }
-  //   ]
-  // }
+  }
 ]
 
 
