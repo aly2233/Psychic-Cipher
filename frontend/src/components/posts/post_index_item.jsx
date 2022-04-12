@@ -31,7 +31,7 @@ const PostIndexItem = ({post, card, currentUser, author, deletePost, setChangeCo
                 <p className='post-body-text'>{post.body}</p>
             </div>
 
-            {currentUser && card && post.userId === currentUser.id ? <button onClick={toggleEditPostWindow} className='edit-post-form-button'>Edit Post</button> : <></>}
+            {currentUser && (card || !post.cardId) && post.userId === currentUser.id ? <button onClick={toggleEditPostWindow} className='edit-post-form-button'>Edit Post</button> : <></>}
             {editPost ? <EditPostFormContainer post={post} cardId={post.cardId} togglePostWindow={toggleEditPostWindow}/> : <></>}
             {editPost ? <button onClick={handleDelete} className='post-form-button'>Delete Post</button> : <></>}
         </li>
