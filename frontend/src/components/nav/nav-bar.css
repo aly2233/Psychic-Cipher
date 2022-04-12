@@ -43,7 +43,7 @@
 .flourish-block {
   position: absolute;
   background-color: rgb(49, 49, 90);
-  margin-left: 20%;
+  margin-left: 15%;
   width: 40px;
   height: 110px;
   
@@ -52,14 +52,14 @@
 .flourish-block2 {
   position: absolute;
   background-color: rgb(49, 49, 90);
-  margin-left: 76%;
+  margin-left: 81%;
   width: 40px;
   height: 110px;
 }
 .flourish-block3 {
   position: absolute;
   background-color: rgb(49, 49, 90);
-  margin-left: 65%;
+  margin-left: 70%;
   width: 20px;
   height: 110px;
 }
@@ -67,7 +67,7 @@
 .flourish-block4 {
   position: absolute;
   background-color: rgb(49, 49, 90);
-  margin-left: 32%;
+  margin-left: 28%;
   width: 20px;
   height: 110px;
 }
@@ -75,7 +75,7 @@
 .flourish-block00 {
   position: absolute;
   background-color: rgb(49, 49, 90);
-  margin-left: 90%;
+  margin-left: 95%;
   width: 80px;
   height: 110px;
 }
@@ -83,7 +83,7 @@
 .flourish-block0 {
   position: absolute;
   background-color: rgb(49, 49, 90);
-  margin-left: 5%;
+  margin-left: 1%;
   width: 80px;
   height: 110px;
   
