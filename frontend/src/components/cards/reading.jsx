@@ -79,7 +79,7 @@ class Reading extends React.Component {
     })
     this.checkboxes.map(checkbox => checkbox ? (checkbox.checked = false) : null)
     this.unFreezeCards(); 
-    this.hideCards(); 
+    // this.hideCards(); 
   }
 
   freezeCards() {
@@ -196,6 +196,8 @@ class Reading extends React.Component {
     ) : (
       null
     )
+
+
 
     return (
       <div className="tarot-reading-container">
