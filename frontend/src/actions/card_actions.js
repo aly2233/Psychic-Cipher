@@ -22,3 +22,9 @@ export const fetchCard = (cardId) => dispatch => (
     CardAPIUtil.fetchCard(cardId)
         .then((card) => dispatch(receiveCard(card)))
 );
+
+export const fetchSearchedCards = searchInput => dispatch => (
+    CardAPIUtil.fetchSearchedCards(searchInput)
+    .then((cards) => dispatch(receiveAllCards(cards)))
+
+)

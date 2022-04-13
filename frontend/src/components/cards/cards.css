@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     padding: 20px;
     background-color: rgb(49, 49, 90);
+    min-height: 100vh;
 }
 
 .card-item-image {

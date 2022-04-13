@@ -16,6 +16,7 @@ import ReadingContainer from "./cards/reading_container"
 
 import Profile from "./profile/profile";
 import EditProfileContainer from './profile/edit_profile_container';
+import searchbar_container from './cards/searchbar/searchbar_container';
 
 
 const App = () => (
@@ -29,6 +30,7 @@ const App = () => (
         {/* <Route exact path="/posts/:post_id/edit" component={EditPostFormContainer} /> */}
         {/* <Route exact path="/login" component={LoginFormContainer} /> */}
         {/* <Route exact path="/signup" component={SignupFormContainer} /> */}
+        {/* <Route exact path="/cards" component={searchbar_container} /> */}
         <Route exact path="/cards" component={cardsContainer} />
         <Route exact path="/cards/:card_id" component={CardShowContainer} />
         <Route exact path="/reading"component={ReadingContainer}/>

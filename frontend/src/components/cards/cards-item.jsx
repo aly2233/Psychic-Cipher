@@ -1,6 +1,6 @@
 import React from "react";
-import './cards.css'
 import { Link } from 'react-router-dom'
+import './cards.css'
 
 class CardsItem extends React.Component {
     constructor(props) {
@@ -10,7 +10,6 @@ class CardsItem extends React.Component {
 
 
     render() {
-    //  console.log(this.props.card._id)
         return (
             <div>
                 <Link to={`/cards/${this.props.card._id}`}>
