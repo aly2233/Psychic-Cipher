@@ -15,7 +15,8 @@ router.get('/current', passport.authenticate('jwt', {session: false}), (req, res
     res.json({
       id: req.user.id,
       handle: req.user.handle,
-      email: req.user.email
+      email: req.user.email,
+      bio: req.user.bio
     });
   })
 
@@ -23,6 +24,12 @@ router.get('/:id', (req, res) => {
   User.findById(req.params.id)
         .then(user => res.json(user))
         .catch(err => res.status(404).json({ nouserfound: 'No user found'}))
+})
+
+router.patch('/:id', (req, res) => {
+  User.findByIdAndUpdate(req.params.id, {bio: req.body.bio},{new: true})
+    .then( updatedUser => res.json(updatedUser))
+    .catch(err => res.status(404).json({ nouserfound: 'No user found'}))
 })
 
 
@@ -41,7 +48,8 @@ router.post("/register", (req, res) => {
         const newUser = new User({
           handle: req.body.handle,
           email: req.body.email,
-          password: req.body.password
+          password: req.body.password,
+          bio: req.body.bio,
         });
   
         bcrypt.genSalt(10, (err, salt) => {
