@@ -1,5 +1,4 @@
 import * as UserApiUtil from '../util/user_api_util'
-import axios from 'axios'
 export const RECEIVE_USERS = 'RECEIVE_USERS'
 export const RECEIVE_USER = 'RECEIVE_USER'
 
@@ -26,4 +25,9 @@ export const fetchUsers = () => dispatch => {
 export const fetchUser = (userId) => dispatch => {
     return UserApiUtil.fetchUser(userId)
         .then(user => dispatch(receiveUser(user)))
+}
+
+export const updateUser = (user) => dispatch => {
+    return UserApiUtil.updateUser(user)
+        .then(updatedUser => dispatch(receiveUser(updatedUser)))
 }

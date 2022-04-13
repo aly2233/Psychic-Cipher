@@ -16,7 +16,8 @@ router.get('/current', passport.authenticate('jwt', {session: false}), (req, res
       id: req.user.id,
       handle: req.user.handle,
       email: req.user.email,
-      bio: req.user.bio
+      bio: req.user.bio,
+      astrology_sign: req.body.astrology_sign
     });
   })
 
@@ -27,9 +28,14 @@ router.get('/:id', (req, res) => {
 })
 
 router.patch('/:id', (req, res) => {
-  User.findByIdAndUpdate(req.params.id, {bio: req.body.bio},{new: true})
-    .then( updatedUser => res.json(updatedUser))
-    .catch(err => res.status(404).json({ nouserfound: 'No user found'}))
+  // console.log(req.body)
+  User.findByIdAndUpdate(req.params.id, {bio: req.body.bio, astrology_sign: req.body.astrology_sign, handle: req.body.handle},{new: true})
+    .then( updatedUser => {
+      console.log(updatedUser)
+      res.json(updatedUser)})
+    .catch(err => {
+      console.log('in catch')
+      res.status(404).json({ nouserfound: 'No user found'})})
 })
 
 
@@ -50,6 +56,7 @@ router.post("/register", (req, res) => {
           email: req.body.email,
           password: req.body.password,
           bio: req.body.bio,
+          astrology_sign: req.body.astrology_sign
         });
   
         bcrypt.genSalt(10, (err, salt) => {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import { fetchUser } from "../../actions/user_actions";
 import PostIndexContainer from "../posts/post_index_container"
 import "./profile.css";
@@ -25,6 +26,9 @@ const Profile = ({user, userId, fetchUser}) => {
           <div className='profile-info'>
           <h1>{user?.data.handle}</h1>
           <p>{user?.data.email}</p>
+          <p>{user?.data?.bio}</p>
+          <p>{user?.data?.astrology_sign}</p>
+          <Link to="/profile/edit">Edit Profile</Link>
         </div>
         <div className="journal-entries">
           <h2>{journalPosts ? 'Journal Entries' : 'Posts On Card Pages'}</h2>

@@ -20,8 +20,8 @@ const UserSchema = new Schema({
       require: false
     },
     astrology_sign: {
-      stype: String,
-      required: true
+      type: String,
+      required: false
     }
   }, {
     timestamps: true
