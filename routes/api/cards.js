@@ -5,7 +5,14 @@ const mongoose = require("mongoose");
 
 //only need index
 router.get("/", (req, res) => {
-  Card.find()
+  console.log(req.query)
+  let filter = req.body.name || req.query.name ? {
+    name: {
+        $regex: req.body.name || req.query.name,
+        $options: "i"
+      }
+    } : {};
+  Card.find(filter)
     .sort({ nameShort: 1 })
     .then(cards => res.json(cards))
     .catch(err => res.status(404).json({ noCardsFound: "index function bug" }))
@@ -17,5 +24,6 @@ router.get("/:id", (req, res) => {
     .then(card => res.json(card))
     .catch(err => res.status(404).json({ noCardFound: "show function bug" }))
 });
+
 
 module.exports = router;
