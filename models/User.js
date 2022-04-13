@@ -18,6 +18,10 @@ const UserSchema = new Schema({
     bio: {
       type: String,
       require: false
+    },
+    astrology_sign: {
+      stype: String,
+      required: true
     }
   }, {
     timestamps: true
