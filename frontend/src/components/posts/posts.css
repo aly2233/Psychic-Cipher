@@ -102,6 +102,7 @@
     font-size: 20px;
     padding: 3px;
     background-color: antiquewhite;
+    cursor: pointer;
 }
 
 .say-about-cards {

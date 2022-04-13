@@ -4,7 +4,7 @@ import './posts.css'
 import CreatePostFormContainer from './post_form/create_post_container';
 
 
-const PostIndex = ({card, posts, journalPosts = false, fetchPosts, fetchJournalPosts, fetchAuthor, authors, match, userId, limit, skip}) => {
+const PostIndex = ({card, posts, journalPosts = false, fetchPosts, fetchJournalPosts, fetchAuthor, authors, match, userId, openModal, limit, skip}) => {
 
     const [createPost, setCreatePost] = useState(false)
     const [changeCounter, setChangeCounter] = useState(0)
@@ -27,7 +27,7 @@ const PostIndex = ({card, posts, journalPosts = false, fetchPosts, fetchJournalP
             {createPost ? <CreatePostFormContainer  cardId={card?.data._id} togglePostWindow={toggleCreatePostWindow} setChangeCounter={setChangeCounter}/> : <></>}
 
             {userId  && !createPost && (card || (match.path === '/profile' && journalPosts))  ? 
-                <button onClick={toggleCreatePostWindow} className='create-post-button'>{journalPosts ? 'Create New Journal Entry' : 'Create New Post'}</button> : <></>}
+                <button onClick={toggleCreatePostWindow} className='create-post-button'>{journalPosts ? 'Create New Journal Entry' : 'Create New Post'}</button> : <p className='create-post-button' onClick={openModal}>Log In To Post</p>}
             <ul className='posts-list'>
                 {posts?.map( post => <PostIndexItemContainer key={post._id} author={authors[post.userId]} card={card} post={post} setChangeCounter={setChangeCounter}/> )}
             </ul>

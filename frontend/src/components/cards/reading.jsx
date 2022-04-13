@@ -26,10 +26,13 @@ class Reading extends React.Component {
     this.showCards = this.showCards.bind(this)
     this.disable = this.disable.bind(this)
     this.refreshCards = this.refreshCards.bind(this)
+    
   }
 
   componentDidMount() {
     this.props.fetchCards();
+    this.checkboxes.map(checkbox => checkbox ? (checkbox.checked = false) : null)
+    this.unFreezeCards(); 
   }
 
   handleCheckCount = (e) => {
@@ -199,9 +202,9 @@ class Reading extends React.Component {
         <br />
         <br />
         <br />
-        <div className="card-read-settings">
+        <div className="card-read-settings" >
           <div className="Please-select-title" >Please select the number of cards you would like read.</div>
-          <input type="radio" id="1" name="cardAmt" value={1} onChange={this.updateField("cardAmt")} onClick={this.refreshCards}/>
+          <input type="radio" id="1" name="cardAmt" value={1} onChange={this.updateField("cardAmt")} onClick={this.refreshCards} />
           <label id="1">1 Card</label>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input type="radio" id="3" name="cardAmt" value={3} onChange={this.updateField("cardAmt")} onClick={this.refreshCards}/>
@@ -219,13 +222,23 @@ class Reading extends React.Component {
 
         <div className="cardspread">
           <div className="deck-container">
-            {Array.from({length: 78})
+            {this.state.cardAmt > 0 ?
+            Array.from({length: 78})
             .map((_, index) => (
               <div className="individual-card-container">
                 <input ref={(checkbox) => {this.checkboxes.push(checkbox)}} type="checkbox" onChange={(e => this.handleCheckCount(e))}/>
                 <img ref={(card) => {this.deckCards.push(card)}}alt="deckimage" className="deck-image" src={tarot_back}></img>
               </div>
-            ))}
+            ))
+            : 
+            Array.from({length: 78})
+            .map((_, index) => (
+              <div className="individual-card-container hide">
+                <input ref={(checkbox) => {this.checkboxes.push(checkbox)}} type="checkbox" onChange={(e => this.handleCheckCount(e))}/>
+                <img ref={(card) => {this.deckCards.push(card)}}alt="deckimage" className="deck-image" src={tarot_back}></img>
+              </div>
+            ))
+            }
           </div>
         </div>
 
