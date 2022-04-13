@@ -1,10 +1,9 @@
-import { useState } from "react"
+// import { useState } from "react"
 import React from "react"
 
 
-const Searchbar = ({fetchSearchedCards }) => {
+const Searchbar = ({fetchSearchedCards, searchInput, setSearchInput }) => {
     
-    const [searchInput, setSearchInput] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault()

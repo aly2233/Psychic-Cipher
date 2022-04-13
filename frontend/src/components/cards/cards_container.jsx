@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { fetchCard, fetchCards } from "../../actions/card_actions";
+import { fetchCard, fetchCards, fetchSearchedCards } from "../../actions/card_actions";
 import Cards from "./cards";
 
 const mapStateToProps = (state, ownProps) => {
@@ -12,7 +12,8 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => {
     return({
         fetchCard:(cardId) => dispatch(fetchCard(cardId)),
-        fetchCards:() => dispatch(fetchCards())
+        fetchCards:() => dispatch(fetchCards()),
+        fetchSearchedCards: searchInput => dispatch(fetchSearchedCards(searchInput))
     })
 }
 

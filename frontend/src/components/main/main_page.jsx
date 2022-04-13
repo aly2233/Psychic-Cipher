@@ -16,7 +16,12 @@ class MainPage extends React.Component {
     super(props)
     this.state = {skip: 0}
   }
+  componentDidMount() {
+    localStorage.removeItem('searchInput')
 
+  }
+
+  
   update(e) {
     this.setState({skip: e.target.value})
   }
