@@ -26,8 +26,9 @@ const PostIndex = ({card, posts, journalPosts = false, fetchPosts, fetchJournalP
         <div>
             {createPost ? <CreatePostFormContainer  cardId={card?.data._id} togglePostWindow={toggleCreatePostWindow} setChangeCounter={setChangeCounter}/> : <></>}
 
+            {userId ? <></> : <p className='create-post-button' onClick={openModal}>Log In To Post</p>}
             {userId  && !createPost && (card || (match.path === '/profile' && journalPosts))  ? 
-                <button onClick={toggleCreatePostWindow} className='create-post-button'>{journalPosts ? 'Create New Journal Entry' : 'Create New Post'}</button> : <p className='create-post-button' onClick={openModal}>Log In To Post</p>}
+                <button onClick={toggleCreatePostWindow} className='create-post-button'>{journalPosts ? 'Create New Journal Entry' : 'Create New Post'}</button> : <></>}
             <ul className='posts-list'>
                 {posts?.map( post => <PostIndexItemContainer key={post._id} author={authors[post.userId]} card={card} post={post} setChangeCounter={setChangeCounter}/> )}
             </ul>

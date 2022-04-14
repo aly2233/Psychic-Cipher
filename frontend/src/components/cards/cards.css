@@ -14,3 +14,57 @@
     border-color: antiquewhite;
 }
 
+.cards-index {
+    display: flex;
+    background-color: rgb(49, 49, 90);
+    flex-direction: column
+}
+
+.cards-index input {
+    align-self: center;
+    text-align: center;
+}
+
+.searchbar-cards {
+    align-self: center;
+    margin-top: 20px;
+    width: 250px;
+    color: antiquewhite;
+    cursor: pointer;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchbar-cards input {
+    background-color: antiquewhite;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    padding: 5px;
+    height: 25px;
+}
+
+.searchbar-cards button {
+    background-color: antiquewhite;
+    border-color: black;
+    font-family: 'Staatliches', cursive;
+    font-size: 16px;
+    width: 100px;
+    height: 41px;
+    cursor: pointer;  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.searchbar-cards form {
+    display: flex;
+    flex-direction: row;
+}
+
+.searchicon {
+    font-size: 25px
+
+}
