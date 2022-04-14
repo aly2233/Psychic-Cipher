@@ -22,7 +22,8 @@ const UserSchema = new Schema({
     astrology_sign: {
       type: String,
       required: false
-    }
+    },
+    friends: {}
   }, {
     timestamps: true
   })

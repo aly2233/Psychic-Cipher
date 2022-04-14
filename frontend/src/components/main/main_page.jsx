@@ -10,6 +10,7 @@ import justice from './Justice.jpeg'
 import hanged from './Hanged_Man.jpeg'
 // import PostIndexContainer from '../posts/post_index_container';
 import PostFrontpageContainer from '../posts/frontpage/post_frontpage_container';
+import { fetchCards } from '../../actions/card_actions';
 
 class MainPage extends React.Component {
   constructor(props) {
@@ -17,8 +18,10 @@ class MainPage extends React.Component {
     this.state = {skip: 0}
   }
   componentDidMount() {
-    localStorage.removeItem('searchInput')
-
+    if(localStorage.getItem('searchInput')) {
+      localStorage.removeItem('searchInput')
+      this.props.fetchCards()
+    }
   }
 
   

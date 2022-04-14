@@ -1,19 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { fetchCards } from "../../actions/card_actions";
 import { fetchUser } from "../../actions/user_actions";
 import PostIndexContainer from "../posts/post_index_container"
 import "./profile.css";
 
 
 
-const Profile = ({user, userId, fetchUser}) => {
+const Profile = ({user, userId, fetchUser, fetchCards}) => {
 
   
 
   useEffect( () => {
     fetchUser(userId)
+    if(localStorage.getItem('searchInput')) {
+      localStorage.removeItem('searchInput')
+      fetchCards()
+    }
   },[])
+ 
 
   const [journalPosts, setJournalPosts] = useState(true)
 
@@ -28,7 +34,7 @@ const Profile = ({user, userId, fetchUser}) => {
           <p>{user?.data.email}</p>
           <p>{user?.data?.bio}</p>
           <p>{user?.data?.astrology_sign}</p>
-          <Link to="/profile/edit">Edit Profile</Link>
+          <Link to="/profile/edit" className='edit-post-button'>Edit Profile</Link>
         </div>
         <div className="journal-entries">
           <h2>{journalPosts ? 'Journal Entries' : 'Posts On Card Pages'}</h2>

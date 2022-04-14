@@ -69,3 +69,53 @@
 .friend-link a {
   margin-left: 9px;
 }
+
+.edit-post-button {
+  text-decoration: none;
+  width: 250px;
+  border-color: black;
+  font-family: 'Staatliches', cursive;
+  font-size: 15px;
+  padding: 3px;
+  background-color: antiquewhite;
+  color: #31325a;
+  cursor: pointer;
+}
+
+.edit-profile-container {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #31325a;
+  color: #faebd7;
+  font-family: 'Staatliches', cursive;
+
+}
+
+.edit-profile-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-bio {
+  font-family: 'Commissioner', sans-serif;
+  font-size: 15px;
+  background-color: antiquewhite;
+  color: #31325a;
+  margin-bottom: 8px;
+}
+
+.edit-profile-container button {
+  font-family: 'Staatliches', cursive;
+  background-color: antiquewhite;
+
+}
+
+.profile-astrology-sign {
+  font-family: 'Staatliches', cursive;
+  background-color: antiquewhite;
+  margin: 0px 0px 15px 0px;
+  width: 100%;
+}
