@@ -1,5 +1,7 @@
 #about-container {
-  background-color: pink;
+  background-color: rgb(49, 49, 90);
+  font-family: 'Staatliches', cursive;
+  color: antiquewhite;
   padding-top: 1px;
   padding-bottom: 10px;
 }
@@ -9,13 +11,26 @@
   justify-content: space-around;
 }
 
+.dev-individ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dev-name {
+  text-align: center;
+}
+
 .links-contain {
   display: flex;
-  justify-content: space-around;
-  width: 100px;
+  justify-content: space-evenly;
+  width: 105px;
 }
 
 .icon-contain {
   height: 30px;
   width: 30px;
 }
+  .icon-contain > svg {
+    fill: rgb(205, 186, 162);
+  }
