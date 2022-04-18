@@ -19,12 +19,10 @@ const PostSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    likesCount: {
-        type: Integer
-    
-    },
-    likers: {
-
+    likes: {
+        type: [Schema.Types.ObjectId],
+        ref: 'users',
+        default: []
     }
 
 });

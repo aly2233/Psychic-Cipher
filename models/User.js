@@ -23,6 +23,11 @@ const UserSchema = new Schema({
       type: String,
       required: false
     },
+    liked_posts: {
+      type: [Schema.Types.ObjectId],
+      ref: 'posts',
+      default: undefined
+    },
     friends: {}
   }, {
     timestamps: true

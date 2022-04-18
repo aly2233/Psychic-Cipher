@@ -17,7 +17,8 @@ router.get('/current', passport.authenticate('jwt', {session: false}), (req, res
       handle: req.user.handle,
       email: req.user.email,
       bio: req.user.bio,
-      astrology_sign: req.body.astrology_sign
+      astrology_sign: req.body.astrology_sign,
+      liked_posts: req.body.liked_posts
     });
   })
 
@@ -56,7 +57,8 @@ router.post("/register", (req, res) => {
           email: req.body.email,
           password: req.body.password,
           bio: req.body.bio,
-          astrology_sign: req.body.astrology_sign
+          astrology_sign: req.body.astrology_sign,
+          liked_posts: req.body.liked_posts
         });
   
         bcrypt.genSalt(10, (err, salt) => {
