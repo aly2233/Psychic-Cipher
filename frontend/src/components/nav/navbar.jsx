@@ -5,6 +5,7 @@ import './nav-bar.css'
 
 class NavBar extends React.Component {
   constructor(props) {
+    console.log(props)
     super(props);
     this.logoutUser = this.logoutUser.bind(this);
     this.getLinks = this.getLinks.bind(this);
@@ -12,7 +13,8 @@ class NavBar extends React.Component {
 
   logoutUser(e) {
       e.preventDefault();
-      this.props.logout();
+      this.props.logout()
+      this.props.history.push("/");
   }
 
   // Selectively render links dependent on whether the user is logged in
