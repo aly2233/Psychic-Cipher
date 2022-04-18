@@ -1,5 +1,6 @@
 #about-container {
   background-color: rgb(49, 49, 90);
+  border-top: 5px solid rgb(166, 157, 144);
   font-family: 'Staatliches', cursive;
   color: antiquewhite;
   padding-top: 1px;
@@ -32,5 +33,5 @@
   width: 30px;
 }
   .icon-contain > svg {
-    fill: rgb(205, 186, 162);
+    fill: rgb(166, 157, 144);
   }

@@ -16,7 +16,7 @@ const AboutFooter = () => {
                 </svg>
               </div>
             </a>
-            <a href="#">
+            <a href="https://github.com/aly2233" target="_blank">
               <div className="icon-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   {/* <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
@@ -37,7 +37,7 @@ const AboutFooter = () => {
                 </svg>
               </div>
             </a>
-            <a href="#">
+            <a href="#" target="_blank">
               <div className="icon-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   {/* <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
@@ -58,7 +58,7 @@ const AboutFooter = () => {
                 </svg>
               </div>
             </a>
-            <a href="#">
+            <a href="#" target="_blank">
               <div className="icon-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   {/* <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
@@ -79,7 +79,7 @@ const AboutFooter = () => {
                 </svg>
               </div>
             </a>
-            <a href="#">
+            <a href="#" target="_blank">
               <div className="icon-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   {/* <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
