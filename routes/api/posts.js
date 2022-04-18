@@ -63,7 +63,7 @@ router.get('/:id', (req, res) => {
 
 router.patch('/:id', (req, res) => { 
         Post.findById(req.params.id)
-        .then(post => Post.findByIdAndUpdate(req.params.id, {body: req.body.body},{new: true}))
+        .then(post => Post.findByIdAndUpdate(req.params.id, {body: req.body.body, likes: req.body.likes},{new: true}))
         .then(updatedPost => res.json(updatedPost))
 })
 
@@ -94,5 +94,8 @@ router.delete('/:id', (req, res) => {
         .then(post => res.json(post.id));
 
 } )
+
+
+
 module.exports = router;
 

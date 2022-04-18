@@ -34,7 +34,8 @@ export const createPost = (post) => {
 }
 
 export const updatePost = post => {
-    return axios.patch(`/api/posts/${post.id}`, post)
+  console.log(post._id)
+    return axios.patch(`/api/posts/${post.id || post._id}`, post)
 }
 
 export const deletePost = (postId) => {
