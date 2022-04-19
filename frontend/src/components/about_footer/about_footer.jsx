@@ -5,10 +5,10 @@ const AboutFooter = () => {
   return (
     <div id="about-container">
       <ul id="dev-links">
-        <li className="dev-individ">
+        <li className="dev-individ" id="alan">
           <p className="dev-name">Alan Yueh</p>
           <div className="links-contain">
-            <a href="https://www.linkedin.com/in/alan-yueh-01428a146/" target="_blank">
+            <a href="https://www.linkedin.com/in/alan-yueh-01428a146/" target="_blank" rel="noreferrer">
               <div className="icon-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   {/* <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
@@ -16,7 +16,7 @@ const AboutFooter = () => {
                 </svg>
               </div>
             </a>
-            <a href="https://github.com/aly2233" target="_blank">
+            <a href="https://github.com/aly2233" target="_blank" rel="noreferrer">
               <div className="icon-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   {/* <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
@@ -26,10 +26,10 @@ const AboutFooter = () => {
             </a>
           </div>
         </li>
-        <li className="dev-individ">
+        <li className="dev-individ" id="zach">
           <p className="dev-name">Zach Werbalowsky</p>
           <div className="links-contain">
-            <a href="https://www.linkedin.com/in/zach-werbalowsky-00a466237/" target="_blank">
+            <a href="https://www.linkedin.com/in/zach-werbalowsky-00a466237/" target="_blank" rel="noreferrer">
               <div className="icon-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   {/* <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
@@ -37,7 +37,7 @@ const AboutFooter = () => {
                 </svg>
               </div>
             </a>
-            <a href="https://github.com/ZWerbo" target="_blank">
+            <a href="https://github.com/ZWerbo" target="_blank" rel="noreferrer">
               <div className="icon-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   {/* <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
@@ -47,10 +47,10 @@ const AboutFooter = () => {
             </a>
           </div>
         </li>
-        <li className="dev-individ">
+        <li className="dev-individ" id="abby">
           <p className="dev-name">Abigail Montemayor</p>
           <div className="links-contain">
-            <a href="https://www.linkedin.com/in/abigail-montemayor/" target="_blank">
+            <a href="https://www.linkedin.com/in/abigail-montemayor/" target="_blank" rel="noreferrer">
               <div className="icon-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   {/* <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
@@ -58,7 +58,7 @@ const AboutFooter = () => {
                 </svg>
               </div>
             </a>
-            <a href="https://github.com/ee3y0re" target="_blank">
+            <a href="https://github.com/ee3y0re" target="_blank" rel="noreferrer">
               <div className="icon-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   {/* <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
@@ -68,10 +68,10 @@ const AboutFooter = () => {
             </a>
           </div>
         </li>
-        <li className="dev-individ">
+        <li className="dev-individ" id="david">
           <p className="dev-name">David Domingo</p>
           <div className="links-contain">
-            <a href="https://www.linkedin.com/in/david-domingo-896b74ba/" target="_blank">
+            <a href="https://www.linkedin.com/in/david-domingo-896b74ba/" target="_blank" rel="noreferrer">
               <div className="icon-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   {/* <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
@@ -79,7 +79,7 @@ const AboutFooter = () => {
                 </svg>
               </div>
             </a>
-            <a href="https://github.com/Domingo-creator" target="_blank">
+            <a href="https://github.com/Domingo-creator" target="_blank" rel="noreferrer">
               <div className="icon-contain">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   {/* <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
