@@ -5,8 +5,15 @@ const PostIndexItem = ({post, card, currentUser, author, deletePost, setChangeCo
 
     const [editPost, setEditPost] = useState(false)
     const [liked, setLiked] = useState(post.likes?.includes(currentUser.id) ? true : false)
+    // const [loading, setLoading] = useState(false)
 
+    // useEffect = ( () => {
+    //     debugger
+    //     setLoading(false)
+    // }, [liked])
+   
 
+    // useEffect = (()=> {debugger}, [liked])
 
     const toggleEditPostWindow = () => {
         editPost ? setEditPost(false) : setEditPost(true)
@@ -23,49 +30,48 @@ const PostIndexItem = ({post, card, currentUser, author, deletePost, setChangeCo
         return dateString.slice(0, dateString.indexOf(':') - 2)
     }
 
-    const update = () => {
-
-
+    const update = () => { 
         if(liked) {
             post.likes = removeLike()
             updatePost(post)
             setLiked(false)
         } else {
-       
             post.likes ? post.likes.push(currentUser.id) : post.likes = []
             updatePost(post)
             setLiked(true)
-
         }
     }
 
     const removeLike = () => {
+        let newLikes = []
         for(let i = 0; i < post.likes.length; i++) {
-            if(currentUser.id == post.likes[i]) {
-               return post.likes.slice(0, i) + post.likes.slice(i + 1)
+            if(currentUser.id !== post.likes[i]) {
+                newLikes.push(post.likes[i])
+           
             }
-        }
+        } 
+        return newLikes
+        
     }
 
 
-    const useEffect = (() => {
-        
-    }, [post.likes])
+
 
     return (
         <li>
             <div className='post-header'>
                 <p className='user-email-tag'>{author?.data.handle}</p>
-                <p>Likes: {post.likes?.length}</p>
+                
                 <p className='date-tag'>{convertDate()}</p>
             </div>
             <div className='post-body'>
                 <p className='post-body-text'>{post.body}</p>
             </div>
-            <button onClick={update}>Like</button>
-            <br />
+            <div className='post-buttons'>
+                {currentUser ? <div onClick={update} className="edit-post-form-button" ><span>({post.likes?.length})   </span>{liked ? 'Unlike' : 'Like'}</div> : <><span>({post.likes?.length})  </span></> }
+                {currentUser && (card || !post.cardId) && post.userId === currentUser.id ? <button onClick={toggleEditPostWindow} className='edit-post-form-button'>Edit Post</button> : <></>}
+            </div>
 
-            {currentUser && (card || !post.cardId) && post.userId === currentUser.id ? <button onClick={toggleEditPostWindow} className='edit-post-form-button'>Edit Post</button> : <></>}
             {editPost ? <EditPostFormContainer post={post} cardId={post.cardId} togglePostWindow={toggleEditPostWindow}/> : <></>}
             {editPost ? <button onClick={handleDelete} className='post-form-button'>Delete Post</button> : <></>}
         </li>

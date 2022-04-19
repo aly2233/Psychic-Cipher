@@ -77,14 +77,14 @@
     color: black;
     width: 100px;
     text-align: center;
-    padding: 5px;
+    /* padding: 5px; */
     align-self: center;
     cursor:pointer;
     font-size: 16px;
-    margin: 10px;
+    margin-bottom: 10px;
     font-family: 'Staatliches', cursive;
     font-size: 16px;
-    margin-top: -28px; 
+    /* margin-top: -28px;  */
 }
 
 .posts-list li > button {
@@ -145,4 +145,15 @@
     color: red;
     font-style: italic;
     font-size: 20px;
+}
+
+/* .like-button {
+    margin:30px;
+} */
+
+.post-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
 }
