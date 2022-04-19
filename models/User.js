@@ -28,10 +28,20 @@ const UserSchema = new Schema({
       ref: 'posts',
       default: undefined
     },
+    favorite_cards: {
+      type: [Schema.Types.ObjectId],
+      ref: 'cards',
+      default: [],
+      validate: [arrayLimit, `{Path} Exceeds limit of 5`]
+    },
     friends: {}
   }, {
     timestamps: true
   })
+
+  function arrayLimit(val) {
+    return val.length <= 5;
+  }
 
 
   module.exports = User = mongoose.model('User', UserSchema);

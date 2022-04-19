@@ -18,7 +18,8 @@ router.get('/current', passport.authenticate('jwt', {session: false}), (req, res
       email: req.user.email,
       bio: req.user.bio,
       astrology_sign: req.body.astrology_sign,
-      liked_posts: req.body.liked_posts
+      liked_posts: req.body.liked_posts,
+      favorite_cards: req.body.favorite_cards
     });
   })
 
@@ -30,7 +31,7 @@ router.get('/:id', (req, res) => {
 
 router.patch('/:id', (req, res) => {
   // console.log(req.body)
-  User.findByIdAndUpdate(req.params.id, {bio: req.body.bio, astrology_sign: req.body.astrology_sign, handle: req.body.handle},{new: true})
+  User.findByIdAndUpdate(req.params.id, {bio: req.body.bio, astrology_sign: req.body.astrology_sign, handle: req.body.handle, favorite_cards: req.body.favorite_cards},{new: true})
     .then( updatedUser => {
       console.log(updatedUser)
       res.json(updatedUser)})
@@ -58,7 +59,8 @@ router.post("/register", (req, res) => {
           password: req.body.password,
           bio: req.body.bio,
           astrology_sign: req.body.astrology_sign,
-          liked_posts: req.body.liked_posts
+          liked_posts: req.body.liked_posts,
+          favorite_cards: req.body.favorite_cards
         });
   
         bcrypt.genSalt(10, (err, salt) => {
