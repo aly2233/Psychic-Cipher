@@ -43,44 +43,48 @@ const Profile = ({user, userId, fetchUser, fetchCards}) => {
         </div>      
       </div>
 
-        <div id="friends-container">
-          <h1>Keep in touch with your friends!</h1>
-          <div id="friend-boundaries">
-            <div id="friend-box-top" className="friend">
-              <div className="friend-heading">
-                <h2>David Domingo</h2>
-              </div>
-              <div className="friend-link">
-              <a href="https://github.com/Domingo-creator" target="_blank">Domingo-creator</a>
-              </div>
+      <div id="friends-container">
+        <h1>Keep in touch with your friends!</h1>
+
+        <div id="friend-boundaries">
+
+          <div id="space-between-friend" className="friend">
+            <div className="friend-heading">
+              <h2>Alan Yueh</h2>
             </div>
+            <div className="friend-link">
+              <a href="https://github.com/aly2233" target="_blank" rel="noreferrer">aly2233</a>          
+            </div>
+          </div>
 
           <div id="space-between-friend" className="friend">
             <div className="friend-heading">
               <h2>Zach Werbalowsky</h2>
             </div>
             <div className="friend-link">
-              <a href="https://github.com/ZWerbo" target="_blank">ZWerbo</a>
+              <a href="https://github.com/ZWerbo" target="_blank" rel="noreferrer">ZWerbo</a>
             </div>
           </div>
           
-          <div id="space-between-friend" className="friend">
-            <div className="friend-heading">
-              <h2>Alan Yueh</h2>
-            </div>
-            <div className="friend-link">
-              <a href="https://github.com/aly2233" target="_blank">aly2233</a>          
-            </div>
-          </div>
 
           <div id="space-between-friend" className="friend">
             <div className="friend-heading">
               <h2>Abigail Montemayor</h2>
             </div>
             <div className="friend-link">
-              <a href="https://github.com/ee3y0re" target="_blank">ee3y0re</a>
+              <a href="https://github.com/ee3y0re" target="_blank" rel="noreferrer">ee3y0re</a>
             </div>
           </div>
+
+          <div id="space-between-friend" className="friend">
+            <div className="friend-heading">
+              <h2>David Domingo</h2>
+            </div>
+            <div className="friend-link">
+            <a href="https://github.com/Domingo-creator" target="_blank" rel="noreferrer">Domingo-creator</a>
+            </div>
+          </div>
+
         </div>
       </div>
       

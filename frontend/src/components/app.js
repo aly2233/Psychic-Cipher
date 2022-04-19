@@ -10,6 +10,7 @@ import CardShowContainer from './cards/card/card_show_container';
 import ReadingContainer from "./cards/reading_container"
 import ProfileContainer from "./profile/profile_contaier";
 import EditProfileContainer from './profile/edit_profile_container';
+import AboutFooter from './about_footer/about_footer';
 
 
 
@@ -27,7 +28,7 @@ const App = () => (
         <Route exact path="/profile/edit" component={EditProfileContainer }/>
         <Route exact path="/profile" component={ProfileContainer}/>
     {/* </Routes> */}
-
+    <AboutFooter />
   </div>
 );
 
