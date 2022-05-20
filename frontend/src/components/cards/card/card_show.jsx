@@ -26,14 +26,16 @@ const CardShow = ({fetchCard, card, match,fetchUser, currentUserId, currentUser,
     }
 
     const checkFavorites = () => {
-        debugger
-        if(currentUser.favorite_cards.includes(card.data._id)) {
-            return  <button onClick={handleFavorite} className='create-post-button'> Unfavorite</button>
-        } else if(currentUser.favorite_cards.length > 4) {
-            return <button className='create-post-button'> Maximum favorites achieved</button>
+        if(currentUser) {
+            if(currentUser.favorite_cards.includes(card.data._id)) {
+                return  <button onClick={handleFavorite} className='favorite-post-button'> Unfavorite</button>
+            } else if(currentUser.favorite_cards.length > 4) {
+                return <button className='favorite-post-button'> Maximum favorites achieved</button>
+            }
+            return <button onClick={handleFavorite} className='favorite-post-button'> Favorite</button>
+        } else {
+            return <button className='favorite-post-button'> Login to Favorite</button>
         }
-
-        return <button onClick={handleFavorite} className='create-post-button'> Favorite</button>
     }
     return (
         <div className='card-show-container'>
@@ -51,6 +53,7 @@ const CardShow = ({fetchCard, card, match,fetchUser, currentUserId, currentUser,
                         <div className='card-name'>{card.data.name}</div>
                     <p className='card-arcana'> Arcana: {card.data.arcana} </p>
                     <p className='card-desc'>{card.data.desc}</p>
+                    {checkFavorites()}
                 </div>
 
 
@@ -68,7 +71,7 @@ const CardShow = ({fetchCard, card, match,fetchUser, currentUserId, currentUser,
 
             </div>
 
-          {checkFavorites()}
+          {/* {checkFavorites()} */}
             {/* <button onClick={handleFavorite} className='create-post-button'> Favorite</button> */}
             <div className='card-comments'>
                 <PostIndexContainer card={card} />

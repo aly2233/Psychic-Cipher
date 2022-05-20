@@ -104,6 +104,16 @@
     background-color: antiquewhite;
     cursor: pointer;
 }
+.favorite-post-button {
+    /* margin-left: 200px; */
+    width: 250px;
+    border-color: black;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    padding: 3px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
 
 .say-about-cards {
     font-family: 'Staatliches', cursive;
