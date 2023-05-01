@@ -35,7 +35,7 @@ https://user-images.githubusercontent.com/96323278/163232140-ca940825-a532-4d56-
 
 
 
-### Pofile Posts and Journals
+### Profile Posts and Journals
 Users can create an account and create public and private reflections on their personal experience with their readings or the cards themselves.
 ```
       <div id="authored-posts">
