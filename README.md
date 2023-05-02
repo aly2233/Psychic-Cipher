@@ -16,7 +16,7 @@ Maybe even want to reflect publically to others or privately like a journal abou
 ## Features
 
 ### Tarot Reading
-After mentally reflecting on a question, users can select card spreads of 1, 3, or 5 cards to receive randomly shuffled cards at random positions.
+After mentally reflecting on a question, users can select card spreads of 1, 3, or 5 cards to receive randomly shuffled cards.
 ```
   cardReading(reqLength) {
     const handIdx = [];
