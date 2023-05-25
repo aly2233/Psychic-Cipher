@@ -1,7 +1,7 @@
 # Psychic-Cipher
 
 ## Curious about wanting to learn tarot? 
-Maybe even want to reflect publically to others or privately like a journal about your readings? Our tarot app enables seamless readings with options of spreads consisting of 1 card, 3 cards, and 5 cards. After receiving readings, users have the option to reflect on their readings like a journal entry. In addition, users can post thoughts, opinions, and interpretations on individual cards for other users to see.
+Do you, maybe even want to reflect publically to others or privately like a journal about your readings? Our tarot app enables seamless readings with options of spread, consisting of 1 card, 3 cards, and 5 cards. After receiving readings, users have the option to reflect on their readings like a journal entry. In addition, users can post thoughts, opinions, and interpretations on individual cards for other users to see.
 
 ## Check it out live!
 [On Heroku](https://psychiccipher.herokuapp.com/#/)
